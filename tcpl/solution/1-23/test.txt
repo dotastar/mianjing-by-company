@@ -1,0 +1,8 @@
+char a[] = "adfasdfasdf";
+char a[] = "adfasdf/*";
+/* adsfasdf
+*/
+/*
+char a[] = "adfasdf*/";
+*/
+char a[] = "adf/*fa*/sdf";
