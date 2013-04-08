@@ -1,0 +1,4 @@
+x()*[]*()char
+x****char
+daytab*[13]int
+daytab[13]*int
