@@ -1,0 +1,16 @@
+(define (square x) 
+  (* x x))
+(define (sum-of-squares x y) 
+  (+ (square x) (square y)))
+(define (mysum x y z) 
+  (if (> x y) 
+      (sum-of-squares x (if(> y z) y z))
+      (sum-of-squares y (if(> x z) x z))))
+
+(mysum 1 2 3)
+(mysum 1 3 2)
+(mysum 2 1 3)
+(mysum 2 3 1)
+(mysum 3 1 2)
+(mysum 3 2 1)
+
