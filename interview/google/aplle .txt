@@ -1,0 +1,11 @@
+phone screen interview 
+
+First round£º
+1. check if a string is anagram  
+2. Given a matrix which contains black and white grids, use a method to find
+out if the white grids are connected or not, if yes, return true.
+
+Second round:
+1.  Design an API which is used for a cache big data
+2.  Given a string, find longest substring which contains just two unique 
+characters. 

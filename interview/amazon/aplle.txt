@@ -1,0 +1,16 @@
+1. power£¨ int a, int b£©
+2. find ways to make coin change
+
+3. print a binary tree in Zig Zag level order
+
+4. how to decide which data structure can be used for special situations
+
+5.  level search tree, need more than one methods
+
+6. design a battleship game
+
+7. given a wrong prototype,  redesign it
+
+8. Sliding window maximum 
+
+9. hiring manager ask details about my projects
