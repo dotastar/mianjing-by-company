@@ -1,0 +1,37 @@
+发信人: sunfaquir (非礼勿言), 信区: JobHunting
+标  题: 发几个面经(3) Tango电面
+发信站: BBS 未名空间站 (Tue May 28 18:42:37 2013, 美东)
+
+-----------------
+Tango
+-----------------
+这是个start up，第一轮电话面，后面三个是skype
+p1 面试官是康柏以前的一个VP，现在同时还是一个小公司的CEO，主要就是聊天，
+   聊做过project，聊java中的垃圾回收机制,还有concurrent programming
+   聊的大叔很开心 结束前告诉我会recommend
+
+p2 tango在北京的国人，有点装,问的问题比较令人费解
+   1)self introduction
+   2)Big Hash table vs small hash table?
+   3)most interesting project
+   4)coding: 给很多这样的log  
+      number=123-456-1111&key1=v1&key2=v2
+      number=123-456-1111&key1=v3
+    假设 sum(key1) = v1+v3
+    Sum Key for each number(also validate number using regex)
+
+p3 加州office的人，面的最不正经的一个
+   1)简单project介绍后，就说你们如何如何不适合我们的职位 
+     晕啊 我感紧解释了自己如何如何适合这个职位
+   2)没有技术问题，就问了个你对tango盈利有何建议，我给了几个方案后就被狂鄙视
+     说你凭什么认为这样一定会盈利，
+     狗血的是 面试结束后我问第四个面试官tango如何实现盈利 
+     人家给我的答案就是我给p3的答案 而且tango已经在做了
+
+p4 也是在北京的国人，人很nice,聊的也比较投机
+   给了个他们正在做的项目 对海量数据进行分析 
+   生成一些结果显示在tango内部用的dashboard上(比如说每小时/天/星期/月发了多
+少信息，有多少是txt的，多少是image的，有多少active user等等
+   主要是系统设计 会讨论一些细节上的实现 但不需要coding   
+   给出的方案和他们的实现比较接近
+   后来让问问题聊了一些tango产品 团队的问题，包括盈利的问题

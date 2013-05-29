@@ -1,0 +1,27 @@
+发信人: bjscput (帅哥你好), 信区: JobHunting
+标  题: Rocket Fuel 的big data infrastructure 组 面经 全是阿三
+发信站: BBS 未名空间站 (Tue May 28 10:51:51 2013, 美东)
+
+全tmd是阿三。
+
+第一轮让找两个排序数组合并后的median，直接dp搞定。他家用interviewstreet。超
+过时间直接关窗口。
+
+第二轮，一个印度人，问系统问题，又问了一个比较两个二叉树是否完全相同。现场写
+colloedit写的。又是dp
+
+第三轮，project manager，还是阿三，问了一堆简历问题和hadoop的source code问题
+。轻松应对，先来很恶心的告诉俺，你免得不错，再给你加两轮在来onsite，一个是5
+个小时的auto racer test，还有一个是电面；
+
+第四轮：电面第三个印度人，上来问hadoop的性能和深层实现，刚开始俺会的的，他丫
+还说fair，等后来问道性能了，俺一通回答，他直接great，great。
+
+第五轮：5个小时太长了，不想做了。直接给他家发信，姐看不懂你题目，不去了。俺
+估摸着就是这个阿三经理不想让俺去，故意恶心俺的。你们有种就去直接h1 iit的毕业
+生吧。这个组俺去了也是受排挤。
+
+顺便分享个link，也是国人的blog，有三道这个公司的5小时题目。2个有提示，第三个
+就是俺要做的，没提示。
+http://get-that-job-at-google.blogspot.com/2013/02/rocketfuel-c
+http://get-that-job-at-google.blogspot.com/2013/02/rocketfuel-codesprint-at-iit-bombay.html

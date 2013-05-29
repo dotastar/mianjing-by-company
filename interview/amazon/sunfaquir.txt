@@ -1,0 +1,37 @@
+发信人: sunfaquir (非礼勿言), 信区: JobHunting
+标  题: 发几个面经(4) Amazon电面
+发信站: BBS 未名空间站 (Tue May 28 18:43:27 2013, 美东)
+
+--------
+Amazon
+--------
+p1:
+1) Java中的常用数据结构的优缺点比较
+   比如 LinkedList,HashMap,Tree等
+2）各种sorting算法的比较，复杂度，优缺点
+3）coding: print Mirror Binary Tree
+4)这轮还问了个behavior question，忘掉了...
+p2:
+1）behavior question: 你有个想法，怎么说服你的老板或者同事接收，举例
+2) 给一堆电话号码，找到出现多于两次的电话号码，算法，时间复杂度
+3）给定数组，找第二大的数
+
+p3: 三姐
+1) what happened when u type a URL in browser?
+follow up: What info was sent? how does the server get the request?
+why TCP/IP reliable? 
+2) 解释java中static keyword，有何优缺点
+3) coding：给用0，1表示黑白颜色的矩阵，找出连续的颜色块数(相邻同色算同一块)
+4) 有很多集群,如何设计CDN network，如果执行资料的备份 同步
+5) coding: 
+a) Create a data structure that represents a family tree through blood and 
+adoption.
+b)write a function to get a person's ancestors at the nth level up, mention
+if they are related by blood or adoption.
+
+三姐这轮比较奇葩，时间就剩不到10分钟了 打断了我第四题正在做的优化 
+匆匆忙忙给我出了第五题 写了5分钟后告诉我没时间了 说知道我一定能写出来 让我写
+完email给她... 还说'this is between you and me' 搞得我莫名其妙
+
+因为面amazon的时候 leetcode已经刷过一遍 三轮面的感觉都还不错 
+最后onsite没拿到比较意外

@@ -1,0 +1,130 @@
+发信人: sunfaquir (非礼勿言), 信区: JobHunting
+标  题: 发几个面经(5) Groupon 电面+onsite
+发信站: BBS 未名空间站 (Tue May 28 18:57:07 2013, 美东)
+
+尽管第一个onsite是twitter给的
+groupon却是我第一个去onsite的公司 过程也是所有面试的公司中最漫长的
+面完groupon心态彻底变平和了 再面任何其他公司也都不会再觉得折腾了
+
+总共面了 10个人  onsite前两轮电话+ onsite 5个人 + onsite后3轮电话
+面试的过程中要去的组因为内部人re-org被强塞了几个人 offer自然也没了
+
+电面
+p1 主要面data mining，毕竟宽泛，考察到了
+1) measures of classification
+2) boundary decision for classification 
+3) Feature selection  
+4)Entrophy,TF,IDF
+5) coding 给定query 打印出所有match的combination
+// Query = dress for less
+// Expansion: "dress:[es, ed, ing] for less:(cheap, deal)"
+/* 
+   dress for less
+   dress for cheap
+   dress for deal
+   dresses for less
+*/
+
+p2
+coding题目 Print Binary Tree in Zigzag order
+
+onsite
+
+p1:
+1) team introduction/self introducaton/project introduction
+2) Coding: Given a user list and a deal, also a api (float relevance(User u,
+deal d)), return the k top users that are most related to the deal
+
+p2:
+1) indroduction
+2) 扔硬币:两个不知道的Head/Tail概率的硬币,扔1000次得500次head VS 扔100次得50
+次head，算confidence, p value
+3) Given a friend network: 
+Lan---> micheal
+Michael--> Kathy
+Lan--->alex
+....
+Found the following result:
+number of person       number of friends
+3	 10
+2	 4
+...
+
+a)how to do this? no need to code.
+b)how to do this with Map Reduce
+c)how to do this in SQL(count,group by, union)
+4) Kmeans的 cost function
+
+p3 lunch guy  算法 Model 设计题
+Given a user query(String), how to build a classified model in which it 
+takes the query and return the most related deal categories?
+Training data availabe(Deals info--->categorical info)
+
+
+p4 
+1）聊天 project/team
+2)coding 题目
+Given two set of weather Data
+April
+City   Tempratature   huminity
+San Jose   50	 50
+San Fran   40	 30
+
+May 
+San Jose   70	 30
+Chicago	   30	 20
+
+Ouput  the variation in the following format
+San Jose  40%	 -40%
+San Fran   infiniti     infiniti
+Chicago    -infiniti     -infiniti
+
+p5 
+1）问project 穿插考察概念
+2) unfair 硬币问题 
+   throw 1000 times, 550 times head, what's the probability of p=0.5? 
+3）算法
+give two Arrays A and B  (size large)
+output   T if all element in  A are also present in B, otherwise F.
+有follow up
+4）算法设计题 一堆groupon向google买的广告的点击和收费记录
+  如何设计算法获取单个词条的收费rate
+
+Problem
+words	# of clicks   TotalPaid Amt to google each day  ,
+w1,	320	
+w2,	250
+w3,      5
+w4,     230
+......
+how to get the rate for each word?
+
+提出解法后有follow up questions.
+
+onstie后recruiter反应feedback很好 要时间说Hiring manager要电话讨论role 
+availability，放松警惕了随便给了个时间也没准备电脑 网络 耳机什么的 结果HM打来
+电话是技术面，让coding的时候一下慌了 没面好，于是给recruiter发信解释，又加了
+两轮面试(recruiter说是一轮技术面，一轮介绍产品的，后来证明又是两轮技术面，
+groupon的内部沟通确实有些问题) 虽然后面coding写的都还可以 但这个过程中其实
+position已经没了
+
+onsite后 电面
+p1
+1) design question, big data/hash table related
+2) coding
+Given 
+"ABBEEFG" and pattern "BE"
+a) remove pattern from string
+    return  "ABEFG"
+b) recursive remove pattern
+    return "AFG"
+
+p2  
+dp题，给定钱数和所有的可能硬币面值，求最少的硬币数目的组合 
+
+p3
+问了很多personal questions 略过不表
+技术有关题目
+1)How to improve an existing algorithm?
+   follow up给出了目前groupon 推荐deal的算法，如何优化
+2）coding题目:给出二叉树，打印从 root到leaf的所有可能路径

@@ -1,0 +1,58 @@
+发信人: sunfaquir (非礼勿言), 信区: JobHunting
+标  题: 发几个面经(6) Twitter 电面+onsite
+发信站: BBS 未名空间站 (Tue May 28 21:05:16 2013, 美东)
+
+twitter员工的精神面貌 在我onsite的几个公司里面我感觉是最好的 不输于Google
+onsite完Groupon后隔天onsite twitter 
+工作环境，食堂，员工活力各方面一对比，感觉twitter都要胜出很多
+twitter的recruiter效率也非常高 电面完当天就安排下一轮
+废话少说 上题目
+
+电话两轮
+p1: coding题目
+   Given continuous incoming real time stock price stream,
+  1) design data structure to support query for max, min price in the past 
+12 months.
+  2)implement in code
+
+p2: 大数据设计题 Map Reduce, 会不断要求优化
+Given 1000 worker nodes/hosts, 1 coordinator node (4GB RAM) - 10 billion 
+numbers are distributed randomly among the worker nodes.
+
+i) Find the mean.
+ii) Find the median
+
+Onsite
+
+p1: 
+  1) detect circle in linkedlist, find the meeting point
+  2) coding evaluate 7+3*4*5+2+4......
+p2: 阿三
+  1)RGB color boxes with lowest cost, neighboring houses can not have the   
+same color.
+  2)coding Maxium Diameter of binary Tree
+3. short URL设计
+
+Lunch 是和电话面试的人 负责回答问题 不提交feedback 和google类似
+
+4.
+1) Most interesting project. why
+2) have large log files, how to design to implement
+Timestamp, Key, Amount of event
+getSequencce(key, start, end, min/hour/daily)
+follow up: what's the challenges
+
+5.
+coding 1: K-way Merge 变形题目
+coding 2: Decorator pattern变形题目
+
+6.
+1)Ask about project
+2) Sorting large files with single machine
+3) LRU Cache Design and coding
+
+onsite 小插曲:
+第二轮阿三本意想给出DP的染色问题 可惜题目条件给错了被我用greedy解决 三哥在那
+愣了半天 不断的加条件 可惜始终没加对 加完greedy依然有效  
+临走时三哥莫名其妙的和我说我本来还有很多题目没时间问你了 就有不详的预感 
+事后recruiter给的feedback证明三哥确实给了negative的 feedback

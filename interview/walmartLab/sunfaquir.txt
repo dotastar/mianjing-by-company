@@ -1,0 +1,63 @@
+发信人: sunfaquir (lovely), 信区: JobHunting
+标  题: 发几个面经(1) walmartLab 电面
+发信站: BBS 未名空间站 (Tue Feb 26 18:05:16 2013, 美东)
+
+两轮 phone interview
+第一轮
+亚裔面试官，很nice，很详细问了当前project，问到许多细节的处理
+算法题 reverse words in a sentence.  
+"It is good"--------->"good is It"
+
+很简单，写完的时候有个bug，让我检查 发现了改了
+然后又提示把reverse string的函数单独提出来
+follow question问能不能处理 string 前后中许多空白
+我说可以 他觉得不可以 我们一块走了一遍code 可以
+结束了
+
+第二轮
+面试官烙印，交流有问题，至少两处都要求重复了两三遍才听懂
+
+先一个一个的让介绍自己的project 大概20分钟 基本都是我在说
+然后开始算法题
+Q1
+find longest palindrome in a string leetcode原题
+解释思路，对每个character 从中间向两边扫 找最长的 他说ok
+开始写 写到一半 考虑到偶数的情况，说还要考虑从中间两个character往两边扫
+code，然后继续写  还没写完就被烙印打断 说u r on the right track 就下一题了 
+
+Q2 Let say you are given all pairwise distances between n points, points in 
+3d, compute a coordinate representation of the points such that the euclid 
+distance matches the input distance
+
+x = sqrt(2)
+eg) 1 2 3 4
+1   0 1 1 1
+2   1 0 x x
+3   1 x 0 x
+4   1 x x 0
+
+output
+1: (0,0,0)
+2: (1,0,0)
+3: (0,1,0)
+4: (0,0,-1)
+
+心想这code也太难了吧 有点懵 不知道他是什么意思 想了一会儿还是没思路 
+试着问 只给距离不给坐标系 解并不唯一 可以选择坐标系有很多解啊？ 他说是的 就
+沉默了
+还是没思路 只好任意发挥，说可以先选两点确定一线作为x轴，然后再选一个不在一条
+线上的第三点确定以平面然后确定y轴 后面还没说怎么确定z轴 就又被打断了 ok let'
+s move on next
+
+Q3 given 2 distance matrices M1, M2 that represent distances bw points in 2d
+, check if the point sets are equivalent (same upto translation + rotation)
+
+这时候还没从上一题中回复过来脑子已经不转了，就brute force吧
+
+说两matrix里的每行对比，看M1中的一行是不是可以通过M2中某一行交换顺序得到 如
+果不能返回false，如果可以，对M1所有列做相同的顺序变换 看能不能对M1中的每一行
+都在M2中找到对应的
+还没说完 又被打断了 让问个问题就结束了
+
+和烙印交流不太顺利 肯定是挂了 
+move on了 题目还是分享一下吧 万一后面有面的兄弟可以有点心理准备

@@ -1,0 +1,19 @@
+发信人: flyinskyha (flyinskyha), 信区: JobHunting
+标  题: F面经
+发信站: BBS 未名空间站 (Tue May 28 21:33:03 2013, 美东)
+
+system design: large scale tinyurl mapping, and search. large scale news 
+feed-> explicitly require number of servers required!
+
+bst next larger node
+
+LL: remove duplicates
+
+mapping
+u-> u A
+a-> c E
+print all combinations
+
+similar to color sort problem.
+
+谁帮忙分析下system design的两道题，明确要求server数量。

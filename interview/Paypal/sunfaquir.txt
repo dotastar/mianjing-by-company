@@ -1,0 +1,22 @@
+发信人: sunfaquir (非礼勿言), 信区: JobHunting
+标  题: 发几个面经(2) Paypal电面
+发信站: BBS 未名空间站 (Tue May 28 18:39:20 2013, 美东)
+
+----------------
+Paypal:
+----------------
+连续面了3个人 skype
+p1:阿三，主面sql
+1)问project,follow up就是project是否用到数据库，有何优缺点
+2）给两个表，根据要求写sql语句
+3）sql中怎么submit change without using commit
+p2 阿三 主要考察coding&design
+1)问project，data mining在paypal里面可以有何应用
+2)coding:  finding common ancester in BST
+3）多线程写数据库的commit的同步问题
+4)Design patterns,问的比较细，会让写代码实现
+
+
+p3 国人
+没有coding，就是聊天，内容包含
+project介绍，Design patterns, Java Concurrent programming, GDB debugging等
