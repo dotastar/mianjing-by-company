@@ -1,0 +1,61 @@
+发信人: sunfaquir (非礼勿言), 信区: JobHunting
+标  题: 发几个面经(8) Roket Fuel 电面 + onsite
+发信站: BBS 未名空间站 (Wed May 29 00:40:00 2013, 美东)
+
+Rocket Fuel面试的是Senior Data Scientist职位
+
+他家的recruiter非常高效 但是不够自信 
+发offer只给三天考虑时间 且不match别家offer
+
+相比较 twitter虽然一样给fresh的package是固定的 不match别人
+但同时也明确表明不会push你做决定 就很大气
+
+电面
+面试官是google跳过去老美 面试水平很高
+1) 随机sampling问题，我给出了几种解法 
+   但最后面试官一步步把我引向 reservior sampling
+   并推导出其算法
+2）Top-K from N, 时间复杂度分析的非常细致
+
+Onsite
+p1. CTO
+  1) given  URLs, find the most frequent one
+   time complexity, compare with other solutions.
+  2)小学水平数学题
+
+CTO面完后可能感觉不错 临时拉了个人过来给我讲他们RTB的model 他旁听
+    边讲边问问题，答得还好, 不过讲得人manner不太好，比如说我为了确认理解没有
+错误  重复问他两遍一样的问题 他就会比较不耐烦 说比较rude的话
+
+p2 面的他家chief scientist
+  1）主要考察 data mining方面的东西 比如避免over fitting的方法
+     又比如给一些数据 如何提取feature
+  2)coding是string题目
+  Jon likes, the weather... --> rehtaew... eht sekil, noJ
+p3. 是三姐
+   1) Map Reduce的题目 要写code
+   2) marching learing题目: 如何处理数据中skew class/features
+   3）coding: leetcode Jump Game II
+   这道题很多人用DP做，我给出的是非DP的解法
+    只需要扫一遍数组，写完时间也差不多了 
+   三姐说有bug给了个列子说会出错 因为时间到了我也没细想
+   但面完第五轮后 我回想了一下我的算法处理三姐的例子不会出错
+   要是因为这个题fail掉就太可惜了 
+   于是找recruiter解释 于是叫来了三姐给她解释为什么我的算法没错
+   没想到无论我怎么解释 三姐都认为不可能扫一遍数组就能找出min steps
+   最后争执不下 三姐让我回去发code和test case给她
+   我回hotel给她发了我的code和leetcode上的一些test case 
+   
+p4. 国人，nice 
+   1)介绍project
+   2) coding: whether string S3 is a shuffle of S1+S2?
+   3) coding: print n parenthesis
+
+p5. 国人 nice
+   1)找top k element 需要各种solution 直到最后O(n)算法
+     MapReduce下如何做
+   2)概率题: 金刚坐飞机问题
+
+题外话：rocket fuel现在给的option没有什么吸引力了
+      多方反应他家内部政治斗争也比较厉害 
+      有其他比好的选择建议就不要去了

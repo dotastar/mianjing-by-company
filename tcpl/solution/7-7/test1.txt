@@ -1,0 +1,5 @@
+ntroduction
+The easiest way to install Photologue is with pip:
+
+pip install django-photologue
+You can also install the development version which is on Github:

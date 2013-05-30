@@ -1,0 +1,10 @@
+Stream properties
+Streams have some properties that define which functions can be used on them and how these will treat the data input or output through them. Most of these properties are defined at the moment the stream is associated with a file (opened) using the fopen function:
+Read/Write Access
+Specifies whether the stream has read or write access (or both) to the physical media they are associated with.
+Text / Binary
+Text streams are thought to represent a set of text lines, each one ending with a new-line character. Depending on the environment where the application is run, some character translation may occur with text streams to adapt some special characters to the text file specifications of the environment. A binary stream, on the other hand, is a sequence of characters written or read from the physical media with no translation, having a one-to-one correspondence with the characters read or written to the stream.
+Buffer
+A buffer is a block of memory where data is accumulated before being physically read or written to the associated file or device. Streams can be either fully buffered, line buffered or unbuffered. On fully buffered streams, data is read/written when the buffer is filled, on line buffered streams this happens when a new-line character is encountered, and on unbuffered streams characters are intended to be read/written as soon as possible.
+Orientation
+On opening, streams have no orientation. As soon as an input/output operation is performed on them, they become either byte-oriented or wide-oriented, depending on the operation performed (generally, functions defined in <cstdio> are byte-oriented, while functions in <cwchar> are wide-oriented). See cwchar for more info.

@@ -1,0 +1,26 @@
+发信人: ctwy (cici), 信区: JobHunting
+标  题: 狗狗家onsite面经
+发信站: BBS 未名空间站 (Wed May 29 23:32:19 2013, 美东)
+
+1)给的一个double linkedlist，给定一个array，包含若干double linkedlist的节点
+的地址，统计这个array包含的互相独立部分的数目。用例子说明吧。
+一个double linkedlist是A<>B<>C<>...<>X<>Y<>Z（一共26个节点，从A到Z）。
+如果array是{A，Z}，那个return 2，因为A和Z两个不相邻的。
+如果array是{A，B，D}，那个return 2，因为AB是一个部分，D是另外一个独立的部分。
+如果array是{A，B，C，。。。，Y，Z}，那么return 1，因为AtoZ是一个独立的部分。
+
+2)从给定的sorted的array如何build的一个balanced的binary tree？
+开始给了一个recursive的方法，后来要一个iterative。
+iterative的解法：
+a.先建立一个空的balanced binary tree
+建立这个空的balanced binary tree的方法可以参见如何用array来表示一个heap的方
+法。具体是对于节点i，它的left和right child可以是节点2*i和2*i+1。这里i必须是
+从1开始的，不能是0，所以不能直接用array中元素的idx。
+b.然后traverse这个空的binary tree，把sorted array的值一个一个拷贝进去。
+for (TreeNode *node = minBST(root); node != NULL; node = successorBST(node))
+{
+    node->value = sortedArray[i++];
+}
+
+3)reservoir sampling的题。一个无限长的数组，一个buffer有K个cells，如何scan这
+个数组一次，并且以相同概率采样K个元素到这个buffer里。
