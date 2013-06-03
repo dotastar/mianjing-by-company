@@ -1,0 +1,29 @@
+发信人: sunfaquir (非礼勿言), 信区: JobHunting
+标  题: 发几个面经(7) Google 电面+onsite
+发信站: BBS 未名空间站 (Tue May 28 23:46:23 2013, 美东)
+
+Google很爱考string的题目
+
+电面只有一道题目
+  设计BigInteger类并实现加减等基本运算
+
+Onsite
+p1. 
+1) reverse words in string
+   面试官很重视效率 同是O(n)的算法 O(2n)和O(3n)对他来说是big difference
+2) word ladder的变形题目 
+   给个dictionary，找出里面最长的ladder，
+   要求: 从start word到每次删除一个character形成下一个word,使得这个路径上每
+个word都   在字典内
+p2.
+1) bbbbc--> bx4c  压缩问题  有follow up以及写test cases
+2）设计web crawler
+3）hashMap VS Tri
+
+p3.
+  1)聊天
+  2）coding题目: Game of Live
+p4. 本来打算让写string的code 看到前面已经写了两轮string了 临时改成
+    LRU Cache 设计和实现（这个题目建议大家重点复习，我三次onsite中都遇到了）
+p5. thesis discussion
+    面试官会突然抛出和thesis毫不相干的问题

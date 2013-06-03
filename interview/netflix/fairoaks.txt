@@ -1,0 +1,11 @@
+发信人: fairoaks (newid), 信区: JobHunting
+标  题: 面经netflix
+发信站: BBS 未名空间站 (Sun Jun  2 23:55:29 2013, 美东)
+
+没有大块的时间，每天能写多少就写多少，特意用了个马甲。以后会加上startup, 
+amazon & google. 结果是拿到amazon, google offer,选择google, startup还没面完,
+选择不面了.
+
+1, Netflix
+申请netflix请先看看这个http://jobs.netflix.com/jobs.html 然后点freedom & responsibility culture,好好看看自己是否适合netflix的culture,看完你就明白了好虫为什么强调被let go以后,会有俩个月的工资,心脏不强者,我建议避免netflix.面试机会是好虫推荐的,好虫很给力,推荐后不久,HR就来联系了,HR安排好店面时间,然后就把上述link发给你. 我是店面当天早上看的,看完后心里就发凉,这公司我是不敢去.店面应该是好虫的经理,是个老印,口音属于比较重的老印,挺难听懂,问题主要是谈项目,然后聊聊spring你用了哪些功能呀,聊聊cassandra,连具体参数也聊了几句,通过好虫原来在此版list的java framework,我就知道他们用REST,用hibernate,由于不太感兴趣,我主动提出我没用过hibernate,那个性能不行,我们都是jdbc template,query都需要自己优化, sql里面都有hint的, (题外话, 如果不考虑性能,用tastypie, based on django, 基本不用写程序, REST, ORM都直接有了, client side java script就可以直接用).
+结果是预料之中,HR说feedback是positive,但是不是perfect match.

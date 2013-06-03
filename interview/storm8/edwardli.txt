@@ -1,0 +1,55 @@
+发信人: edwardli (饺子沙拉), 信区: JobHunting
+标  题: storm8 online  code给跪了
+发信站: BBS 未名空间站 (Thu Feb 14 12:16:36 2013, 美东)
+
+昨天做了storm8 的online code，挂了。
+题目变了，不再是以前说的find max sum path in one grid。
+题目如下：
+给定一个string,如 “codility”,每次向左循环一个char.
+codility 0th;
+odilityc 1st;
+dilityco 2nd;
+ilitycod 3rd;
+....
+codility 8th;
+要求返回Unique 的string. 如上所示，应当返回 7.
+然后又举例，“byebye”，应当返回二
+任何string，包括空数组，应当最少返回1.
+要求time complexity 和 space complexity 都为O(N).
+
+我的code：
+import java.util.HashMap;
+
+public class Cyclic {
+
+    /**
+     * @param args
+     */
+    public static void main(String[] args) {
+        // TODO Auto-generated method stub
+        String s = "";
+        System.out.println(cyclic_automorphisms(s));
+    }
+    
+    public static int cyclic_automorphisms ( String S ) {
+        int lens = S.length();
+        HashMap<String, Integer> map = new HashMap<String, Integer>();
+        if(lens < 1)
+            return 0;
+        for(int i = 0; i < lens; i++){
+          if(!map.containsKey(S)){
+            map.put(S,i);
+          }
+          S = shiftLeft(S);
+        }
+        return map.size()-1;
+      }
+      
+      public static String shiftLeft(String s){
+        return s.substring(1)+s.charAt(0);
+      }
+}
+在eclipse里测试，没有问题，也通过了测试，但他说我这个不是最优解。
+我当时第一反应就是用Hashmap做，从前也没有想过哈希表的空间复杂度问题。我想是
+不是跪在这个地方了，求大神指点。
+另外，求大神Refer.
