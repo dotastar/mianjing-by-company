@@ -1,0 +1,32 @@
+发信人: wxyjwxyj (wxyjwxyj), 信区: JobHunting
+标  题: f 一些面试题
+发信站: BBS 未名空间站 (Sat Jun  8 23:09:45 2013, 美东)
+
+f:
+written test before interview:
+Code:
+public int bar(int a, int b) {
+  if (b == 0) return 1;
+  if (b % 2 == 0)
+    return bar(a, b / 2) * bar(a, b / 2);
+  return bar(a, b - 1) * a;
+}
+Questions:
+1. bar 是什么？
+2. big O in terms of a and b
+3. list 2 - 3 changes you would make to the above fucntion, and reweite code
+
+phone
+1. array intersection
+2. start from # , can only move to the upleft/up/upright cell from each 
+position, return the max value you could get traversing thru the matrix
+W
+=================
+|0|5|0|5|0|1|0|4|
+|0|0|0|2|0|0|0|0|
+|0|1|0|0|2|2|0|1|
+|0|0|0|0|2|0|0|1|
+|9|0|0|0|2|7|0|0| H
+|9|0|9|0|0|0|0|0|
+|9|0|0|5|0|0|0|0|
+|9|0|0|#|0|0|0|0|

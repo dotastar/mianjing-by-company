@@ -1,0 +1,43 @@
+发信人: ctwy (cici), 信区: JobHunting
+标  题: 小公司onsite面经（求bless）
+发信站: BBS 未名空间站 (Wed Jun  5 17:48:00 2013, 美东)
+
+小公司，有点research性质的。面了6,7个人吧，问了很多关于之前的research 
+projects，不具有代表性。就把记得的算法题汇报一下吧。很多也没要求写code。
+
+1. 给定一个sorted array，如何查找所有pair，他们的和等去一个给定sum。
+要求给一个不用hash table的方法
+给了一个用binary search加速查找过程的方法。
+
+2. 如何用一个1G内存sort一个10G的文件，假设硬盘空间足够大。
+刚开始给了一个pair-wise sort，后经讨论improve成K-way sort。相比K-way sort，
+pair-wise sort要求更多的硬盘访问次数。
+后来讨论一下如果硬盘空间有限，例如只有10.5G，如何做K-way sort。
+
+3. 给定一个有向图，如何判定是不是bipartite，只讨论的算法，没有要求写code
+这里是Wiki上定义http://en.wikipedia.org/wiki/Bipartite_graph
+
+4. 如何判定一个binary search tree
+
+5. 给定一个array和一个sum，如何找到所有个pair和triple它们的和。不确定是不是
+leetcode上的two-sum和tree-sum的原题。
+two-sum
+开始给了一个O(n^2)的brutal force的方法。
+后要求优化到O(n log n)，给了一个基于binary search的方法（和第一题一样）。
+后要求优化到O(n)，给了一个基于HashTable的方法。
+后要求优化到O(1)，即对于给定任何一个sum，从constant时间返回所有pair。这里可
+以preprocess。就事先用brutal force的方法，对于所有pair的和，建立一个hash 
+table。
+three-sum
+开始给了一个O(n^3)的brutal force的方法。
+后要求优化到O(n^2 log n)
+后要求优化到O(n^2)
+思路和two-sum差不多，基本都是用hash table来加速查找。
+
+6. 给定一组判定语句，定义一个数据结构来进行快速查找。
+例如给定判定条件如下
+A==5 && B==1 && Z==20
+Y==20 && Z==3 && C==6
+D==4 && B==2 && M==30
+只讨论了算法，没有要求写code。
+给了用tier来建立一个快速查找表。

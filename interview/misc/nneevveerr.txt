@@ -1,0 +1,71 @@
+发信人: nneevveerr (nneevveerr), 信区: JobHunting
+标  题: 分享一点找工作经验吧，求人品
+发信站: BBS 未名空间站 (Thu May 16 15:08:03 2013, 美东)
+
+cs的master，下周毕业，3月开始找cs的工作（之前天真的想找finance的，只能说too 
+young to simple, always naive），到现在2个月有余了，无offer。
+刚睡午觉等着下午的factset电面，结果goldman打电话过来，当时看号码是Ohio的就没
+接，听了留言，说是goldman的recruiter，当时就给我一阵狂喜：看样子上周的电面过
+了。然后立马给她回电话，我擦，那mm说，你好啊，不好意思啊，你上次面的equity 
+quant组给我说你没过，他们也没有留comment说为什么。
+
+我去，你妹啊，这事咱们来个邮件就行了吧，何必搞得我先乐呵一阵呢，幸亏哥没心脏病
+
+1. epic，新人们自己搜mitbbs的相关帖子就好了，拿来练练口语听力就好，反正我是
+情愿待业几个月，好好补充知识再面其他公司，也不会去epic的（当时电面就如其他前
+辈所说一样，全tm在吹他们公司咋地咋地，让我有种被拉入传销的感觉）
+更新一下：a. epic的h1b不支持transfer
+b. 它家的401k好像评价也不咋地
+
+2. EA，当时刚开始找cs工作，没怎么刷题，就投了ea（当初太年轻太傻，浪费宝贵机
+会，现在怎么投都是没点反应了），职位就是这两天那位报offer仁兄的那个，这里得
+感谢那位电面我的国人大哥，一个reverse string的题我硬是用stack来搞，他说能不
+能in place啊，总之各种提示。最后还让我过了，并且鼓励我好好准备下一轮。这是我
+第一个大公司电面，非常感谢他没让我直接挂。第二轮是test assignment
+题1：输入:aaaabbbbbcccc
+两个相邻的不同字符可以变为第三种，如ab ----> c     ac ----> b   bc ---->a
+求最后能压缩成最短的串
+题2：mapreduce的，因为这个职位就是data方面的，可惜我当时一点不懂mapreduce，
+直接挂了
+
+3. mathworks，面的application support engineer，题目在glassdoor搜就好了，感
+觉这家公司招人方式不科学，没怎么准备，估计挂了
+
+4. goldman，投的Equity Quant Volatility Trading Strats，想不到竟然给我电面了
+（算是我的dream position），这里再次印证recruiter的话不可信，mm邮件告诉我主
+要问金融数学的东西，实际上是一点option pricing+c++，可惜我好久没用c++了，好
+几个问题支支吾吾没答上来，当时就觉得挂了
+
+5. 继续写。google，电面约的和goldman同一天，感冒了，刚好google是在下午，就推
+到这周了。本来想以一个好状态来面的，但是现实总是残酷的。约的2:00pm，那边大哥
+晚了10分钟电话过来，就说我们开始吧。用docs写代码，题目是leetcode上面的
+interval那个类型，但是他说“给你两个interval，求他们的intersection”。题目不
+难，我sb在于这样写的：public Interval[] getIntersection(Interval[] input)。
+写完以后，他问我“你为什么要用数组当输入， 我说的是比较两个“，我知道他的意
+思是该这样：public Interval[] getIntersection(Interval a)，把这个写在
+Interval类里面。我说我懂你的意思了，请给我一分钟改一下，他口气很不好的说不用
+了，我们下一题吧。我觉得该挂了。然后问怎么设计停车场，随便扯了点，然后就挂了
+。目测是没戏了
+所以，以后碰到题，首先别动手写，先花1分钟想想该如何做，面试官可能希望你如何
+做，远比立马啪啪啪敲键盘安全
+
+还有几个约了没面，到时候再更新
+
+总结：
+1. 不打无准备之战，练手先拿不想去的小公司练，不要sb呵呵的投各种大公司，你要
+知道这种行为是在浪费金钱浪费生命
+2. 合理安排面试，我10个weekday被安排了8个电面1个onsite，还有两个final 
+project，而且goldman的面试准备一堆数学的东西，累得跟狗一样。如果忙不过来，就
+跟recruiter一开始就说好，人家mm一般都很善解人意的，reschecule次数尽量小于等
+于1
+3. 每天锻炼，身体是革命本钱，感冒了真心难受，浪费一把机会，生理心理都是折磨
+。而且感冒了，一般都说”吃药的话一个星期能好，不吃药的话7天能好”。最好的办
+法就是不感冒
+4. 个人觉得很好的准备资料：
+a. Leetcode，拜谢leetcode大神，造福我这种小菜鸟
+b. Geeksforgeeks
+c. cc150
+d. MITBBS，各位大神的讨论让小菜鸟受益匪浅
+e. careercup 和 glassdoor
+
+希望大家找工作都能拿到满意的offer

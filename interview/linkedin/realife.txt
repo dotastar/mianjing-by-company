@@ -1,0 +1,17 @@
+发信人: realife (leda), 信区: JobHunting
+标  题: 新鲜的L一面
+发信站: BBS 未名空间站 (Mon May 20 14:42:17 2013, 美东)
+
+difference between thread and process
+what's page and page fault
+coding:
+1. check whether a given string is a valid number (no scientific 
+representation needs to be considered，我问用吗，答先不用)
+
+2. 数组连续最大和,
+
+上面的都回答完后，还有不少时间，又让实现最大乘积，这个没做好。
+从来没写过，现写的时候出了不少问题，最后也只是写了个主体，我说
+有些细节我没时间了，说说得了。感觉面试官也没什么idea，因为我问她
+0的情况你觉得怎么处理好，她也只说了些需要reset什么的。有空准备
+写一下这个。整体感觉还可以，如果因为这个题就悲剧了也没什么好说的。

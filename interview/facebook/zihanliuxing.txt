@@ -1,0 +1,15 @@
+发信人: zihanliuxing (奶茶), 信区: JobHunting
+标  题: 昨天的F家店面
+发信站: BBS 未名空间站 (Thu Apr 19 23:17:55 2012, 美东)
+
+给你一个 char* read4096() 的API，一次返回小于或者等于4096个字符。
+如果返回是小于4096个字符，意味着已经读到文件末尾 '\0'。
+
+用read4096()这个API，写一个 char* readline() 的function。
+要求：
+#1 readline（）returns when reading '\n' or '\0';
+#2 readline() may be called multiple times on a file, the return value 
+should be correct.
+#3 readline() may return char array longer than 4096 chars.
+
+挣扎了半天，超时了。move on 了。 

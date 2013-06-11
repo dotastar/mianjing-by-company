@@ -1,0 +1,29 @@
+发信人: Accio (Geek的内酷 | 卍解), 信区: JobHunting
+标  题: YELP 面经
+发信站: BBS 未名空间站 (Wed Jun  5 23:07:16 2013, 美东)
+
+
+刚收到rej，先上题
+
+电话1)问project，coding问题powerset, cs常见基础题
+电话2)跟一大同小异
+
+onsite 4个人，三个manager，每个人都是45分钟，其中10分钟聊project/
+dissertation: 
+1）三哥，coding 中续后续重建bst
+2）白人，给定一组无重复的数字和运算符，看是否能算出目标数
+3）白人，给定一组节点以及每个节点该父节点的id，按层打印树
+4）白人，给定两个doc，求相似度，写code
+
+感觉yelp没诚意，除了第二个写code时间有点紧，其他我都花10分钟就写完了。四个
+coding题，面试官最后都说了没问题，聊的project也什么挑刺的，给的每个project都
+是top conf的paper。
+
+这家办公室看上去很像网吧，一共120个engineer，50多个intern。面试种种让人觉得
+很无奈，比如我问其中一个interviewer，你加入yelp 3年，感觉skillset方面有什么
+不一样？他直接很rude回答 I learn how to become a manager. 
+
+一边面一边心里在苦笑，看得出这帮人其实都很水，想考我datalog，自己relational 
+algebra和SQL什么关系都分不清楚，上来就piss off我的paper。我一边纠正还要一边
+想怎么给他漂亮的台阶下。这家真是个joke。
+  
