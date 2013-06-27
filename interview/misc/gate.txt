@@ -1,0 +1,12 @@
+发信人: gate (民工), 信区: JobHunting
+标  题: 贡献个设计题
+发信站: BBS 未名空间站 (Mon Jun 24 21:12:33 2013, 美东)
+
+Fuzzy/Approximate string matching，实际应用很广泛。
+
+有一堆target string。给定一个新的string，要从target string里面找出拼写/发音
+类似的。如何scale？
+
+答每次计算levenshtein distance的不及格
+答soundex的及格
+答用lucene的直接拖出去

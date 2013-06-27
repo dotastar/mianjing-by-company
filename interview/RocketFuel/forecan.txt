@@ -1,0 +1,33 @@
+发信人: forecan (Harry), 信区: JobHunting
+标  题: rocket fuel 面试题
+发信站: BBS 未名空间站 (Wed May  1 21:14:53 2013, 美东)
+
+一道RF的面试题：
+有N个ad, (n是million级别的)
+每个ad的表示为（id, value）
+比如：
+121 -> new
+130 -> new york
+145 -> new york time square
+156 -> new york department store
+
+假设有一 query = new york department store
+规定ad中每个单词都包含在query中时，这个ad为valid （即ad是query的子集）
+上述例子中ad 121， 130， 156是valid的，145是invalid
+
+问：
+如何设计一个solution，使得
+vector<unsigned int> getValid(string query) （返回所有valid的ad的id）这个函
+数在worst case时复杂度也能小于O(n)，面试官的说法是does not depend on N.
+
+整个solution可以分两个阶段，第一阶段是preprocessing，这个可以是O(n)的，但是
+第二阶段query阶段，也即调用函数getValid()，必须小于O(n)
+
+我给是方案是在preprocessing阶段建立类似trie的结构，就是把trie中每个字母换成
+单词，每增加一个单词，向下走一层。建树时就顺便mark每个node是否valid。query时
+只要检查所有leaf node，如果valid就向上检查parent，直到invalid为止。这样
+average的复杂度应该是O(logN)。但是面试官说worst case，就是每个ad都是valid时
+，我的方案的复杂度还是O(N)。
+
+大家有什么想法吗？
+--

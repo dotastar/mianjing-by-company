@@ -1,0 +1,13 @@
+发信人: url (url), 信区: JobHunting
+标  题: 问个A家的面试题
+发信站: BBS 未名空间站 (Sat Jun 22 10:40:27 2013, 美东)
+
+平面上有N个员工，C个城市，位置都已知道。
+现在想设置M个Office在这C个城市里面（一个城市可以有多个Office），每个Office可
+以容纳(N/M)个员工。
+请问如何设置这些Office，使总的员工Commute的距离最短。 
+
+我的回答是brute force： 要设置M个Office，每个Office可以在C个城市中任何一个。
+所以总共有C**M (power) 种方案。
+
+有没有更有效的解法？  

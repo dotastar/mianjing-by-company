@@ -1,0 +1,14 @@
+发信人: rhsh (天晴), 信区: JobHunting
+标  题: C++面试问题，供参考
+发信站: BBS 未名空间站 (Wed Jun 26 14:01:46 2013, 美东)
+
+如何实现polymorphism
+mutable
+pointer and reference
+template
+对C++的看法和心得
+说一点design pattern
+heap 和 stack
+smart pointer
+pure virtual function
+iterator and functor

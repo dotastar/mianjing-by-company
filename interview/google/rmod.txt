@@ -1,0 +1,23 @@
+发信人: rmod (yahoo), 信区: JobHunting
+标  题: 新鲜G面筋（2）
+发信站: BBS 未名空间站 (Tue Oct 23 23:20:53 2012, 美东)
+
+given random generator rand(int n)
+now, design a random generator such as
+
+rand(int n, int[] except)
+
+example, n=10, random 1-10
+now, except[3]={1,5,6}
+then rand(10, except) output {2,3,4, 7, 8, 9,10}
+提到hashtable, 对方说，如果n很大，百万，output 几个数，怎么办？
+
+发信人: lanmama (lanmama), 信区: JobHunting
+标  题: Re: 新鲜G面筋（2）
+发信站: BBS 未名空间站 (Thu Oct 25 02:15:44 2012, 美东)
+
+正解。
+
+【 在 okeoke (okeoke) 的大作中提到: 】
+: http://www.careercup.com/question?id=9865865
+: here you go...

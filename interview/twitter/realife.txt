@@ -1,0 +1,11 @@
+发信人: realife (leda), 信区: JobHunting
+标  题: 一道T的onsite题
+发信站: BBS 未名空间站 (Sat Jun 15 14:41:33 2013, 美东)
+
+第一个人问的，大家看看下面的link吧。我挺久以前看过这个人的blog，
+但面试的时候完全想不起来了，吭哧吭哧地写了半天code，也没弄出最优解。
+好像面试官也不知道这个答案，因为我最后问他复杂度是什么，因为我们当时
+主要讨论的是怎么存数据实现O（1）的access，他说是M^2N^2。
+
+今天又visit了这个blog，这次应该不会忘记这个最优解了，呵呵。
+http://www.ardendertat.com/2011/09/20/programming-interview-questions-2-matrix-region-sum/

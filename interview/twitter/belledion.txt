@@ -1,0 +1,42 @@
+发信人: belledion (sunny), 信区: JobHunting
+标  题: 一个新鲜twitter面经
+发信站: BBS 未名空间站 (Mon Jun 24 15:09:06 2013, 美东)
+
+interview 迟到了20分钟，只问了一道oo题，open end discussion。其实应该挺简单
+，但答得不咋地，发上来给大家讨论造福后人吧～
+假设有如下class： Account，Campain， TargetingCritierion，Logger. 前三个
+class包含account，campain，和target的相关信息，后面的logger class用来输出前
+三个class的信息。以下是初始code，问在class设计上有什么可以改进的地方，怎么改
+进，怎么进一步改进，等等
+
+
+class Account  
+  attr_accessor :id, twitter_handle
+end
+
+class Campaign
+  attr_accessor :id, :name, :budget, :account
+end
+
+class TargetingCriterion
+  attr_accessor :targeting_type, :targeting_value
+end
+
+class Logger
+
+  def log(object)
+    case object.class.name
+    when "Campaign"
+      log_text(object.name " (" + object.id + ")")
+      log_text(object.budget)
+      log_text(object.account_id)
+    when "TargetingCriterion"
+      log_text(object.targeting_type)
+      log_text(object.targeting_value)
+    when "Account"
+      log_text(object.id)
+      log_text(object.twitter_handle)
+    end
+  end
+
+end

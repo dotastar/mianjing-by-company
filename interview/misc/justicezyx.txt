@@ -1,0 +1,42 @@
+发信人: justicezyx (just), 信区: JobHunting
+标  题: 面经ebay, qumulo, linkedin, google, fb
+发信站: BBS 未名空间站 (Mon Jun 24 00:39:39 2013, 美东)
+
+ebay PS1: 1. Merge sorted linked lists; 2. Iterative inorder traversal of 
+binary tree
+ebay PS2: 1. Inorder successor of binary search tree; 
+ebay onsite: 1. infix expression evaluation of integers and + - * /; 2. 
+implement a system to route packets based on their priority; implement 
+associative container Map; 3. Given n nodes, each node has 2 blocking 
+functions: send(int to_id, int msg); recv(int from_id); each node has a 
+value; design a method to distribute the sum of all values on every node to 
+all nodes; 4. power. design a Amazon product page chat service so that 
+people browsing on the same product page can chat with each other.
+
+qumulo onsite: 1. Flatten a binary tree; 2. implement a big integer's 
+addition; with addition, minus, multiplication implemented, implement 
+division; 3. combination sum, design a battleship game; 4. implement reader-
+writer lock with mutex and conditional variable.
+
+linkedin PS1: 1. power; other misc staff
+LinkedIn PS2: 1. intersection of sorted lists; 2. merge multiple sorted 
+lists; 3. how to accelerate the merging of sorted lists (parallelism)
+LinkedIn onsite: 1. design indexing method of increasing but not necessarily
+consecutive sequence numbers; 2. given a function of get_connection(int uid
+), implement find_1_hop(), find_2_hop(), find_3_hop(); 3. implement delayed 
+scheduler: Future schedule(int target_time, Runnable task); 4. design Amazon
+'s product page, with user info, recommendation and product information, 
+include the details of the data storage; 5. given a linked list with struct 
+node { node* up, node* down, node* prev, node* next}, assuming no cycles, 
+flatten the linked list; 6. Roman to integer, integer to roman.
+
+Google onsite: 1. what is TCP sliding window; 2. in an array starting with 1
+'s (consecutively) and following with 0's, find the boundary of 1's; 3. 
+design a distributed games with consistent interaction between players, the 
+game is assumed on a 2D plane; 4. Given multiple printers on a grid map, 
+find the location to place papers such that the sum of distance from the 
+paper to all printers is minimal; note that there are obstacles in the grid 
+map. What if there is no obstacles? 5. Quick selection, and how to optimize 
+on multi-core machines.
+
+FB: skyline

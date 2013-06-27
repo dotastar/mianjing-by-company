@@ -1,0 +1,28 @@
+发信人: stockawards (南京跑腿的), 信区: JobHunting
+标  题: 说一下我最近面过的题吧
+发信站: BBS 未名空间站 (Tue Jun 18 23:44:50 2013, 美东)
+
+May, June店面，on-site过一些公司:box, quantcast, samsung information system 
+america, castlight health, storm8, yelp, pocketgem, facebook, palantir, cox 
+digital solutions, linkedin等等。只拿到两个鸡肋offers.其余全挂了。
+
+July还有几个on-site/phone interviews,有dream companies.如果搞不定的话，就休
+息一下，年底再试。
+
+一些我碰到的，leetcode OJ上没有的题.
+
+1. Hadoop job for matrix multiplication. How to map? How to reduce?
+2. Given a known function f(x), where x is in range [0,1] (continuous). f(x)
+returns an integer. Ask for a random function g, which returns a uniformly 
+random number X (consider the distribution of f(x)).
+3. Maximum continuous sub-array product. 
+4. Given an array of integers, all numbers appear three times except one. 
+Find this unique number.
+5. Find the longest path in a tree (could be from any two nodes).
+6. Given human input address (in various format), how to identify two inputs
+are the same address.
+7. Design a mobile app for contacts. Need to sync the contacts with the 
+server.
+8. In a train route map (like the nyc subway), some routers share part or 
+all railway. Express train may skip some stations. For any two stations, 
+find the train with lowest fare and the train with the minimum stop. 
