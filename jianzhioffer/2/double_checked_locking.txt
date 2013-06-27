@@ -1,0 +1,50 @@
+A* a = new A("plop");
+
+// Looks simple enough.
+// But this can be split into three parts.
+(a) allocate Memory
+(b) Call constructor
+(c) Assign value to 'a'
+
+// No problem here:
+// The compiler is allowed to do this:
+(a) allocate Memory
+(c) Assign value to 'a'
+(b) Call constructor.
+// This is because the whole thing is between two sequence points.
+
+// So what is the big deal.
+// Simple Double checked lock. (I know there are many other problems with this).
+if (a == null) // (Point B)
+{
+    Lock   lock(mutex);
+    if (a == null)
+    {
+        a = new A("Plop");  // (Point A).
+    }
+}
+a->doStuff();
+
+// Think of this situation.
+// Thread 1: Reaches point A. Executes (a)(c)
+// Thread 1: Is about to do (b) and gets unscheduled.
+// Thread 2: Reaches point B. It can now skip the if block
+//           Remember (c) has been done thus 'a' is not NULL.
+//           But the memory has not been initialized.
+//           Thread 2 now executes doStuff() on an uninitialized variable.
+
+// The solution to this problem is to move the assignment of 'a'
+// To the other side of the sequence point.
+if (a == null) // (Point B)
+{
+    Lock   lock(mutex);
+    if (a == null)
+    {
+        A* tmp = new A("Plop");  // (Point A).
+        a = tmp;
+    }
+}
+a->doStuff();
+
+// Of course there are still other problems because of C++ support for
+// threads. But hopefully these are addresses in the next standard.
