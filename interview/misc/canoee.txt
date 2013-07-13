@@ -1,0 +1,15 @@
+发信人: canoee (熊猫|黑与白|ShaMu~), 信区: JobHunting
+标  题: 码工的面试暂时不会再有了，报一下到目前为止的题
+发信站: BBS 未名空间站 (Sun Jul  7 18:44:07 2013, 美东)
+
+很少上，不知道是不是不能报了，如果有问题的话版主就删了
+其实就面了两家公司
+
+1.找到第987654个素数
+2.regular expression matching
+3.在football中，已知所有的每回合得分，以及最后结果：列出所有可能的得分组合
+4.把一个string里所有重复的字符去掉
+5.binary tree level order traversal
+6.给BST以及两个结点，给出它们之前距离。如果结点有parent信息怎么做？constant 
+storage + linear time
+7.设计网页自动跳转系统

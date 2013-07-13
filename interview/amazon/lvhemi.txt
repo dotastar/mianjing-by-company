@@ -1,0 +1,45 @@
+发信人: lvhemi (驴和咪), 信区: JobHunting
+标  题: 【update: 拿到offer了】昨天(6/11)A家onsite
+发信站: BBS 未名空间站 (Tue Jun 12 12:06:41 2012, 美东)
+
+多谢大家的bless，刚刚recruiter通知，Amazon决定给我offer了。看来攒人品太重要
+了。
+Amazon一般PhD毕业research scientist或SDE给多少钱啊？有知道的透露一下
+
+现在手头还有6、7个onsite，决定拖一阵子再答复，有什么技巧吗？ 谢谢大家了，等
+决定了offer散尽家财发包子。
+
+另外，昨天面了MS，貌似也准备给offer了，等一下上面经。
+
+================================================================
+fresh PhD;面试research scientist position
+1.Job talk一小时，audience七八个人，主要是interviewer
+2.老印SDE，问了一些research的问题，然后coding，判断二叉树是不是BST，因为题目
+都很简单答得比较顺利，老印SDE表示非常满意
+3.老印director，lunch interview，瞎聊，问我“如果amazon要想在竞争者中脱颖而
+出做得更好怎么办”我答“要hire top talents”，接着这个话题瞎聊了聊，还算开心
+4.韩国MM研究员，research面试，总体满意
+5.老印SDE；这个环节答的不好，不知道给了什么样的feedback
+问题: 给一个选课的AOV网络(比如要选machine learning必须先修完Algorithm)，总计
+n门课，每学期最多可以选k门课，找最快修完所有课的schedule
+Follow up: 如果没门课只在给定的学期开设，怎么办？
+
+这一面发挥不好，一个是题目比较生僻，另外，graph这块自己不是很熟，没有信心按
+时写完程序。所以最后只写了一个拓扑排序的code，而且鬼使神差用了邻接矩阵做data
+structure，导致只写出了O(n^3)的程序
+
+6.两个白人SDE，主要是其中一个在面，另外一个自始至终没说话。
+问题: 有一个大的catalog，总共有500Million个entry，每个entry内容是 （ID， 
+document），每个document大小约10KB，不同的ID对应的document可能相同，怎样设计
+一个程序，对每个给定的一个ID，找出与该ID对应着相同的document的所有其他ID。
+Follow Up: 如果每台机器内存只有1GB，硬盘100GB，怎么做
+
+这是我第一次被面到大数据的问题，比较慌，关键不知道他们要考什么，所以瞎答一气
+：开始考虑用hash table,document做Key，ID做value，conflicts时用链表(chaining)
+，问题是hash function的计算可能开销比较大；后来乱说，是不是可以基于document
+排序，他们好像没有反对，所以就答是不是可以把数据按segment load到每个机器的内
+存，排序index，然后按tree的形式merge.
+
+7. ABC manager,聊了聊research，聊得比较开心。
+
+结束

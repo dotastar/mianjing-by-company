@@ -1,0 +1,17 @@
+发信人: rhsh (天晴), 信区: JobHunting
+标  题: wlab电面面经，攒rp
+发信站: BBS 未名空间站 (Mon Jul  1 19:40:39 2013, 美东)
+
+三哥，口音很重
+
+给一堆feature和label，如何用logistic regression求一个classifier
+overfit如何处理
+解释一下KMeans？
+GMM如何估计参数？
+是否用过矩阵分解
+不同regularizer的异同和作用
+编程题：反转链表
+概率题：一个人喝醉的人往前走的概率是p，往前一步就要摔倒，但是可以后退
+请问他摔倒的概率有多少
+
+感觉答得一般，估计要跪了，求bless

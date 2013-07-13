@@ -1,0 +1,25 @@
+发信人: wxyjwxyj (wxyjwxyj), 信区: JobHunting
+标  题: f system design 地图搜索， 请教
+发信站: BBS 未名空间站 (Sat Jun 29 17:49:44 2013, 美东)
+
+设计题，地图搜索，怎样设计index，系统结构
+
+这个题怎么做啊，我查了半天也没查到一般map service的infrasture是怎么做的，而
+且到底怎么做index， 怎么query啊。听说是用bigtable，但是具体什么事key/value啊。
+哪位给指点一下啊，给哥链接也行啊。
+谢谢！
+发信人: wxyjwxyj (wxyjwxyj), 信区: JobHunting
+标  题: Re: f system design 地图搜索， 请教
+发信站: BBS 未名空间站 (Sun Jun 30 10:30:05 2013, 美东)
+
+这个题别人遇过的题，具体怎么样我也不知道....
+至于怎么找，你以为我会告诉你我就花一天的时间各种google，中文英文挨个试吗....
+..
+http://www.quora.com/What-are-best-practices-for-building-somet
+http://www.quora.com/What-are-best-practices-for-building-something-like-a-News-Feed
+
+http://www.infoq.com/presentations/Scale-at-Facebook
+http://www.infoq.com/presentations/Scale-at-Facebook
+
+http://www.quora.com/Facebook-Engineering/What-is-Facebooks-arc
+http://www.quora.com/Facebook-Engineering/What-is-Facebooks-architecture

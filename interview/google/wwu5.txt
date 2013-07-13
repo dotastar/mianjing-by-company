@@ -1,0 +1,21 @@
+发信人: wwu5 (w5), 信区: JobHunting
+标  题: G家SRE店面
+发信站: BBS 未名空间站 (Thu Jun 27 20:38:01 2013, 美东)
+
+1. LeetCode: Word Ladder
+
+2. memory management
+  what's page fault? what would cause page fault?
+
+  char *a = 0x123456;
+  is the memory address pointing physical location?
+  kernel, software or hardware doing the memory translation?
+
+  what would cause page fault to load data from harddrive (not swap)? (
+access lib.so)
+
+3. networking
+  what happen when tcp packet lost? what is tcp sliding window?
+  what is the optimal sliding windows size if you the round tril time is 
+100ms and bandwidth is 100mb/s?
+--

@@ -1,0 +1,9 @@
+发信人: sunsnap (神灯), 信区: JobHunting
+标  题: G家新鲜面经
+关键字: google面经
+发信站: BBS 未名空间站 (Thu Jun 27 20:28:08 2013, 美东)
+
+   昨天刚电面的G家，给一个binary tree(不是binary search tree, 也不一定
+balanced).
+要求efficiently store it in other data structure on disk, and reconstruct
+the binary tree from this data structure.

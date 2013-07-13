@@ -1,0 +1,7 @@
+发信人: belledion (sunny), 信区: JobHunting
+标  题: 发T家面经
+发信站: BBS 未名空间站 (Tue Jul  2 20:53:31 2013, 美东)
+
+就一题，写一个fibonacci数的生成器。每次调用生成下一个fibonacci数。e.g: 第一
+次调用生成0，第二次生成1，第三次1，第四次2。。。。
+--

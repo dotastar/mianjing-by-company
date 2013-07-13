@@ -1,0 +1,7 @@
+发信人: dekst (Time is money, friend!), 信区: JobHunting
+标  题: A家电面面经
+发信站: BBS 未名空间站 (Tue Jul  2 04:44:42 2013, 美东)
+
+1. 找数组中的duplicate
+
+2. 一个文件里有billions of unsorted星坐标，返回M个离地心最近的stars

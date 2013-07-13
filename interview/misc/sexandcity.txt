@@ -1,0 +1,33 @@
+发信人: sexandcity (sexandcity), 信区: JobHunting
+标  题: 请教T F system design
+发信站: BBS 未名空间站 (Wed May 22 03:19:04 2013, 美东)
+
+都是版上的，大牛帮忙解答下或者分享下链接啊。
+
+[T] 然后问了一个开放问题，一个有缓存的微博 系统，请求多了
+或者某块坏了，会有什么现象，以及什么应对措施。
+
+memcached的fault detection? 具体怎么搞的？
+
+[T] 如何找出最热门的话题(根据tweets)。如果一个话题一直热门，我们不想考虑怎么办
+hot topic? 和hot tag/找 trend 有什么区别？
+
+不考虑的话就直接看时间，大于某个threshold就不考虑了？
+
+[T] 怎么找hot的tag（就是#tag这种）
+
+[T] 如何抽取tweet上一个ID所关注的news，如何抽取这个ID喜欢什么topic
+建立一个list of news这个id subscribe的不就行了？要用到topic model?
+
+[T] 1 million followers, your twitter how to display in followers timeline?
+
+push? what else?
+
+[F] 任给一个手机的位置信号(经纬度)，需要返回附近5mile
+的POI，怎么设计这样的系统
+找到最近的server,然后呢？
+
+[F] how to implement the like function?
+
+link between publisher and subscriber? 
+

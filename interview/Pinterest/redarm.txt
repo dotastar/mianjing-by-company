@@ -1,0 +1,21 @@
+发信人: redarm (小米加步枪), 信区: JobHunting
+标  题: 攒人品，分享Pinterest面经
+发信站: BBS 未名空间站 (Thu Jan  3 23:22:40 2013, 美东)
+
+HR先介绍流程
+1. 接着和一个engineer吃饭，同胞，吃饭同桌的还有好几个其他同胞，用中文聊了一
+会天，吃完饭开始面试，讨论了很多distribute的东西，shard, hash, queue之类,
+怎么design pinterest homepage.
+2. 接下来另engineer，但没口音，问了两道题
+  a. 给一个数组和一个位置，从该位置起左右jump，检测能否jump到值为0的位置, 
+canJump(int a[], int pos)
+  b. 给一组字符串，找最长的公共前缀，至少两个字符串公共
+3. Hire Manager, 让我介绍了一下项目，然后问了我能想到的怎么improve pinterest
+   每次查询，将查询字符串写入日志文件，查找出现次数前十的查询字符串
+   我用priority queue实现，然后问我怎么实现priority queue, 我给他介绍了堆的
+实现: 插入、删除和调整
+   然后问在不同机器怎么办
+4. 非技术, 问了最自豪的项目和好几个behavior的问题
+5. 和HR随便聊聊，结束面试
+
+已经被拒，分享出来希望对大家有帮助

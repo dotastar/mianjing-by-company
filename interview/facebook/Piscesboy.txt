@@ -1,0 +1,33 @@
+发信人: Piscesboy (bluesky), 信区: JobHunting
+标  题: F家面经
+发信站: BBS 未名空间站 (Mon May  6 22:21:47 2013, 美东)
+
+电面一面：
+给一堆F的用户，以及朋友关系，朋友之间的关系是双向的。问能否将朋友的关系图分
+成两个partition。使得任何有直接朋友关系的两个人必须处在不同的partition里。
+
+电面二面：
+leetcode的手机键盘给数字，求各种字母组合的题。但是让给出recursive和iterative
+方法。recursive很简单，iterative之前没写过，比较难想，当时卡了一会儿。后来写
+出来了。
+
+onsite五轮，每轮45分钟：
+第一轮coding为主：先聊了下他的项目和我的research，几分钟的样子，然后写了个二
+进制字符串相加的。另外一题是一个直角坐标系，上面和N个点，找出离原点最近的k个
+点，就是top k问题
+
+第二轮系统设计：让设计分布式的large scale的producer和consumer问题。就是有一
+堆机器是producer，一堆机器是consumer。后来顺便写了一道coding题，范围变成是单
+机的producer和consumer，实现produce和consume函数，其实就是相当于fix size的
+cache的add和pop问题，不用考虑多线程
+
+第三轮coding为主：写了道regular expression匹配的，leetcode原题。但是让优化，
+当时刚开始没想出来，后来经提醒知道用memorize的方法。以前DP的题知道用这个方法
+，这题从来没去想过，差点出差子
+
+第四轮culture fit：主要讨论了research。后来写了个简单的题，三个数组，从三个
+数组各取一数，找出和为某个值的组合
+
+第五轮coding为主：三个color排序的题，leetcode原题。另一道是平面上一堆点，找
+出四个点，使得四边形面积最大。刚开始想不出，后来问题简化成找三个点，使得三角
+形面积最大。这题挺难的。后来没有coding这题

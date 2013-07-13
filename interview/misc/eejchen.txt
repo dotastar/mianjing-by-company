@@ -1,0 +1,11 @@
+发信人: eejchen (今晨), 信区: JobHunting
+标  题: 一个面试challenge
+发信站: BBS 未名空间站 (Fri Jun 28 22:17:33 2013, 美东)
+
+关于string的，是否用DP，请指教
+Consider an arbitrary string made up of N digits 0-9, e.g., S="01703406777".
+What's an efficient algorithm to figure out if there exists any digit D in 
+the string that has 3 occurrences with equal gaps in the string, i.e., in 
+the example string S, D=0 occurs at 1st (from left), 4th and 7th positions 
+in the string. Also, 7 occurs (with 0 gap) in the last 3 positions. You only
+need to find one set of 3 positions for the digit in the string.

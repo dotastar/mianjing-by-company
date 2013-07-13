@@ -1,0 +1,47 @@
+发信人: iloveada (Love ADA), 信区: JobHunting
+标  题: Qualcomm面经
+关键字: 面经，高通
+发信站: BBS 未名空间站 (Sat Jun 29 12:32:46 2013, 美东)
+
+个人背景是fresh cs PhD。面试挺顺利，感觉都不错，主要围绕简历上的项目讨论。但
+不幸被拒。Hiring manager说 definitely impressed with your interview，但只有
+一个职位。说是把我推荐给其他组了。 这个是客气话不？ 这种还有戏么？Recruiter
+电话里也说过我被推荐给其他组了，但是都快一个月了，也没消息。Recruiter也从不
+回email。是不是还没有其他组表示感兴趣？  Anyway, move on了。
+
+1. Read code to say which c routine function it is. Interviewer want to see 
+how you understand a program.
+00009 void *
+00010 f1(register const void *p1, register const void *p2,
+00011         register size_t n1, register size_t n2,
+00012         int (*f2)(const void *, const void *))
+00013 {
+00014         register const void *p3;
+00015         register int  n3;
+00016 
+00017         while (n1 > 0) {
+00018                 p3 = (char *)p2 + n2 * (n1 >> 1);
+00019                 if ((n3 = (*f2)(p1, p3)) == 0)
+00020                         return (void *)p3;
+00021                 if (n3 >= 0) {
+00022                         p2  = (char *)p3 + n2;
+00023                         n1 = (n1 - 1) >> 1;
+00024                 } else
+00025                         n1 >>= 1;
+00026         }
+00027         return (void *)NULL;
+00028 }
+
+2. Design pattern used in your project.
+3. Data structure used in your project? 
+4. Find the number of leading zero for a 64 bit long, given a function to 
+find the position of first set bit in a 32 bit integer.
+4. Design a library routine to set a bit in a byte array.
+5. Hex, Oct and binary of an integer.
+6. What is register? Why register?
+7. What is sizeof? Why sizeof?
+8. x*7 without a multiplier in at least two ways.
+9. What is provided by operating system?
+9. Static keyword in c c++.
+10. What is the difference between tcp and udp ? What is the same?
+11. What is icmp? How to implement ping?
