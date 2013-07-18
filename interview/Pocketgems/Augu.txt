@@ -1,0 +1,30 @@
+发信人: Augu (奥古), 信区: JobHunting
+标  题: 报个Pocket gems的onsite题目吧 趁我还记得
+发信站: BBS 未名空间站 (Tue Jul 16 21:29:12 2013, 美东)
+
+5 rounds.
+1. HR talk
+
+2a. 一个字典D. 给一个字符串, 判断是否能split成字典中的单词. 比如"thecow"行，
+"pxtry"不行. 
+2b. 数据流，每次都一个数，找个策略能使得等概率的取个数
+2c. 一个机器人从(0,0)可以东西南北走1步. 现在条件 sum(x digits) + sum(y 
+digits) <= K. (12,6) 计算为 (1+2) + 6 = 9. 证明 K有限的话，这个机器人访问的
+点是finite的
+
+3. 设计一个问卷系统. 
+    老师使用时候，给这个系统提供questions.txt, 这个系统解释，运行. 
+    这个questions.txt的格式自己定义. 
+
+4.  Longest Palindrome, Sort colors, min stack
+
+5.  设计一个功能. 
+    char* strToken(char* str, char* delimeter)
+    对str = "abc;xy,zz;;;"
+    第一次调用StrToken(str,";,")， 返回abc
+    第二次调用StrToken(null,";,")， 返回xy
+    第三次调用StrToken(null,";")， 返回null
+    第N次调用 strToten(null,";,") 返回null
+     
+====
+准备出offer了，不过不太兴趣 公司里的人都好年轻，老了

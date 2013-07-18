@@ -1,0 +1,15 @@
+发信人: simprince (Yu), 信区: JobHunting
+标  题: Yelp onsite面经
+发信站: BBS 未名空间站 (Mon Jul 15 10:29:36 2013, 美东)
+
+可能忘掉一些题，单说我还记得的吧：
+
+（1）powerset and permutation
+（2）mapreduce计算click-through rate
+（3）按层print树（带indent，非binary），输入是只有父节点的node list
+（4）Top k urls in a string stream
+（5）Mysql怎么解决deadlock问题
+
+已悲剧，估计是挂在(5)了，我说我用mysql熟，但对deadlock解决不熟悉，他还穷追不
+舍，要我当场想，我想了说timeout吧，他说对，但还有其他方法吗，一定要我想三四
+个不同方法，然后就stuck在那了，也不move on到下一个问题，晕死
