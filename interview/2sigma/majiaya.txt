@@ -1,0 +1,40 @@
+发信人: majiaya (majiaya), 信区: JobHunting
+标  题: 攒人品，发个2sigma面经
+发信站: BBS 未名空间站 (Thu Jul 18 08:33:13 2013, 美东)
+
+看到版上他家面经不太多，贡献一个。
+fresh master
+
+他家招聘战线比较长，
+我的经验可能不typical，hr 给我重新match 了一次position，
+先是HR电话确定code test时间，然后电面了两次，
+
+phone interview 1：
+1. Knowledge questions. Throughput & Latency.
+2. Tree problem=> time complexity. How to get the sum of geometrics series =
+> Proof.
+3. Design pattern: visitor
+
+phone interview 2:
+1. A/B Test
+2. Design question
+3. User study skills
+
+onsite (感觉每轮面试不是45分钟，要长很多，但太紧张，不记得看时间了):
+1. manager。design question， brain teaser （怎么解决机场等出租车排队问题）
+，简单编程题.
+2. leetcode 某简单题 + 做一个简单ajax 网站，实时刷新股票价格。（javascript里
+有个括号写搂了，显示有问题，浪费了7 8 分钟解决这个问题）
+3. 电面2的面试官 又过来面，很多design question，如何evaluate search quality
+之类。 coding题 是写一个简单小游戏，一只青蛙，两条腿，四只眼睛，呱哇 然后两
+只青蛙 blabla。。。
+4. lunch
+5. 一个senior的engineer，非常nice，少数几个interview感觉学到好多东西。先编程
+，题目没记清。问浏览器输入地址后发生什么，被follow-up问得最深入的一次，细节
+到DNS ping 地址是什么协议（UDP），为什么是UDP等等，浏览器发给server的header 
+是怎么样的（细节到格式，但是是open question，可以在电脑上用chrome看，（
+firefox 看不了原始格式））？ 怎么用telnet 来模拟浏览器的行为？ 
+6. 空白。。。想不起面经了
+7. 和VP聊，当时窃喜，以为见到VP还挺有机会的，VP说下周给消息。
+
+面完后第三周拒信

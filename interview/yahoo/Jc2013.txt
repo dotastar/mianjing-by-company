@@ -1,0 +1,14 @@
+发信人: Jc2013 (屌丝的逆袭), 信区: JobHunting
+标  题: 发个yahoo面经
+发信站: BBS 未名空间站 (Thu Jul 18 16:53:07 2013, 美东)
+
+刚面的。。给跪了。
+一三姐。 说话真是听不懂。竟然一道算法题都没（太假了啊啊啊啊）
+1. OOP是啥？
+2. Inheritance是啥？
+3. Polymorphism 是啥？
+4. final in java 干啥的？
+5. static 干啥的？
+6. GET 和POST IN TCP/IP？
+
+6往后就实在不会扯了。。好久木有搞过TCP.IP的东西了。 发个面经攒人品吧。。

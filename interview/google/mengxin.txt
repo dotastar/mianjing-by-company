@@ -1,0 +1,25 @@
+发信人: mengxin (waking up), 信区: JobHunting
+标  题: G家电面
+发信站: BBS 未名空间站 (Thu Jul 18 14:59:16 2013, 美东)
+
+这周面的，一道coding一道open question。coding题一个隐藏的小bug被提醒才发现，
+已经歇菜了。
+
+1. 有一个item set a，和里面每个item出现的probability p，写一个function，每次
+调用返回一个item，很多次调用后，各个item返回的频率要符合其概率。可以调用一个
+random number generator。
+e.g. a = {'A', 'B', 'C'}, p = {0.3, 0.4, 0.3}
+
+题目简单，把p转换成cumulative的，再做binary search。我是忘了preprocess p将其
+转换成cumulative，开始写的一个就是O（n）。问是否可以优化，我再指出可以对p做
+binary search。估计问题出在这里。
+
+2. 有很大一个电子图书馆，里面每本书的每一页都是OCR转换出来的text，所有每页大
+约有5%的error（转换错误，错误分割单词，跳脱。。。）。设计一个方法判定图书馆
+里是否有完全一样的书（duplicate），或者将来有书进来时判定同样的书是否已存在。
+
+这个问题有点类似face recognition，要自己extract features，自己做predictive 
+modeling。
+
+总的感觉第二题答的还可以，第一题太简单大意了，与G无缘啊。
+--
