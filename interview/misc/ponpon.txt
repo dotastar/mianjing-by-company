@@ -1,0 +1,72 @@
+发信人: ponpon (ponpon), 信区: JobHunting
+标  题: 发面经，求祝福，送包子
+发信站: BBS 未名空间站 (Thu Jul 25 23:18:32 2013, 美东)
+
+最近面了一些矿工/码工的职位，结果都是惨败而归。感觉好多时候都已经走到了最后
+一步，结果还是失败了，实力和运气总有一样差那么一点点。今天把一些不太常见的题
+发出来，希望对大家有帮助。同时也为今天的面试求祝福，发40个包子。
+
+
+1. Generate Fibonacci number without iteration and recursion
+
+
+
+2. Given two functions
+vector<lock_id> has_ID(thread_id) // give a thread_id, return all locks it 
+currently has
+vector<lock_id> want_ID(thread_id) // give a thread_id, return all locks it 
+is waiting
+
+and a set of thread_ids, how do you determine if there is a deadlock in the 
+system
+
+
+
+3. Complexity of solving a system of linear equations. How many floating 
+point operations per clock cycle is a modern CPU (say intel core-i series) 
+capable of? Use this to give an order of magnitude estimate of the running 
+time of solving a system of linear equations with given size (say n = 1000).
+
+
+
+4. Why is entropy defined as E_p[log(p)]. The interviewer drew sketches of 
+several distributions and asked which one has the largest entropy (don't 
+need to compute explicitly).
+
+
+5. Given large samples (x_i, y_i) of a pair r.v. (X, Y), can you come up 
+with some quick and dirty way to determine if X and Y are independent 
+without resorting to estimate joint/marginal pdf.
+
+
+6. Implement Newton's method
+
+
+7. Given pairs of related IDs, e.g. (ID_1, ID_2), (ID_2, ID_6), (ID_4, ID_3)
+, implement a function which returns all related IDs for any input ID. Note 
+that the relationship is transitive. 
+E.g.
+input: ID_6
+output: ID_1, ID_2
+
+input ID_4
+output: ID_3
+
+
+
+8. How to estimate probability density function given random samples. If you
+answer histogram, then how to determine the number of bins. And the pdf 
+should be smooth, what should you do after computing the histogram?
+
+
+9. Find median for an infinite stream of numbers.  You can do it 
+approximately, but state your assumption.
+
+
+10. How to prove that geometric mean is no greater than arithmetic mean?
+
+
+11. Design a way to generate a fair coin when you can toss a biased coin, 
+with prob(H) = p, for n (n is large, say n > 1000) times. How many fair coin
+toss can you make out of it?
+--
