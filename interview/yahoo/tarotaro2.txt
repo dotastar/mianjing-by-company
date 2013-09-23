@@ -1,0 +1,81 @@
+发信人: tarotaro2 (taro), 信区: JobHunting
+标  题: 上个Yahoo电面面经, 给恶心坏了。。
+发信站: BBS 未名空间站 (Thu Sep 12 14:33:48 2013, 美东)
+
+一老印，电面迟到15分钟，打过来也不花两分钟介绍一下team之类的，直接上题。。
+
+1) Can you explain dependency injection with an example, in java.
+我一下子懵了，听都没听说过这个东西，什么也扯不出来，只好老实承认没听说过。。
+事后google了一下，好像是Spring framework里面的一个概念。。
+
+2) Can you create memory leak with a sample program.
+也是完全没准备过，想了两分钟想不出什么来，老印直接开始问下题
+
+3) What do you think is the output of this sample program
+
+public class MyThread implements Runnable {
+
+String myString = "Yes ";
+public void run() {
+    this.myString = "No ";
+}
+public static void main(String[] args) {
+
+MyThread t = new MyThread ();
+new Thread(t).start();
+
+for (int i=0; i < 10; i++)
+    System.out.print(t.myString);
+}
+}
+想比之下这题的恶心程度还稍微好点。。
+
+4) Can you explain what is the Output of these two ?  
+  1) return world.equals("hello");    
+  2) return "hello".equals(world);  
+我说， world这个variable没有initialize吗？ 老印说没有。我说不知道这个ariable
+的value我没法知道output。老印说那都有哪些possibility，我说.equals() returns 
+true if world has value "hello", otherwise false. 老印还是不满意，最后僵持了
+半天，他说如果world是null会怎样？我了个去，你一开始就把话说完会死啊。。。
+
+5) Consider a tree and can you do a in order traversal, so that it prints 
+out the value of each node.
+亏我刷了半天leetcode，人就问一道coding，最简单的inorder traversal。。
+我写的时候print就直接用“print”表示意思，没有严格按照syntax用“System.out.
+print”，结果老印拿去run，说不对，不能run。。。苍天啊
+
+6) Can you explain static class loading and dynamic class loading with an 
+example each.
+只知道static就是用new keyword，比如 ArrayList<Integer> list = new ArrayList<
+Integer>();
+dynamic是用一个function，compile的时候不知道class name，runtime才决定。
+我说我就知道这些，老印非要让给example，我说syntax我实在不记得了，老印表示不
+太满意。。
+
+7) Can you explain Hashtable, HashMap, TreeMap, ConcurrentHashMap, 
+LinkedHashMap.
+只了解Hashtable和HashMap，LinkedHashMap写LRU cache的时候了解到一点，其他两个
+真是完全没研究过啊。。瞎蒙了个ConcurrentHashMap是和multi thread有关的。。
+
+8) Can you execute a java program without main method ?  Would this work in 
+any version ? of JDK?
+我说用static block， 
+static {
+    // Statements to run
+    //
+}
+老印说你用的什么version的Java，我说Java 6，他说那Java 7里是怎么样的？我只能
+说不知道啊，真的是不知道。。。
+
+最后还问我，你有没有用过Java的这个library，那个library。。。 我说我只有1年工
+作经验（我这一年其实还不是写java），真的没用过那么多library，但是core Java我
+还不错
+
+当时hiring manager给我发来schedule和job description，是一个principal level的
+description，他还特地说了不用管job description里面写的level，他们会按照你的
+experience调整。。 我严重怀疑老印有没有看我简历，到底是按什么level在面
+
+整个过程里老印像个机器一样，完全没什么互动，从开始到结束也没说要介绍一下team
+什么的，最后是我自己问了，他才简单说两句
+
+面完感觉吃了苍蝇一样恶心，真是再怎么准备，也架不住各种千奇百怪的面试。。

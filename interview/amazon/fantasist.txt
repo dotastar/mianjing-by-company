@@ -1,0 +1,109 @@
+发信人: fantasist (fan), 信区: JobHunting
+标  题: [zz]最后一点关于Amazon的事
+发信站: BBS 未名空间站 (Sun Sep  8 13:03:56 2013, 美东)
+
+作者： 宋皓
+
+写在前面的话
+
+大概一年半前 我写了一篇Amazon是个什么样的公司 后来一直想写一篇续 深入讲讲
+Amazon内部是什么样 可是各种时间冲突 机缘巧合 这篇文章拖了又拖 一直拖到现在 
+忙里偷闲 凑出来一篇 希望能解答一些疑问 帮助一些想来的 或者想了解Amazon或者科
+技大公司的童鞋们
+
+快要离开Amazon了 如果人可以回到过去 那么你现在的我飞回半年前 告诉当时的我你
+半年后将要离开Amazon 我都不信 不过就是在这一年 我经历了一些事 让我终于下决心
+离开 我到现在都认为Amazon是好公司 已经很大规模却依然非常有前途(这点在大公司
+中不多见)
+
+面试
+
+Amazon的面试可以被一并归入几大公司的面试之中(mitbbs上面常称为FLAG...) 题目包
+括数据结构和算法, OO/System Design两大块 数据结构和算法基本上就是CareerCup 
+150 + 面经 leetcode可以看 但是上面的题80%只要考了就是难题 另外有时候一题会问
+多种解法并且问tradeoff OO Design会考你的面向对象的思维 比如怎样建一个图书馆 
+有哪些对象 又是什么关系(会数据库的就列table) System design通常会牵扯到
+multithread和scalable problem
+
+Amazon面试的统计学难度略低于Facebook, Linkedin和Google以及一些pre IPO的很火
+的公司 但是依然是偏难的大公司之一 事实上 拿到Amazon offer的人很多都有FLG等的
+offer 加上Amazon的绿卡问题(下个section详细讲) 就选择了其他公司 所以导致
+Amazon保持现有的bar总是招不到人
+
+Amazon面试流程一般是2轮电话面试(偶尔有第3轮 通常是因为前面两人一个yes一个no)
+如果通过就给onsite onsite一般是4轮技术面试(其中包括bar raiser 他不是你面试
+的组的人 但是负责保证hiring bar不被降低) + hiring manager lunch(有可能问题) 
+然后4个interviewer会和hiring manager开个会投票 如果全部是yes或no 那结果一目
+了然 如果有yes有no 这个时候通常是bar raiser和hiring manager再次要求大家确认
+投票 然后bar raiser和hiring manager有决定权 我所见到的通常情况是no的几率更大
+
+待遇
+
+Amazon的offer package是这样组成的(基本和其他大公司一样)
+
+Base package + sign-up bonus + RSUs + relocation reimbursement
+
+这里要说的是 Amazon的sign-up bonus之高是很有名的 通常可以给到35K以上 分两半
+给 第一个50%在就职当月给 第二个50%在就职满一年给
+
+还有 Amazon的RSU比较臭名昭著 分四年给 四年的比例依次是5% 15% 40% 40% 至于四
+年之后的RSU怎么办 每年的review会决定(见年度review)
+
+Amazon有正常的医疗保险和401k 但正如传言 确实没有什么perk(我两年来就拿到过一
+件tshirt还是我面了10＋个interns...)
+
+Amazon的年假还是可圈可点的 头一年有10天vacation days 从第二年起有15天 Amazon
+还有每年6天的personal days 最近华盛顿州通过一项法律 所以Amazon又增加了3天
+sick days 所以如果从第二年算一年是有21+3天年假的(当然sick day你要想办法休呀.
+..)
+
+总体而言 Amazon的total package略低于湾区的大公司 并且想和HR negotiate offer
+比较难 但是华盛顿州没有州税(加州大概10%州税) 而且西雅图的cost of living指数
+比湾区低的不是一点
+
+最后 Amazon的绿卡政策不是很好 要求必须是SDE II或者以上才能申请绿卡 当然你的
+老板是可以自己帮你申请绿卡的 即使你是SDE I
+
+Amazon文化
+
+Customer centered -- 加州开始收Amazon tax了 Amazon要完了么? 我看不会 Amazon
+一直都是一个以顾客为中心的公司 我在刚来Amazon参加培训的时候看到这样一道题目 
+说一个孩子的爸爸圣诞节前给customer service打电话问说自己几天前定的PS3还没有
+到货 可是order上显示的确实是delivered了 这时候怎么办呢? 正确答案是不由分说 
+立马再送一台 以客户为中心不只体现在customer service 在内部的处理issue的网站 
+customer－faced issue就是severity最高的 这时候通常一大片developers会被page 
+非常苦X
+
+Frugality -- 是的 没有perk Amazon把所有利润基本都让给customer和投资未来了 
+Amazon is frugal and is proud of its frugality. 其实我看到很多人拿这个自嘲 
+哈哈 和Google Facebook一样 大部分情况下 你会坐在open space工作 和Google 
+Facebook不一样的是 饮料和午餐都不是免费的...
+
+Distributed -- 大公司很多达到一定规模就会出现官僚主义 Amazon认为 杜绝官僚主
+义的办法就是使team足够小 小的标准是什么呢? 小到2个pizza可以让所有人吃饱(所以
+顶线大概是10-12人) 如果team过大 就可能会被拆分成多个小team 行动上 每个team是
+一个个体 独立进行开发 所以这样总体上是鼓励创新的 缺点就像distributed system 
+没有一个central state 有可能好几个team弄了半天做了很类似的东西
+
+Page -- 这个很多人说很重 我觉得仁者见仁智者见智 至少我觉得没有影响我正常生活
+我从来没有凌晨爬起来过 而且是online service就一定有page Google Facebook 
+Microsoft都有 不知道为啥就Amazon有名
+
+年度review
+
+每年的4月是老板告诉员工一年的performance的时候 Amazon的评分分为5级 但并没有
+一个public的数据知道每一级所占的比例 但我听我原来老板说过最好的1级大概只有3%
+左右 大多数人会是3级 如果是4或5 就会进PIP的名单了
+
+每年的review伴随大多数人的是涨工资 Amazon通常是的很少的base增长(升职另说)+不
+错的股票奖励 鉴于Amazon的股票的强势表现 这个还是留住了一部分人的
+
+至于升职 由于现在Amazon招的人越来越多 而升职人数却感觉并没有怎么变化 导致难
+度越来越高 另外我所看到的今年周围升职的从SDE I到II的还没有senior dev/manager
+到principal dev/senior manager的多 说实话挺奇怪的
+
+尾声
+
+在Amazon两年快半 感觉真的收获了很多 有很多高兴的 也有不少不高兴的 但我认为都
+是成长的财富 帮助我继续前进 不管怎样 当初我没有其他任何offer的时候 Amazon愿
+意收留我 所以Amazon在我心里 永远都占有一个非常特殊的位置 

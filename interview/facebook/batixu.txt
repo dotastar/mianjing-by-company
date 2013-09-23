@@ -1,0 +1,18 @@
+发信人: batixu (Ninny), 信区: JobHunting
+标  题: Facebook Phone Interview
+发信站: BBS 未名空间站 (Wed Apr 24 12:21:49 2013, 美东)
+
+Question: For some N, print all the solutions of A * B = C * D where A, B, C
+, D are all 1-N.
+
+
+eg. n=2
+print:
+1 * 1 = 1 * 1
+1 * 2 = 1 * 2
+1 * 2 = 2 * 1
+2 * 1 = 1 * 2
+2 * 1 = 2 * 1
+2 * 2 = 2 * 2
+
+请问各位有什么好的解法？

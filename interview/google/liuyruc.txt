@@ -1,0 +1,58 @@
+发信人: liuyruc (liuyruc), 信区: JobHunting
+标  题: G家面经 已跪
+发信站: BBS 未名空间站 (Mon Aug  5 20:14:44 2013, 美东)
+
+前前后后面了四个月 电面面了两次 第一次onsite结束以后 Hiring Committee要求加
+面一次两轮的onsite 周五HR电话打来说offer还是不能approve 决定move-on 接着面别
+的家了
+
+攒人品 求refer
+
+Phone 1st
+1.    Hash table (collision, probability)
+2.    Generate fuzzy words (Not in dictionary, but look like the given 
+strings)
+    implement build() and nextWord();     
+    e.g. ["APE", "APPLE", "ACE"] -> "ACE" (randomly)
+
+Phone 2nd
+1.    Lowest common ancestor
+2.    Can't remember
+
+Onsite 1st
+1     White Female Mira
+1.1     Find intersection from two lists
+1.2    How many 0s tailing in N!
+
+2    Indian Male
+2.1     10 buttons passcode with 4 digitals. Generate a sequence to
+    brute force it. Upper bound and lower bound of length, code to 
+    generate an optimal one.
+
+3    White Male geek
+3.1     Guess how a PDF file is structured 
+3.2     How to present a rectangle. Check two rectangle is intersected
+3.3     Program structure.
+3.4     Run Unit twice, passed the first time, and failed at the
+    second. Why?
+3.5    Forced context switching
+
+Lunch Steve
+
+4    ABC Male
+4.1     Design a system to upgrade patches on remote data center
+    How to transfer the patch
+    How to install patch between computers (in the data center), fast and 
+safe
+    If error happens, how to fix it
+    What will make this system down
+
+
+Onsite 2nd
+1    White Male
+1.1    A function to validate UTF-8 String
+1.2    How to break down a the watch-video page
+1.3    Design a system to server video thumbs
+
+2    White Male
+1.1    Design a class to serialize and deserialize an object

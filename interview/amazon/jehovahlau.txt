@@ -1,0 +1,33 @@
+发信人: jehovahlau (Neo), 信区: JobHunting
+标  题: 更新面经..收到A家recruiter的邮件，说给offer，要约个时间电话里谈
+关键字: Amazon
+发信站: BBS 未名空间站 (Tue Aug 20 12:59:49 2013, 美东)
+
+8月9号去的onsite，当天有不少一起面试的，其中绝大多数是同胞，一两个阿三和一个
+白人。属于是campus招聘。今天收到recruiter的邮件说给offer，要约个时间谈谈。想
+请教下板上有经验的前辈们，这主要是谈什么呢？工资？on board时间？应该怎样准备
+才不会处于被动的状态？请各位大大给点信息和建议！我目前的情况是刚在NYC的一家
+很小的startup工作了没几个月，工资一般般，做web application的backend 
+development。A家肯定要比我现在的驴要好太多，不过NYC的妹子是真心多啊，不了解
+西雅图那边的情况。下班了就上面经！
+
+--------上面经-------
+其实没有网申Amazon的职位，只以前申过在NJ这边的子公司Audible。没有电话面试，
+做online assessment，3道题，太久远记不太清楚了，但是板上有版友发过题目，一模
+一样，每道题都要分析时间复杂度。题做完大概3个星期后得到onsite通知，给了几个
+时间让选择。
+
+onsite那天先是所有的candidates在一个大会议室里分几个桌子吃披萨，然后来了一些
+engineer一起边吃边谈，大概1小时后开始正式面试，一共四轮。
+1. 本土白人， 先是behavior questions，问了leadership, biggest mistake, 
+challenging...然后一道算法题，leetcode的word ladder1
+2. 同胞，问的不难，第一题记不起来了，第二题是tree level traversal，只不过不
+是binary tree，任意多个children的tree，一样的思路。
+3. 烙印，口音很重，题目是要实现Shannon–Fano coding，第一次听说这个，没写出
+来，其实名字当时都没听清楚，回去后google了下才知道。。。整个过程，就是我在不
+停地说，烙印不停地在那里打字，我想互动下也没鸟我，面完就觉得估计是悬了。
+4. 本土白人，两道题，一个是CC150上的stack with min()，第二题是leetcode上的
+letter combinations of a phone number。
+
+总得来说除了烙印的题我见识太短没见过外，其他都是常规题，运气好；而且我觉得同
+胞放水了，先谢谢了。

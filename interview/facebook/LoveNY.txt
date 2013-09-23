@@ -1,0 +1,14 @@
+发信人: LoveNY (@NJ), 信区: JobHunting
+标  题: F面经
+发信站: BBS 未名空间站 (Tue Mar 26 19:57:28 2013, 美东)
+
+前两道coding题目不说了，直接上第三道：
+
+Write code to do arithmetic expression validation: 
+digits: 0..9
+operators: +, -, (, )
+
+E.g.:
+1+2-3  valid
+1+(2-(3+4)) valid
+-2 not valid

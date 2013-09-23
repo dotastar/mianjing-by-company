@@ -1,0 +1,76 @@
+发信人: ygdx (ygdx), 信区: JobHunting
+标  题: service now 卧佛和面筋
+发信站: BBS 未名空间站 (Sat Aug 31 15:13:24 2013, 美东)
+
+official offer 出来了，实在一般。可能我的级别很低吧,entry level，“associate
+” SE。有牛人指点一下怎么negotiate啊，是不是太少了？78k + 6280/year bonus + 
+1000share/4years。不知道这种转正式的software engineer要多久呢？好了，以下面
+经，反正也没签什么NDA，我一股脑全贡献出来啦：
+
+第一次onsite screen。不知为何没有phone screen，可能因为我住的近，他们直接叫
+我过去了。一个小时一个白哥。问了how to delete a node from binary search tree
+。CLRS上直接有解法。白哥答案要求的很笼统，写个psuedo code就pass了。连找
+successor node的具体实现都不用写出来。后来又问不用mutex怎么实现share data 
+between threads。我说GPU里面有一个东西叫thread synchronizer （我master学位做
+了些CUDA编程），白哥没理解，说他会用个queue把thread都queue起来，然后一个一个
+的run thread。我说那thread concurrently加到queue中间去时，怎么保证queue状态
+的consistency。白哥想想说queue里边要有个mutex，最后承认必须要有某种形式的
+mutex。我心里暗笑，不敢表现出来。anyway,白哥似乎觉得我还算机灵，给了好评。因
+此有了第二次onsite。
+
+第二次onsite，4 hours，4个三哥。第一位senior developer，上来就是reverse 
+linked list。我靠这么基础的题我竟然栽了，用两个指针搞了半天以为搞定了，结果
+三哥说你这不对，我才发现必须要三个指针。真是大意失荆州，leetcode刷了那么久全
+白刷了。改完以后三哥也没有耐心再让我查错，接着要我Find a node in a binary 
+tree.  Not BST。这里要感谢ultrabo以前总结的tree的12种走法，幸亏我看了一下，
+还记了一点。三哥果然不接受简单明了的recursive解法，我只好摆出stack+flag，三
+哥又拒绝之，我死乞白赖又憋出一个stack+HashSet（用于记录node出现次数，功能和
+flag一样），三哥仍不满足，我顿时放弃。Ultrabo总结的方法里面有用一个指针mark 
+tree node 的方法，可当时我觉得回字这么多写法不会变态到全部考一遍吧，没想到三
+哥没底线啊没底线。两题过去时间无几，三哥不再出coding题，开始一轮概念题rapid 
+fire， process vs thread， np hard vs np complete，Semaphore vs mutex, 还有
+一些不记得了。基本是我刚开始回答，三哥听到了几个关键字就打断直接下一题。总之
+感觉不算太好。接下来六哥，coding题，1） Find the weight of a tree = sum of 
+weight of all node in the tree.  Weight of node = value of node * level of 
+the node in the tree。靠又是tree，这家怎么这么喜欢在树上爬来爬去，猴子么？我
+问recursive可不可以，三哥许可，写了recursive的出来，他又改主意，说要
+iteration。我就用queue写了BFS，queue里边用一个mock node 作为不同level间的间
+隔，不喜，要我想办法count。我当时没想起来java的各种collection都有size（），
+就用了两个int变量switch的办法，仍不喜。耗了点时间思考，结果就没时间做第二题
+了。2）Find a sub tree with min weight. 这题没做，但三哥提前给了。第三个是个
+三叔director，感觉人挺好的。就出了个BFS找graph中两个node最短路径，要输出这个
+路径，很基础的题，我写的也不算太熟练，但三叔没有计较太多。又问了Process vs 
+thread，我心里诅咒发誓回去以后把这题tatoo到手掌心。还问了不少Java相关，JVM增
+么garbage collection, how to implement that, 我完全没概念，用queue定时check
+？他启发我说有什么不好，我说可能做很多无用功，他说有什么别的方法，我瞎蒙一个
+event trigger，他就转而详细问了event handle实现的机理。这个幸亏我还了解了一
+下，就说了一堆，三叔好像还满意。还有Java exception handling，幸亏我也了解了
+一下，又扯了一堆。List vs array, how java implement collection and list? 不
+懂就瞎讲了一下。后来有机会show一下master做的research，我是做CUDA模拟的，我自
+己把visualization的部分录制了一个video，从iphone上放给三叔看，大喜，感觉还好
+。最后大boss从California 打电话过来，还叫了另一个三哥在旁围观，String to 
+integer conversion，String的形式很简单，也没有小数点或者e，考察了over flow怎
+么办。然后就是一系列概念题，JSON vs XML， How to represent a many to many 
+relationship in Data Base，Java vs C++, differences，How APS.Net maintain 
+session status。我都回答的不算太好。所以整体感觉实在不是很好，不知道为什么有
+第三轮，可能是三叔力挺。
+第三次onsite，一个三哥一个白哥，1.5小时。纯coding没有什么概念题了。三哥问我
+一个项目里面怎么做LRU的，我说用个linkedlist做queue，用个HashMap找linkedlist
+里边的node。他就问update queue 里的node怎么搞。最后就退化成这么一个初级问题
+了，把一个doubly linked list 中间某个node分离出来然后attach到linked list 头
+部。我写了下，也没写完就第二题了，singly linked list 怎么检查是否palindrome
+。要求时间O（n），不能有extra space。我想想觉得只能先找出linkedlist总长，然
+后定位到linkedlist中间，再把中间到末尾的链结反转，然后两头向中间对称的比较，
+最后再把linkedlist还原。算法狂麻烦，我就硬着头皮上，也没有时间写完。但是三哥
+也没太计较了。有牛人有更简洁的办法吗？最后一个白哥，考了个标准的leetcode 
+3Sum。哈哈，终于有一个题一泻千里痛快的出来了。结果中间又留下小错（HashMap的
+数字取出后要记得还回去），被白哥提醒，慌忙查找发现后改正。这样就总算全部面完。
+总结：（仅适用ServiceNow，或许还有类似的三哥dominant的公司）
+coding还是要熟练，但是遇到没写好的也没有必要太计较。年轻的developer，
+engineer倾向于出偏题怪题，而且颇计较回字有几种写法。领导director 之类反而
+coding不会太怪太偏。重点搞定领导级别的人物，小兵之流screw了也不会是决定性因
+素。领导面前要强势，多表现，小兵面前要示弱示友好。当然能无错秒coding题应该最
+好。我offer这么烂可能还是interview不算太出色。最后是一定要培养一下ppt技能，
+大家平时锻炼锻炼口语说话，也不能就是刷题了。
+花了三个多小时终于写完，苦逼的微软拼音啊。希望能帮助版里的各位，也算给自己一
+个总结。祝人人有满意大offer!!!

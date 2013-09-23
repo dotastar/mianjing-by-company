@@ -1,0 +1,27 @@
+发信人: zhaichun108 (onlylonely), 信区: JobHunting
+标  题: Y家新鲜面经
+发信站: BBS 未名空间站 (Sat Sep  7 01:18:13 2013, 美东)
+
+what is virtual method. virtual vs abstract in C#
+interface vs abstract class
+C# generic. Constraints.
+有没有github 上面的open source projects。
+怎么实现priority queue
+有1GB左右的webpage存在一个U盘上面， 怎么快速得到上面的email addresses？ （我
+说写代码用regex得到， 面试官说不需要。。。谁能给个答案？）
+
+
+用过以下东东吗：
+- memcached
+- cassandra
+- GO
+- dynamic piping （这个不知道有没有听错。。。）
+
+OO design： 经典的扑克牌设计。。。
+
+Architecture design: 设计一个scalable 的 web下棋游戏。 当一个玩家下了一步之
+后， 怎么传给server？ server怎么push给另一个玩家？
+
+Coding：
+-写个double linked list class。 实现AddToEnd 和RemoveFirst 两个methods
+-写个BinarySearchTree class. 实现Insert， 用iteration和recursion两种方法

@@ -1,0 +1,63 @@
+发信人: nexussnap (nexussnap), 信区: JobHunting
+标  题: T和T家面经，都被拒。
+发信站: BBS 未名空间站 (Thu Sep 12 12:54:31 2013, 美东)
+
+面了Twitter和Turn，两家都已被拒。分享面经，祝大家好运。
+
+Twitter：
+
+1 sort linkedlist。 老中大哥放水，非常感谢。
+
+2 一个2D matrix,每个cell都是一个灯泡，0表示灭，1表示亮，当一个灯泡发生变化的
+时候，他临近的灯泡都要变化，问给你一个board configuration，让你判断是否可以
+通过亮灭使得所有的灯泡都熄灭。这个题面试的哥们说他是朋友问他的，他也没做出来
+，让我和他一起做，看能做出来不。 结果是大体有了一个solution，但是不知道对不
+对。
+
+3 分布式环境中设计一个lock，使得做广告的时候，spending不会超过budget。 
+rotated sorted array中找最小的元素，返回index。第一个基本上就是设计
+distributed cache的lock。 这个老中大哥貌似很不友好，给了你个方案，他最后也没
+说啥，说换个题吧。问他你们实际中怎么做解决了没，他说yes and no。 做题的时候
+他在下班玩手机。
+
+4 powerset。 maximum subarray。
+
+5 设计一个系统，用来显示某个时间，某个词在所有的tweets中被提到的次数。最后扩
+展到如何找到提到一个词和另外一个词但是没有第三个词的所有的tweets，然后
+visualize。这个估计是出问题的地方。太着急给答案，没有深层次的讨论。最后用map
+reduce加no sql给做的，结果他说他们用的是mysql 建 view。 
+
+一周内发了两次email催，结果昨天催来拒信。recuirter昨天打电话，说是pretty 
+close，但是现在申请的人很多，所以hiring bar非常高。感觉现在twitter真的是非常
+多的人申请，去了以后每个小黑屋里都有人在面试。面试题目虽然不难，但是估计人太
+多，所以很难进去。
+
+Turn的面试就是一个joke，都不想说了。去了以后5个烙印上来一顿蹂躏。不知道为什
+么说这个公司好，去了以后第一印象就不怎么行，乱糟糟的，一堆烙印。不知道为什么
+版上对这个公司非常推崇。基本上也是烙印当道，应该会过的很struggle。
+
+1. 设计一个map reduce的scheduler，结果这个大哥自己都不知道map reduce里有几种
+scheduler，不知道他是怎么敢面这个题的。 sort color，leetcode原题，很简单的几
+行code，大哥实在是看不懂，跟他一起过了很多testcase。结果才发现时对的对，不知
+道这个大哥是想让我写出什么样的solution。
+
+2. 烙印，号称是architect。maze problem,基本上也是leetcode原题，顺利写出，结
+果他死活说不对。跟他一起过testcase，弄了有20分钟，结果是对的。当时心里就想，
+我真是死给你看好了。 然后就是弄了20分钟的各种大数据的设计，各种constraint加
+上以后，做相应的处理。
+
+3. ABC architect，这个人不错。从web log里construct DAG。美国node都要记录
+click count。用了很长的时间，连饭也没顾上吃。饭就是一个pie。
+
+4. 烙印，设计一个search engine。 乱七八糟的讨论了一堆有的没有的，感觉他自己
+也不是很懂。
+
+5. 一个设计题，写出workable code。题目不难，但是写了一黑板。
+
+总体觉得，烙印当道，没啥好去的。他家是面完就告诉你有没有offer。recuirter跟我
+讨论，说是他们觉得我没有设计过分布式系统的经验。我擦，哥就不是来面
+distributed system engineer，哥是来面data engineer的。当时也没争，觉得即使你
+给了offer，哥也不会去的。
+
+希望对大家有帮助。
+--

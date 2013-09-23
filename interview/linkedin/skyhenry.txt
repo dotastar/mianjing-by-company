@@ -1,0 +1,43 @@
+发信人: skyhenry (henry), 信区: JobHunting
+标  题: LinkedIn 面经
+发信站: BBS 未名空间站 (Wed Feb 20 15:52:40 2013, 美东)
+
+
+两轮店面 + Onsite, onsite面了8个人，四个人问coding，两个人问design，一个人问
+project，还有一个senior manager问behavior。 题目都不难，自我感觉答得也还行，
+但是还是悲剧了，anyway， move on了。 发一下记得的题目，
+
+
+电面：
+1.  给一个二叉树，返回它的镜像
+    实现一个 thread-safe blocking queue
+
+2. 一个嵌套Map， 就是一个HashMap, 它的value可以是一个element也可以是另外一个
+嵌套map或是空的map. 实现一个iterator来遍历这个map里面的所有element。 就是类
+似树遍历一样的方法
+
+Onsite:
+
+第一个:  给两个单词， 比如head,  tail: 找到一个最短的转换，从head到tail，每
+次只能变一个字母，path上的word都必须是有效的英文单词，我用的Graph shortest 
+path
+
+第二个: memcpy:  源区域和目标区域可能有重叠
+   BST 插入和删除操作实现
+   BST iterator 实现
+
+3: 实现两个函数: H() and O(), 这两个函数会被多线程调用。当一个线程调用H或O时
+，如果当前已经有至少两个线程call H和一个线程call O。那么让两个call H和一个
+call O的线程返回（产生一个水分子），其他的都block。
+
+4: Given a social graph, find if there is a path between two persons with at
+most 2 steps (3rd level connection), how to handle it in distributed way (
+large graph stored at a large number of nodes, minimize cross-communication)
+  
+5: 设计题:  a restful server with 4GB,  
+given a request such as: http://seq=4?len=60?xxxxdata
+the system will store the binary data with that sequence number.
+given a request: http://startseq=3?maxLen=100, the system returns all data objects with sequence >= 3 with total data length less equal than 100.
+
+multiple clients calling simutaneous
+what data structure, concurrency, locking, etc..

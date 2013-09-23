@@ -1,0 +1,13 @@
+发信人: workoutomg (), 信区: JobHunting
+标  题: CGG电面
+发信站: BBS 未名空间站 (Mon Aug 19 05:08:42 2013, 美东)
+
+1、用C++写一个circular buffer
+2、写一个shuffle函数，并证明自己的算法是正确的
+
+发信人: workoutomg (), 信区: JobHunting
+标  题: CGG电面2
+发信站: BBS 未名空间站 (Mon Aug 19 05:11:48 2013, 美东)
+
+1、写一个stack，能handle元素个数无限增加的情况
+2、如何判断一个点在多边形的内部还是外部

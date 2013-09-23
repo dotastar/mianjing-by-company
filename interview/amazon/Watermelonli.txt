@@ -1,0 +1,17 @@
+发信人: Watermelonli (haha ^_^), 信区: JobHunting
+标  题: A 家两轮电话面试面经攒人品
+发信站: BBS 未名空间站 (Mon Aug 26 16:33:11 2013, 美东)
+
+已经两周了，连A家自己的recruiter都说没消息，估计没戏了，发两轮电话面试面经攒
+人品。
+
+第一轮，介绍自己，按层打印树，缩写字符串，aabbbbccddaa变成a2b4c2d2a2
+
+第二轮，在一个字符串中，其他字符出现次数都是偶数，只有一个是奇数次。找到这个
+字符
+
+判断字符串是否是palindrome
+
+正则表达式找电话号码
+
+Hashtable和binary search tree两种数据结构的区别

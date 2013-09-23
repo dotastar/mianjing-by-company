@@ -1,0 +1,21 @@
+发信人: fgld926 (fgld926), 信区: JobHunting
+标  题: Expedia电面面经验
+发信站: BBS 未名空间站 (Thu Sep 12 23:45:18 2013, 美东)
+
+一个烙印面试官，声音给人感觉死气沉沉的。。。
+上来就说了下自己的名字，问我是不是面这个的人。
+然后也没叫我自我介绍，就问我熟悉啥语言。我说java用的多。然后就直接突然问题目
+了。
+基本都是概念题。
+linkedlist 和 array的区别
+我就分析了时间空间上以及对于element操作的一些特点，然后他继续问我还有其他不
+同么，我沉默了一会感觉脑子空白了，然后他就说ok就下一题了。
+什么是binary search tree，什么是HashTable, binary search tree和HashTable的区别
+static的作用
+什么是mutable object in java
+然后就出了一道括号匹配的编程题，判断是不是wellformed的String。我先说了思路，
+然后就在doc里写，很快就写完了面试官也没多问，就问了代码每行是干嘛的。
+今天发信问HR已经说move forward another candidate了好吧。
+简历上的东西一个没问.
+面试过程中的确因为听力问题有的话让面试官重复了一边。或者叫他打在doc里。。。
+太菜了，继续找面试，多积累多锻炼吧。真的很想去西雅图工作－ －。

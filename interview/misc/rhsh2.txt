@@ -1,0 +1,294 @@
+发信人: rhsh (天晴), 信区: JobHunting
+标  题: 一点码工求职经验总结，回报本版
+发信站: BBS 未名空间站 (Wed Aug 14 17:56:48 2013, 美东)
+
+前两天把offer签了，找工作终于算是告一段落了。在求职过程中得到本版很多帮助，
+在这里也想分享一点个人的心得，希望能够对大家有所帮助。
+
+我的背景是Fresh CS PhD，非牛校，无实习经历。研究方向比较冷门，基本上没有对口
+的position，属于PhD中比较悲催的一类。前两年写的代码主要是以Matlab和C为主，一
+年以前甚至连Java都不熟悉（只是本科的时候学习过），几次投暑期实习都是杳无音讯
+。这就是我当时的状态，曾经一度很怀疑自己是否符合工业界的要求。不过反过来，这
+种状态也让我能够及时认清现实，调整心态，从0开始一点点复习总结，也算是一件不
+坏的事情吧。
+
+
+关于背景
+
+由于研究方向的机会实在是有限，因此我早早的树立了“要主动迎合工作的要求，而不
+是让工作来迎合我”这样的思路。也就是干脆放弃自己的研究方向，多做一些热门方向
+的project或者技术，用那些经历来找工作。在过去的一年里我自己自学了Hadoop、
+Python和Scala，熟练了Java和C++，操作系统转向了Linux，还学习使用了不少如vi，
+gdb，git之类的工具。这样至少简历上会好看很多，skillset里面终于不是只有空荡荡
+的Matlab和C了。而且事实证明，一些热门的技术像mapreduce/hadoop，放在简历里，
+还是能够增色不少。
+
+
+关于简历
+
+个人感觉我这次简历还算是挺成功的，投出去之后的反馈率很高。个人认为简历一定要
+做到和job description能够match。一般Job Description上都会写得天花乱坠让人看
+了就想打退堂鼓，其实实际上他们也没有要求那么多，甚至说只要有30%-40%左右能对
+上就算不错了。因此写简历的时候最好能够做到有针对性，qualification/skill set
+多上关键词，project里面多摆几个相关的内容，这样比用一个一成不变的简历海投要
+靠谱得多。
+
+
+关于算法题和设计题
+
+一开始我也是本着“多准备总比少准备好”的心态来准备题目的。大概看了CLRS/CC150
+/g4g/leetcode上的所有题目，外加不少zoj/hackerrank的题。不过在后来的面试中感
+觉钻研难题怪题完全没有必要——因为面试中基本上不会出现ACM中等题以上难度的题
+目，而且ACM的OJ没有test case，有时候一题AC要折腾一整天，得不偿失。Leetcode是
+个好网站，尤其适合面试前一个月的突击。基本上只要基本的算法/数据结构能够熟悉
+，能够总结出一些常用的解法，以不变应万变，保证能够快速的完成代码（一两个小
+bug也没事），就已经完全足够了。如果还有空做题，建议做一些ACM的水题和模拟题，
+锻炼一下把算法转换成实际代码的能力就好。
+
+这次面试了很多家公司，感觉自己对面试的认识有点不同了。一开始我也以为所谓面试
+就是做算法题，结果发现几家公司走下来，只有FB和RF算法题的比重比较大，其他甚至
+都没有达到50%。而且很多编程题都是有一些应用背景的，比如简单的实现一个web 
+crawler，实现一个给定record建立trie做recommendation的过程，实现LRU/水塘抽样/
+tfidf，或者是多线程类型的题目，像是实现读写锁，实现blocking queue，实现存取
+款机制等等。剩下的部分就是所谓的“设计题”，很多时候都是给一些他们正在遇到的
+问题问问你的思路，这种没什么办法准备，完全要靠平时的积累了。所以我不大赞成把
+时间全部放在刷题上，有空多多扩展一下知识面也是很重要的，现在公司的面试都越来
+越务实了。
+
+至于OO设计题，好像除了AMZN其他家遇到的可能性很小，基本上有一些概念就行了。而
+且AMZN我电面之后就杳无音讯了，也没机会做这些题了><
+
+
+关于CS的基本概念题
+
+以前看到有人问说OS/网络层/数据库的东西要不要准备。一般说来问题都取决于简历上
+的内容，如果简历上没有太多这方面的内容的话，基本上也不怎么会问。不过最基本的
+概念还是最好能了解，比如进程和线程的不同，tcp和udp的不同，inner join和outer 
+join的不同，等等。这些问题反映了一个人的CS基本功。
+
+比如说简历上要是出现了concurrency的话，那下面这段出自<Get that job at Google
+>的话里提到的东西应该都要能够了解：
+
+This is just a plug, from me, for you to know about processes, threads and 
+concurrency issues. A lot of interviewers ask about that stuff, and it's 
+pretty fundamental, so you should know it. Know about locks and mutexes and 
+semaphores and monitors and how they work. Know about deadlock and livelock 
+and how to avoid them. Know what resources a processes needs, and a thread 
+needs, and how context switching works, and how it's initiated by the 
+operating system and underlying hardware. Know a little about scheduling. 
+The world is rapidly moving towards multi-core, and you'll be a dinosaur in 
+a real hurry if you don't understand the fundamentals of "modern" (which is 
+to say, "kinda broken") concurrency constructs.
+
+还有就是C++/Java语言的一些基本概念，比如说构造函数、虚函数、接口之类。以及OO
+的基本概念。
+
+
+关于面试流程的一些经验
+
+1.能内推的公司尽量找人内推。我这次也得到了很多热心人的帮助，真是非常感激。
+2.我觉得投简历的时候不需要考虑“先拿不想去的公司练手”。个人经历是，面试完全
+不想去的公司的状态和面试dream company的状态肯定是不一样的，训练价值相当有限
+。而且万一不大想去的公司先来了offer催着接受，且后面理想的公司电面都还没排到
+，这种情况也是十分让人纠结的。
+3.面试的时候一定要淡定且全力以赴，无论是面对什么公司（前提是投的公司肯定是自
+己想去的）。整个求职过程中我的心态就是“有地方去就行了，先锻炼几年再说”。这
+种心态反而能够让我充分发挥。
+4.个人感觉面试的时候完全不要揣摩面试官的心态。遇到过被很kind的面试官挂了，也
+遇到过被看上去很有敌意的三哥给过了。与其考虑面试官，还不如专心答好题目。毕竟
+面试本来就是实力+运气。
+5.面试的时候一定要talk loud，有想法就尽量说，很可能你觉得不靠谱的想法别人还
+很认可。同时也一定要自信。
+6.东岸飞西岸面试的话最好能提早2天到，因为这种coast to coast的航班经常延误，
+到西边住下来可能都要后半夜了，而很多公司的面试早上10点之前就要开始。多休息一
+天能保证好的状态。
+7.面试完一家就move on，快速总结做的不好的地方，但是不要太纠结于结果。
+8.有最优算法直接上最优算法，不要浪费大家的时间:)
+
+
+其他的一些感想
+
+如果离找工作还有一段时间，一定要尽量多做一些热门的project。比如说写一个小的
+android app，自己搭一个cluster玩玩hadoop，或者写一个简单的有前后端交互的小网
+站。不需要做得很fancy，但是至少能够通过这个project了解到这一套东西的机制。当
+然能够有机会做一些实习或者开源项目就更好了。
+
+现在的job market还是挺不错的，背景不要太偏门的话拿一些面试应该不难。希望大家
+都能有好offer。
+
+
+
+--
+
+※ 来源:·WWW 未名空间站 海外: mitbbs.com 中国: mitbbs.cn·[FROM: 128.]
+ 	
+	 rhsh
+进入未名形象秀
+	我的博客
+[回复] [回信给作者] [本篇全文] [本讨论区] [修改] [删除] [转寄] [转贴] [收藏] [举报]		[ 2 ]
+发信人: rhsh (天晴), 信区: JobHunting
+标  题: Re: 一点码工求职经验总结，回报本版
+发信站: BBS 未名空间站 (Wed Aug 14 17:57:31 2013, 美东)
+
+个人总结的一些C/C++问题：
+
+C Tutorial：
+http://www.cprogramming.com/tutorial.html
+
+C问题集：
+http://www.indiabix.com/technical/c/
+http://www.parashift.com/c++-faq-lite/index.html
+
+1) 为啥要用c++;
+2) encapsulate, polymorphism ,inheritance 的概念；
+    encapsulate: Hide details of implementation
+    polymorphism : has multiple forms
+    inheritance: is-a relationship
+3）class的概念
+    type of object
+4）default constructor是啥样的；
+    without parameters
+5) 写copy  constructor要注意啥
+    parameter must be reference :    Node(const Node &node)
+6) 写 operator assignment的时候要注意啥
+    return a reference
+7）can constructor be virtual? why it can or can not? how about destructor.
+    no. Since we need to know the actual type while constructing an object. 
+And some issues related to virtual function table.
+    yes. it should be virtual
+8) what's the default functions of class
+    A()                                              //constructor
+    ~A()                                            //destructor
+    A(const &A)                              //copy constructor
+    A& operator=(const &A)        //copy assignment operator
+    A& operator*()                        //
+    A& operator&()
+9) describe virtual table
+10) what's the size of empty class
+    1 byte make sure each object has different memory address
+11) what's the difference of class and struct
+    struct -- all public
+    class -- all private by default (diff from java) can change
+12) what's the difference of reference & pointer
+    1. A pointer can be re-assigned any number of times while a reference 
+can not be reassigned after initialization. 
+    2. A pointer can point to NULL while reference can never point to NULL
+    3. You can't take the address of a reference like you can with pointers
+    4. There's no "reference arithmetics" (but you can take the address of 
+an object pointed by a reference and do pointer arithmetics on it as in &obj
++ 5).
+13) what's the difference of passing by reference  & passing by value
+14) when is the copy constructor called
+    first time, A a = another_a;
+15) type cast
+16) template
+17) deep copy & shallow copy
+18) auto pointer
+19) what's the differenc of new & malloc
+    ? malloc allocates uninitialized memory. The allocated memory has 
+to be released with free.
+    ? calloc is like malloc but initializes the allocated memory with 
+a constant (0). It needs to be freed with free.
+    ? new initializes the allocated memory by calling the constructor 
+(if it's an object). Memory allocated with new should be released with 
+delete (which in turn calls the destructor). It does not need you to 
+manually specify the size you need and cast it to the appropriate type. Thus
+, it's more modern and less prone to errors.
+20) what happens when new/malloc fails
+21) what's the abstract class
+    contains pure virtual function
+22) what's the pure function?
+    virtual void foo() = 0;
+23) how to print "hello world" before main()
+    static int g_var = printHelloworld();
+    int main(){}
+24) inheritance 哪些能继承，哪些不能
+25）class a array[50],怎么给这50个元素置初值，不能循环赋值，就是这个意思，你
+可以动态分配
+26）static
+
+From <http://www.mitbbs.com/article_t1/JobHunting/32195137_32195137_1.html> 
+
+如何处理内存泄露(memory leak)?
+答：对每一个对象设立一个引用计数器（或者smart pointer）
+
+C常见问题集合
+
+近指针和远指针：
+    http://blog.chinaunix.net/uid-13282010-id-135808.html
+    http://baike.baidu.com/view/919902.htm
+    基本上来说就是，远指针通过四个字节支持段间寻址，近指针通过2个字节支持段
+内寻址
+
+操作符相关：
+    1. y = a+++b怎么解析
+        应该看做y = (a++) + b;
+    2. c = c++怎么解析
+        这种未被定义，取决于编译器
+    3. c = c++++
+        错误
+    
+
+指针相关：
+    1.不同指针定义的意义
+        a) int a; // An integer 
+        b) int *a; // A pointer to an integer 
+        c) int **a; // A pointer to a pointer to an integer 
+        d) int a[10]; // An array of 10 integers 
+        e) int *a[10]; // An array of 10 pointers to integers 
+        f) int (*a)[10]; // A pointer to an array of 10 integers 
+        g) int (*a)(int); // A pointer to a function a that takes an integer
+argument and returns an integer 
+        h) int (*a[10])(int); // An array of 10 pointers to functions that 
+take an integer argument and return an integer 
+
+循环相关：
+    1.四种死循环的实现方式
+        for, while, do-while, goto  (Loop:    goto Loop)
+
+内存空间分配相关：
+    memcpy and memmove
+        前者不检查两个空间是否overlap，后者检查
+    calloc and malloc
+        前者将空间清0，后者不清除
+        前者有两个参数（元素个数，单个元素空间），后者只有一个参数（总空间）
+    
+数组相关：
+    char* itoa(int n)：数字转换成字符数组
+    
+关键字相关：
+    static：
+        意义：
+            1.函数内，表示静态变量
+            2.类对象，表示静态成员
+            3.类成员函数，表示静态成员函数
+        static和global：
+            1.前者是文件/函数作用域，后者是全局作用域
+    const：
+        1.int* const p和const int *p的区别
+            前者不能改变指向的元素，后者不能改变指向的元素的值
+        2.const的意义
+            1.易于代码读者理解，减少bug
+            2.利于优化器修改，产生更紧凑的代码，提高效率
+    
+    volatile：
+        http://www.kuqin.com/job/20071025/1796.html 第八题
+        1.作用：
+            强制不进行优化，每次从内存中重新读值
+        2.const类型和指针类型可以设置成volatile吗
+            两个都可以
+        3.下面的函数有什么错误： 
+            int square(volatile int *ptr) { return *ptr * *ptr; } 
+            错误是，每次*ptr可能取到不同的值
+            
+类相关：
+    1.空类相关
+        Hint：class A{}； sizeof(A)是1，默认函数有
+            A()                                              //constructor
+            ~A()                                            //destructor
+            A(const &A)                              //copy constructor
+            A& operator=(const &A)        //copy assignment operator
+            A& operator*()                        //
+            A& operator&()
+    
+explicit的用法：防止构造函数进行模糊匹配

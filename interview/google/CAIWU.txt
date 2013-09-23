@@ -1,0 +1,25 @@
+发信人: CAIWU (Cai), 信区: JobHunting
+标  题: google电面面经
+发信站: BBS 未名空间站 (Mon Oct 22 17:30:03 2012, 美东)
+
+设计
+
+class  webcounter {
+   void  increment();
+   int  lastmin();
+   int  lasthour();
+   int  lastday();
+}
+
+
+
+
+打印函数
+奇数行完全打印
+偶数行隔一个打印
+
+
+设计那里讨论了半天。
+最后匆匆结束了。咋觉得挂了呢。
+
+一般多久能知道能不能进下一轮?

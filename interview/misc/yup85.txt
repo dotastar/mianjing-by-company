@@ -1,0 +1,114 @@
+发信人: yup85 (yup85), 信区: JobHunting
+标  题: F/L/A/G/T/Groupon/Box 贴面经 报offer 回报本版
+发信站: BBS 未名空间站 (Sat Apr 20 14:17:28 2013, 美东)
+
+结果：面试7家，5 onsite，3 offer。
+
+面经：
+Amazon：2轮电面，5轮onsite。2天后offer，最后decline，非常nice的manager（拿到
+A offer时还在面其它公司，比较大度地祝我good luck），拒绝的时候感情上比较难受。
+  电面1，设计parking lot
+     2， intersection of sorted int array; design data structure for a phone
+contact book
+  onsite 1: find biggest int in array, 
+            find K biggest int in array(tradeoff between many methods), 
+implement using heap
+         2: print modification path from "head" to "tail", given isWord() 
+api and every time can modify 1 word in the strings
+         3: lunch, no coding, behavior questions.
+         4. Given coins of value {k1, k2, ..., km}, 用最少硬币数组成一个sum; 
+            实现 isSumTree() 
+         5. OOD 设计一个魔方，实现一个rotation method
+LinkedIn:2轮电面，5轮onsite见9个人。2天后offer。每一个遇到的人都很nice，
+onsite的时候会给准备零食放在会议室，会打印出InMap，手写卡片等，非常sweet收拢
+人心。
+  电面1-2 请搜索版内面经，基本重复。
+  onsite 1: behavior questions with their director, 最后讲了讲如果设计一个系
+统（和我master研究相关）可能会存在的问题。
+  onsite 2：介绍我现在的工作，考察technical communication skills
+  onsite 3: justify text, leetcode上原题
+  onsite 4：minimize the cost of painting K houses, each house has different
+costs to paint in different colors, 
+            2 houses (next to each other) cannot be painted in the same 
+color. DP 问题
+            让我问问题，看我似乎不想问，问我要不要再来一道题，我说好。计算题
+很简单，忽略。
+  onsite 5：设计题，涉及到分布式系统，缓存算法，缓存更新，读取速度优化，面试
+GG非常兴奋，沟通比较愉快。
+  
+Facebook Seattle 1轮电面 5轮onsite见6个人 1天后offer onsite会议室比较小 
+  准备签题目不表 欢迎未来的同事私信建立联系
+  
+Box 1电面 5轮onsite fail
+  电面1，电梯OOD，实现最短等待时间
+  Onsite是个joke 不值得表
+   
+T 3轮电面 fail
+  电面1，find intersection of two sorted int array, and improve the 
+performance to handle some special cases.
+  电面2，string permutation
+  电面3，sum 3
+        Tokenize input string given a word dictionary
+  T第二面是个国人，感觉是个jerk。是这次面试遇到的唯一感觉不nice的国人。
+吐槽一下：T家面试很乱，面试官普遍比较junior。效率极低。而且竟然把别人的phone
+screen confirm错发给我，导致我等了很久没有电话，然后打开doc看见里面两个人在
+写code的乌龙事件。  
+G 2电面 5轮onsite见6人 fail
+  G电面1，Binary Tree的问题，get Kth node in binary tree.
+  G电面2，Interval高频题，具体忘了
+  Onsite1，GC概念，写code peek-able iterator，设计月球100kernel更新
+  Onsite2，实现bit vector class，设计爬虫系统
+  Onsite3，merge interval
+  onsite4，encode/decode string array to one big array, spatial print array
+  onsite5, big number相加，另一道基于MapReduce的设计题
+
+Groupon 1轮电话 电话断4次 主动要求终止申请
+  电面1：encode/decode binary tree
+
+背景：加拿大CS master。总工作经验不到4年，包括在M 1.5年SDET和国内2年的SDE。
+
+资源推荐：
+- 如果我只推荐一个准备面试的资源，那就是leetcode
+  1.题目比CC150真实，因此更吸引人 
+  2. OJ，对和错一目了然，锻炼special case的处理
+  3. Big Test一般会要求算法接近最优才能通过，虽然有时候我通过profiling cheat 
+  4.非常tractable，因为题目总数相对少，能看到自己的进步比较motivating。 相比
+之下读CC150比较枯燥。
+  向leetcode表达最崇高的敬意
+- http://blog.csdn.net/v_july_v/article/details/7382693，这个人还贴了很多很好的资源。
+- http://steve-yegge.blogspot.com/2008/03/get-that-job-at-google.html
+- 有些笔误的Java基本知识帖 http://www.developersbook.com/corejava/interview-questions/corejava-interview-questions-faqs.php
+- http://www.youtube.com/watch?v=jo_B4LTHi3I，很聪明的node.js creator，信息量比较大的一个talk
+- Well...Wikipedia
+  概念性的了解一些知识很有帮助，这一点我是在fail了G之后，L和F onsite之前体会
+到的。 那之间的一个月很多时间都是在做DFS Wikipedia:) 想到哪看到哪。
+  我个人感觉，coding是基本功，不过硬会导致必然失败，bug free和可以编译运行有
+些不切实际，关键是反应要快，经过提示30秒找到bug也会给人比较深的印象。
+  难度方面，leetcode我觉得足够了。 design很难短时间提高，需要一个积累。45分
+钟面试如果能设计出一个scale的分布式多层系统，必然很impressive。design问题的
+好坏，会决定上限。
+- http://vimeo.com/53601035，算是个广告贴吧，不过这里的信息可以回答很多behavior questions
+
+感受：
+- Variance和randomness太大了，即使同一个公司，你也会遇到截然不同的人。有些
+recruiter会和你share everything，有些人会和你share nothing。这一点也适用于面
+试你的人，甚至面试的顺序。有的时候，不要强求，看缘份吧~
+- be proactive.Keep the conversations going.另外LinkedIn有很多potential的机
+会，reach out! Connection is important. 除了A，Box和Groupon，其他机会都是朋
+友refer的。
+- be confident,try to make the interview fun.从开始G onsite的紧张，到后来经
+常在面试的时候和面试官开玩笑逗乐，也算一个进步。At the end of the day, they 
+are looking for their future co-workers, so make it fun at the beginning.
+- 控制时间，尽量控制局面。面试的时候要think aloud，积极寻求feedback并要求
+confirm。
+  比如，可以征求意见，说要做这样这样的error checking，但是我们先不都写出来了
+，最后有时间再写可以吗。再比如需要一个Helper function，可以先把函数声明写在
+一边，说我们回头再实现它可以吗。诸如此类等等。总之，沟通很重要。
+- 拿到offer之后和recruiter之间的角色瞬间就转变了。同时拿到多个offer会有幸福
+的烦恼。被多家公司抢互相counter offer还是很刺激的。但是应该适可而止，不可过
+度贪婪:)
+- 拒绝对方的时候要尽量be kind，软件行业还是比较小，搞不准过几年还会在一起做
+事。
+- 整体看来M的SDET并没有带来太大的负面效果。
+- 非大牛。也比较讨厌最近版上互相吹捧为大牛的风气。"Hard work pays off" -- 
+simple like that.
