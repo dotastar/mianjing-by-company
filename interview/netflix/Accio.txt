@@ -1,0 +1,12 @@
+发信人: Accio (Geek的内酷 | 卍解), 信区: JobHunting
+标  题: NFLX电面
+发信站: BBS 未名空间站 (Tue Sep 24 17:17:41 2013, 美东)
+
+feel like a tough team
+
+* 哈度基础
+* restful services
+* SOAP 
+* 分布式事务
+* 控制反转, 依赖注入
+* 代码题重建多叉树，输入一文件，每行一条根到叶的路径，其实就一特殊的trie
