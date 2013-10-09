@@ -1,0 +1,18 @@
+发信人: linzhp (民为贵，社稷次之，君为轻), 信区: JobHunting
+标  题: 微软校园面试总结
+发信站: BBS 未名空间站 (Mon Oct  7 11:51:21 2013, 美东)
+
+先是问还有几年毕业，确定面试的是实习。然后开始在白板上做题。
+
+第一题：找出二维平面上相互重叠的长方形。我先给出个O(n^2)的算法。要求我优化成
+O(n)。一再提示可以多用空间，还是没解出来
+
+第二题：找出柱型图中最大的长方形。觉得可以用动态规划，但还是没解出来
+发信人: lcn (Lincoln), 信区: JobHunting
+标  题: Re: 微软校园面试总结
+发信站: BBS 未名空间站 (Mon Oct  7 14:47:15 2013, 美东)
+
+如此黑你啊，且不说第二题是最难的面试题之一，第一题根本就没有o(n)解法吧。
+http://www.cs.princeton.edu/~rs/AlgsDS07/17GeometricSearch.pdf
+http://stackoverflow.com/questions/4542892/possible-interview-q
+怎么着也得要o(nlogn)吧。

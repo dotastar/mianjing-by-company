@@ -1,0 +1,14 @@
+发信人: c0090555 (Ray), 信区: JobHunting
+标  题: ebay skype interview面经（4轮）
+发信站: BBS 未名空间站 (Tue Mar 19 18:19:23 2013, 美东)
+
+昨天刚面的，今天知道挂了。。。
+第一轮: 实现一个简化版的boggle game，给定一个dictionary，我用dfs做的
+第二轮：给一个int array, 不用division,replace each element with the
+multiplication of all elements other than that element
+第三轮:给一个method char[] read(int n)，读入n个字符，输出到数组中，让实现一
+个String readline()，字符流以null结尾
+第四轮：实现method: int getNthPrime(int n)，找出第n个质数，n从0开始，这题没
+打好，想错了，用了sieve of eratosthenes.
+
+唉，感觉面试时一旦想错了如果面试官不提示的话，就万劫不复了。。。

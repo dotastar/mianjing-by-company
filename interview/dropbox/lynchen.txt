@@ -1,0 +1,12 @@
+发信人: lynchen (Lyn), 信区: JobHunting
+标  题: Dropbox电话面经
+关键字: dropbox
+发信站: BBS 未名空间站 (Tue Oct  8 18:41:35 2013, 美东)
+
+新鲜出炉的dropbox电话面经， 叫我写个计数函数，返回5分钟内hit()被运行了几次.
+
+两个function;
+
+void hit()
+
+long getHits() //返回五分钟内hit了几次

@@ -1,0 +1,78 @@
+发信人: hendry (hendry), 信区: JobHunting
+标  题: T家电面面经并且不解为何被秒拒
+发信站: BBS 未名空间站 (Fri Sep 27 22:25:57 2013, 美东)
+
+leetcode原题, permutation II和permutation sequence, 就是把int换成了char, 45
+分钟的面试老中面试官大哥迟到5分钟, 却要按时结束, 加上闲扯几句, 这两题一共就
+32分钟时间, 我自己感觉除了一点小typo之外没有问题啊, 那几个typo还是因为第二题
+完全没时间检查了, 有他迟到的5分钟肯定能检查出来. 6个小时后就收到拒信, 而且我
+用的C++, 感觉面试官对C++一点都不熟, 基本不说话, 我说好了后他也不review, 不作
+评价,第二题还冒了一句std::set的元素是无序的, 你这样遍历得到的结果是随机的, 
+还浪费我时间跟他解释, 我汗...
+
+下面贴上我的代码, 想请大家评评, 真心不懂为啥被拒, 能不能跟recruiter complain
+一下?
+1. input : string
+output : print all the permutation of the input
+there are duplicates in the input, avoid print out the same string in the 
+output
+
+void permute_helper(string& str, int idx, vector<string>& res, unordered_set
+<char, int>& hash)
+{
+    if (idx == str.size())
+    {
+        res.emplace_back(str);
+        return;
+    }
+    
+    for (auto& c : hash)
+    {
+        if (c.second > 0)
+        {
+            str[idx] = c.first;
+            --c.second;
+            permute_helper(str, idx+1, res, hash);
+            ++c.second;
+        }
+    }
+}
+
+vector<string> permute(string& str)
+{
+    vector<string> res;
+    unordered_set<char, int> hash;
+    for (auto& c : str)
+        ++hash[c];
+        
+    permute_helper(str, 0, res, hash);
+    return res;
+}
+
+2. n-th permutation in lexicographic order
+
+string correspPermute(string& str, int index)
+{
+    set<char> table;
+    for (auto& c : str)
+        table.insert(c);
+    
+    int nPermute = 1;
+    for (int i = 1; i < str.size(); ++i)
+        nPermute *= i;
+        
+    string res;
+    --index;
+    for (int m = index; m >= 0; --m)   // 这里不应该是index应该是str.size()
+    {
+        nPermute /= m;
+        int idx = index / nPermute;
+        auto iter = table.begin();
+        for (int i = 0; i < idx; ++i)
+            ++iter;
+        res.emplace_back(*iter);     // 这里应该是push_back
+        talbe.erase(iter);           // 这里table打错了
+        index %= nPermute;
+    }
+    return res;
+}

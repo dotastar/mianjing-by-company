@@ -1,0 +1,8 @@
+1. Graph Clone
+2. OO design a system so:
+   a. The user can create survey
+   b. The user can see all surveys
+   c. The user can take any survey not created by himself
+   d. The user can get a summary of any survey answers. For example, for
+survey ABC, 70% answers to 1st question is A ...
+

@@ -1,0 +1,165 @@
+发信人: milili (milili), 信区: JobHunting
+标  题: Google, Facebook, Rocket Fuel面经及经验总结
+发信站: BBS 未名空间站 (Sat Sep 28 18:53:20 2013, 美东)
+
+找工作期间在本版潜水两个月，收益良多，发一下最近面经和经验作为回馈。
+本人背景：美国不错学校电子PHD即将毕业，专业是EDA做电路设计算法优化。因为EDA
+已经是一个很稳定的工业，没什么太大的前景，随想转到前沿的tech公司。本专业只投
+了一家现在最大的公司，拿到offer。别的投了Google, Facebook, Rocket fuel, 
+Twitter, Linkedin, Yahoo, Amazon, Box, Oracle. 除了box别的都找人refer了， 在
+此感谢板上大哥们的热情帮忙. 除了GFR别的都没理我，可能背景差太大了。
+
+因为之前是学算法的，mit算法书以前就看过两遍，基础还可以，前期8月份刷了遍
+leetcode。然后9月初投出简历。两个星期刷Career cup 150， 最后面试期间一直查缺
+补漏。到现在尘埃落定大概两个月。 最后GFR全挂，总结下惨痛经历：
+
+1. Facebook电面
+
+面试官做distributed cache infrastructure的，先问我最难的project，没怎么好好
+准备过behavior，胡乱说了一通。但是因为做的是电路相关，非行内人士很难明白，讲
+的也比较乱。最后估计起到了反效果。感觉如果不是有特别好的经历和体会的话（特别
+对于fresh在校内没什么好相关项目经历的）这种最好长话短说想办法一笔带过，不然
+可能起到反效果。
+
+浪费了大几分钟开始第一题，leetcode原题，Valid Panlindrome
+"A man, a plan, a canal: Panama" is a palindrome.
+
+这题之前做过，也很简单，但当时太紧张出了一个很sb的bug，还是在面试官提示下找
+到的。15行的代码出bug实在是不能犯的错误。另外在判断一个char是否letter的时候
+没有另用函数把一堆&&写了两次，被批评不够简洁。
+
+第二题，将1->2->3->4->5->6->7 变成 1->7->2->6->3->5->4，不能用额外空间
+
+第一遍用了recursive很快解决，被指出用了stack额外空间，开始改iterative，最后
+因为第一题浪费时间手忙脚乱没改完。说了一下大概思路草草收场，面完就知道不妙。
+4天后被通知挂了。
+
+总结： facebook非常重视coding的clean和bugfree。 这两题都没什么算法但是如果
+coding不过硬第一遍很容易有bug，我感觉从这点上来讲面试官出题水品很高，死的心
+服口服。 另外他家感觉比较看背景，phd onsite会有jedi面试问项目经验什么的，专
+业差太大估计要超级牛才容易过。
+
+2. Google电面
+
+上来直接上题，题目有些绕。CSS里面表示颜色用
+#abcdef (eg 0x1F2A3B) 这种形式， 每个字母代表四个bit (hex)，两个字母代表一种
+原色
+比如 ab = R, cd = G, ef = B
+现在需要压缩空间改#abcdef 为 #xyz
+实际上#xyz = #xxyyzz,所以减小一半，问怎么找到最好的压缩让
+（ab-xx）^2 + (cd - yy)^2 + (ef - z)^2 最小
+
+这题其实数学上很简单因为三个维度是分开的，其实就是找#ab到#xx的压缩。
+
+我当时的面试官是个asian可能是韩国人或abc，有点bitchy。我最开始说让我想一想，
+才过了5秒钟他说不知道我在想什么让我在google doc上打，然后我就在上面打example
+试图观察一下规律，他又阻止我说不用什么都打出来。完了我说了我的观察： a的权重
+更大， x应该很接近a， 实际上 x = a, a - 1 , or a + 1。 然后他不置可否。可能
+我说的不是很清楚，他又开始和我纠结我的变量名用得不好。因为他一直和我纠结这些
+细节，我也没法安心思考，直接就开始写code，又拿不准函数input和output应该用什
+么样的type和形式。这就是这种模糊提很麻烦的一个地方。面试官还是不给提示，我就
+开始写但是code写的很乱。中途面试官没有任何提示。完了我说想move on到下一题他
+说没时间了要我找bug。整个code写的很糟，因为没有分情况按 a > b 时 x = a, a- 1
+， a < b时 x = a, a + 1这样来考虑所以变成了for loop非常乱。还剩5分钟时万念俱
+灰面试官问我还可以怎么optimize已经没心思回答了跟他说”如果你想让我检查代码我
+就看吧“开始有点顶撞他的意思。我电面这么多次第一次和面试官搞得这么僵心情非常
+沮丧。最后草草收尾。3天后通知被挂。
+
+心得体会：google电面其实是很松的，很容易过。电面没过打击很大，除了运气不好碰
+到面试经验不丰富的面试官和模糊题外主要问题还在自己。因为题目并不难，就算和面
+试官不和拍也应该避免干扰仔细思考认真写代码。特别是到后面十分钟我有点破罐子破
+摔，这样给面试官映像肯定非常糟糕。因为面试的一个目的就是考验你是rise against
+challenge还是crash under pressure。这点上我表现的非常失败。因为google家比较
+看中算法算是我的强项，所以没能去成onsite非常可惜。
+
+3. Rocket Fuel
+
+网上交简历，当天收到hr回信，过两天和hr电话chat半个小时，主要问问背景和看你是
+不是serious applicant。完了发来online test 5hour。我做的auto racer。没有
+follow他的hints选了最优算法但是由于编不出balanced avl tree有个test case没过
+，还是个给了电面，面试官是三哥，电面是之前有人贴过的ad query题，给出了大家讨
+论的最优答案，又拓展到分布式系统。才说了半个小时面试官突然说时间到了问我有没
+什么问题，我看他很急就说没问题就bye了。本来以为肯定挂了因为预定要一个小时，
+结果过了两天recruiter说feedback very positive让我去onsite有点莫名其妙。
+
+onsite中午和一个cmu毕业的topcoder 2000+的nb phd吃饭闲聊了一下，下午面了四个
+人，三个三哥一个asian。两个big data infrastucture（最后端）的， 两个serving 
+infrastrucre（中后端）的。所有题目在之前rocket fuel的帖子里或者leetcode都能
+找到，除了一道挺有意思的题
+
+给定一个n*n的board里面是0或1.算出里面独立0group的数量。比如
+
+0 0 1 1 1
+0 1 1 1 0
+1 1 1 1 0
+1 0 1 1 1
+1 1 1 1 1
+
+答案是3个group。我瞬间给出了一个BFS的O(n^2)答案，被指出需要visited数组的额外
+空间。然后给了一个逐行扫描的算法相当tricky，我经过提示才想出来。面试完后第二
+天被告知挂了。其实自我感觉还不错除了java multithreading答的不好。recruiter给
+的反馈是总体还不错但有人指出我coding a bit messy。说另外还有一个不错的
+candidate选了另外那个人，说我是pretty close。我自己猜测如果不是因为另外一个
+人是三哥或美国人这种原因还是死在coding quality上，另外背景实在差的有点远。他
+家要求最好一遍写出clean code。另外在onsite是建议code不要写太长，如果要超过一
+黑板最好把里面主要部件都先用函数代替写出主要流程向面试官说明之后补充即可。
+
+心得： onsite时因为很多题都见过经常迅速讲一下思路就开始coding，感觉交流不够
+。面试的时候交流还是第一位的，如果跑上来就写代码写的再好面试官对你印象也未必
+好（可能还会觉得你是练过的），因为他会把你当成未来的coworker所以交流的融洽是
+很重要的。rf家的big data infrastructure全部是三哥，我觉得这也是我挂的一个原
+因，建议申请ai optimization那些核心组，那才是他们家的精髓所在。rf没有之前提
+的那些帖子那么乱但感觉还是不够正规，面试的时候不是很舒服，连schedule都不给你
+,说好的面试官经常换人。
+
+总体心得：coding不过硬会导致必然的失败。我之前就是觉得自己算法底子不错忽视了
+coding，其实本末倒置。工作中coding才是最重要的，而且看了很多牛人的coding之后
+才发现这个事情真的不是搬砖那么简单，同一个内容的程序coding好不好能差很多（再
+加上clear和readability的考虑）。顶尖it公司要的不是average coder而是top coder
+，所以以前仗着算法不错就满足于average的coding水品实在是很幼稚，以后一定会在
+这方面加强锻炼。
+
+个人还有些算法和advanced data structure的重点觉得没有在leetcode里面很好体现
+的，总结如下:
+
+1. 很多recursive容易的算法也要考虑iterative方法。因为掌握iterative代表你对问
+题结构理解上升了一个高度。e.g. reverse linked list， tree traversal
+
+2. i) top k (kth) elements: heap O(n+klogn), quickselect O(n) average O(n^2)
+worst, median of medians O(n) worst. cons and pros.
+Extension: what if all data can not fit into memory. heap size of k O(nlogk)
+for single machine, many machines see 3.
+ii) get median in data stream: max heap + min heap
+
+3. kth element in many m machines: binary search, pick a pivot and see how 
+many less and larger among all machines, then discard halves accordingly (
+distributed quickselect)
+
+if sorted in single machine: find smallest (k/m)th element among all 
+machines and discard the less partition.
+
+4. stack support O(1) getMin
+   queue support O(1) getMin
+e.g. k sliding window, most frequently clicked url in past 12 months.
+
+5. reservoir sampling for infinite stream, generate random(1-7) with random(
+1-5), card shuffle, string permute in place
+
+6. data structure with O(1) insert, delete, getRandom, get: hashmap + array
+
+LRU data structure: hashmap + doublelikedlist.
+
+binary search tree with rank() (position of inserted or queried data)
+(add treesize attribute for each node)
+
+7. bit operation and bitset.
+e.g. find missing number in large data, reverse binary number, 
+
+8. java multi-threading, blocking queue, nonblocking queue, H20, philosophy 
+dining, deadlock checking. 现在是个公司都问concurrency，一定要好好准备。
+
+9. OOP: elevator design, parking lot design
+distributed: large log file design, social network design, distributed cache
+design ....
+
+本人已挂等待明年满血复活，祝各位job hunting顺利。

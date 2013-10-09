@@ -1,0 +1,24 @@
+发信人: passenger (路人甲), 信区: JobHunting
+标  题: 报个Box Offer，和面经
+发信站: BBS 未名空间站 (Mon Oct  7 17:42:15 2013, 美东)
+
+骑驴找马，没有特别想换工作，只是报着试一下的态度，稍微准备了一下。目前只拿到
+一个Box Offer，比起版上各位差远了。觉得自己还是准备不充分，另一个感觉就是现
+在和前一阵子比较来，各大公司都更挑剔了。面试光做对还不行，还要无错，快速，最
+优。报Offer细节和面世题，回馈大家。希望大家都能找到理想的Offer。
+
+个人情况，大IT公司工作5年多，在Seattle。Box offer, base 160K, stock option
+15K。只是比较工资，如果把我现在的工资乘上1.15，新工资其实还要低一些。不知道
+他家15K stock option值多少钱。
+
+面试５轮技术，加上一个公司tour．都是常规题。
+
+P1: 找出二叉树中所有uni-value子二叉树的个数。
+P2: 一个链表，每个节点除了一个next pointer，还有一个random pointer指向一个随
+机节点，如何clone这个链表。
+P3: A series of appointments with start and end time. What is the numberof
+conflicting appointments?
+P4: Distributed cache problem, ask for better design。
+P5: 电梯设计。最优等待时间分析。
+
+另外各位帮我看看，这个Offer 值不值得接？

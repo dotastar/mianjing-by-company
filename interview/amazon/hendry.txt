@@ -1,0 +1,21 @@
+2个月前面的, 现在来攒攒人品
+电面(45分钟, 前3题描述算法就行, 只有最后一题写code)
+1. from 1 to N one number appear twice, others once, find that number, (how
+about two numbers? 500 numbers appear twice?)
+2. a billion number, find K smallest numbers . 面试官居然不知道不fit memory
+也可以linear搞定, 真汗 
+3. how DNS return IP lookup request.
+4. write atoi, allow input 1200.00, not 1200.01, can you handle -2^31? if
+not, how to fix it?
+
+onsite
+1. 一个矩阵, 把所有非0元素按connected component分组打印出来, 4-neighbors算连通
+2. thesis presentation
+3. design spreadsheet, 每个单元格可以是int, 可以是对其他单元格的引用, 可以是
+算术表达式, 加减乘除, 表达式中可以有对其他单元格的引用, 要能把值求出来, 这题
+居然是lunch interview, 真啃爹, 饭都没吃完
+4. design chess game, 人机对战
+5. print matrix in spiral order. 这个简单, 但是follow up搞不定, how to
+minimize cache misses when you go downward and upward?
+6. leetcode, jump game II
+onsite六轮面试之间连break都没有

@@ -1,0 +1,18 @@
+发信人: mawai (George), 信区: JobHunting
+标  题: T家昂赛...
+发信站: BBS 未名空间站 (Wed Sep 11 17:24:25 2013, 美东)
+
+两周前昂赛, 感觉良好。上周问瑞哭特，人家说提母还在Deliberating，估计是当备胎
+。求bless. 有结果了上面经。
+---
+结果终于来了，等了这么久，不出意外是杯具了。
+1. 老美。谈论join, query optimization, 何时用map-side join,何时用reduce-side
+join
+2. 老中，灰常nice，而且放水，赞！1)题目版上见过，判断字符串3是不是由字符串1
+和字符串intersect生成的。2)简单链表题，看leetcode吧。
+3. 烙印。 1)讨论distributed top k。2)给出一个基于k1的bst，每个节点有两个key
+（k1,k2)，要求设计一个数据结构（可改变或添加数据结构）实现基于k1的range
+search和找出给定的某k2所在节点。
+4. 烙印。一个无序数组，求数组元素能自己构成A+B+C=D的组合。要求O(n2)
+5. 老美/欧洲。扯key-value store设计
+6. 烙印。讨论distributed-sort.
