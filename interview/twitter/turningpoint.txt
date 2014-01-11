@@ -1,0 +1,9 @@
+http://www.mitbbs.com/article_t/JobHunting/32556633.html
+发信人: turningpoint (turningpoint), 信区: JobHunting
+标  题: T家店面
+发信站: BBS 未名空间站 (Thu Oct 17 16:39:40 2013, 美东)
+
+设计一字典数据结构, 支持快速lookup, for both exact and wildcard (only '.', 
+no ‘×’)
+
+要求写code实现，估计已跪

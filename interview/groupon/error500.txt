@@ -1,0 +1,13 @@
+http://www.mitbbs.com/article_t/JobHunting/32563809.html
+发信人: error500 (娃娃的啃), 信区: JobHunting
+标  题: Groupon 2面 面经
+关键字: 面经
+发信站: BBS 未名空间站 (Fri Oct 25 20:32:06 2013, 美东)
+
+给出16 characters（可能有重复的）， 求在4*4的Grid上输出 valid words. (即每行
+每列都是valid 4字母单词)。 给了字典。
+
+a / / /
+/ / / /
+/ / / /
+/ / / /

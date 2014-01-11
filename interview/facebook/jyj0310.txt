@@ -1,0 +1,86 @@
+发信人: jyj0310 (anniekim), 信区: JobHunting
+标  题: 我也发个F家面试流水账。
+发信站: BBS 未名空间站 (Sun Oct 27 00:16:50 2013, 美东)
+
+从今年三四月份开始准备面试，最后从了F家。整个过程从本版收获颇多，发个面经，
+同样回馈本版。
+
+背景：国内top 2学校fresh MS。在校期间有一年半的实习经历。
+
+准备过程：
+1. LeetCode做了2-3遍，题目基本上都能背下来了。
+我的题解在https://github.com/AnnieKim/LeetCode，里面有一些方案不是我自己写的
+，我只是整合了一下而已。因为做LeetCode的题目的意义本身不在于能否AC，而是要尝
+试掌握一个题目的各种不同写法，比如dfs能解决的话用bfs怎么解决等等。
+另外我参考了其他很多人的题解，列举一下以表谢意：
+https://github.com/anson627/leetcode
+https://github.com/fuwutu/LeetCode
+https://github.com/snakeDling/LeetCode
+http://blog.unieagle.net/category/develop/%E7%AE%97%E6%B3%95/
+http://fisherlei.blogspot.com/search/label/LeetCode
+其实还有很多，就不一一列举了。
+
+2. CC150看了一遍，自己尝试写部分题目。
+CC150其实没什么要多说的，我主要就是看下面这个网站，这个网址大家也都知道的。
+http://hawstein.com/posts/ctci-solutions-contents.html
+
+3. wikioi天梯（http://wikioi.com/accounts/login/?next=/）
+这个是为了准备面google准备的，因为听说google面的相当的广。我就是把天梯刷到了
+提高一等结束。
+
+4. 从本版看来的一个中文OJ，http://www.itint5.com/oj/
+我没做里面那些很难的，就做了二三十道觉得比较容易考的。当然，和LeetCode完全重
+复的也没有做。
+
+5. 英语
+我去年上过四个月的网上英语培训，就是跟菲律宾老师一对一通过Skype对话。挺实惠
+的，一节课20分钟，10元左右。
+这四个月我主要是纠正口音，学了如何发美音。以前觉得自己发音可标准了，这一纠正
+才知道我原来有这么多的问题，当然问题不在于英式还是美式。纠正完发音，感觉也自
+信了很多。以前不敢和外国人搭话，现在至少不恐惧。
+我个人觉得，这次培训对我帮助还挺大，因为F家从头到尾没有用中文面试，即便是华
+人面试官。
+
+
+面试题+过程：
+对不住大家，我打算就讲讲电面的题目，因为onsite的面试官说了他也逛mitbbs有木有
+:)
+
+1. 第一面我也不知道面试官是哪国人，反正带点口音，我sorry，pardon了好多好多次
+。最后对方给我的feedback也是说和我交流有问题:)
+第一题是LCA，最近公共祖先问题。假设每个节点里都有一个指向其父节点的指针。最
+后要达到O(1)空间，O(n)时间。我是优化了几次才达到的。中间写代码很慌乱，缩进什
+么的都不管了，第一目标是赶紧写完。结果feedback是说我代码写的太乱:)
+第二题是sqrt(double)。算是LeetCode里sqrt的变种吧。
+
+2. 第二面是一位口音很纯正的美眉。一上来简单问了问项目就直接转向做题。
+第一题是deep copy一个graph，就是LeetCode新出的Clone Graph一题。我面的时候这
+题还没有弄成OJ，好在这题一直出现在旧版LeetCode首页，所以碰巧面试前做过了。
+第二题是2Sum，用两种方法解决，一种是先排序再从两头往中间搜，第二种就是hash，
+两种都要求coding。
+
+投简历是七月份的时候，看到水木上有f家在国内校招的帖子，就尝试投了简历。
+大约10天之后来邮件，先安排一次跟recruiter的聊天，主要是讲面试注意事项。然后
+又过了几天进行了第一次电面。
+第一轮电面结束过了四天还木有消息，我就主动发邮件给recruiter问结果。我觉得
+feedback不好，应该是recruiter想再给我一次机会试试。
+第二轮电面结束当天就得到消息，说要安排onsite了。
+onsite是十一期间在北京进行的。面试完大概一周来消息说要reference，再过大概一
+周有了offer。个人感觉等offer阶段心理上更纠结。
+
+offer数字就不细说了，就是今年的标准，我也没有negotiate，因为我从头到尾只面了
+F这一家，木有底牌有木有。而且这是我的first job + dream job，已经相当满足了。
+接完offer又来了MS Hong Kong的onsite邀请，为了不伤人品，就婉拒了。
+
+
+
+希望这些能帮助到在找工作的朋友。其实整个过程没什么特别之处。
+最重要的是面试的时候要有自信，要健谈，不能冷在哪里。我感觉把题目一次性bug
+free做对，或者直接给最优解，都不是最重要的。关键还是要互动，就是
+communication。
+不要把面试当成考试，可以当成一次discussion或者interactive session，这样就会
+放松很多。
+
+最后评论一下本版流行的“男半年女半月”一说，根据我个人经验来看，半个月根本就
+不够有木有--|最后的最后，希望跟我一同找工作的小姐妹也能成功拿到offer，bless
+you，Charlene！

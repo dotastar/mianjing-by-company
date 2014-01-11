@@ -1,0 +1,38 @@
+http://www.mitbbs.com/article_t/JobHunting/32587679.html
+发信人: skiiwalker (Skiing), 信区: JobHunting
+标  题: 报个G家Technical PM面经
+发信站: BBS 未名空间站 (Wed Nov 27 20:00:17 2013, 美东)
+
+Recruiter今天来电没offer，当是一个经验了，现在回赠本版。 
+
+我找的是Youtube Tech PM的位置，电面是和老板谈，问了经典的estimate问题，还有
+要是网站用户需求大于capacity时该怎么办，顺利拿到on site。
+
+两个礼拜后on site， 第一轮： 白人Engineering Manager，问了很多PM的问题，要我
+举例，画图，还有很多open ended questions，这轮我答得很好，后来recruiter说这
+个白人就是我传说中的strong endorser。第二轮，烙印seniorPM， 这个家伙一进来就
+给我脸色，说我resume这个为什么这样，那个为什么这样，然后说你不要说得太长，之
+后你就不够时间做题，结果真的被他说中了。第一个问题:估计三藩市有多少地方可以
+买咖啡喝，怎么来test你的结果，第二个问题：为什么太阳和月亮同时出现的时候月亮
+从来不是圆的？尼玛遇到极品brain teaser了，我举了几个可能性都被他说I am not 
+convinced，也不给提示，时间一到就结束了。我想在这轮被黑了。 午饭是和老板吃，
+人很好，不过好像他对hiring没有input的权力。第三轮，和小印software engineer聊
+，这个家伙态度很好，笑容满面，问了很多web site design的问题，还问我怎么吸引
+更多的viewer来看youtube，我们聊的很开心，我觉得有戏了，结果后来HR说他也不
+recommend to hire。我靠，终于领教到三哥的两面三刀了，他笑眯眯，谈得很开心可
+能是因为我跟他说了一些他平时没注意到的问题，但是他从来没有任何feedback说我哪
+里说的他觉得不满意。大家以后见到这种烙印笑面虎真的要小心。第四轮：年轻ABC， 
+data center manager，问了很多open ended question，问我一条问题是如
+果明天老板要你准备带领500个义工礼拜五去学校做雷锋，你该怎么准备，先做什么。
+。。我想我没令他满意是他问我所有东西都准备好了，你每天还要花多少时间去manage
+，最后他还问我一条简单的SQL select query的问题。我感觉这轮面的马马虎虎。    
+
+这次的心得是：专业知识要过关，G家一天到晚都是面对着data，所有问题都是相关的
+，还有对自己的简历要熟悉，例如要是曾经跳槽频繁要给予合理的解释，见到变态
+brainteaser不要慌，碰到烙印时要多问一下他觉得答案怎么样，逼他给feedback，还
+有就是要碰运气了，四轮里每一轮都是focus不同的东西，例如management skills，
+analytical skills，technical skills 还有planning skills。多找几家练练再来G会
+很有帮助。我这是最近第一个onsite，所以还没到最佳状态。最后祝大家好运！ 
+
+
+

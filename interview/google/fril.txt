@@ -1,0 +1,616 @@
+发信人: fril (None), 信区: JobHunting
+标  题: G onsite 新鲜面经
+发信站: BBS 未名空间站 (Thu Oct 10 11:17:31 2013, 美东)
+
+1.1 gas station
+1.2 一个数组，找出一个solution使得1st《2nd， 2nd》3rd。。比如15462就是数组1
+，2，4，5，6的一个solution。大牛指点下这个怎么弄？
+2. most frequent character in a huge string (10works 1master)， 如果一个big
+文件在一个机子上怎么弄，如果多个小文件在多个机子上怎么弄？
+3.1. return random node of a list, what if it can be modified concurrently
+3.2. 1k Ads, how to make it only appear once across all servers, no master
+server
+4.check generalized tree, follow up:return all generalized tree of its
+children， 比如
+    1
+2      3
+4     5 6
+
+这种情况下，2，4，5，6是valid的节点。
+
+5.how to design general cache
+
+--
+
+※ 修改:·fril 於 Oct 10 19:40:48 2013 修改本文·[FROM: 24.]
+※ 来源:·WWW 未名空间站 海外: mitbbs.com 中国: mitbbs.cn·[FROM: 24.]
+	
+  	
+	fril
+进入未名形象秀
+	我的博客
+	
+	
+[回复] [回信给作者] [本篇全文] [本讨论区] [修改] [删除] [转寄] [转贴] [收藏] [举报] 		[ 2 ]
+
+发信人: fril (None), 信区: JobHunting
+标  题: Re: G新鲜面经
+发信站: BBS 未名空间站 (Thu Oct 10 11:18:29 2013, 美东)
+
+如果大家那个题我没说明白，请跟贴，讨论提高一下，我估计是跪了。。。
+--
+
+※ 来源:·WWW 未名空间站 海外: mitbbs.com 中国: mitbbs.cn·[FROM: 24.]
+ 
+	zhaichun108
+进入未名形象秀
+	我的博客
+	
+	
+[回复] [回信给作者] [本篇全文] [本讨论区] [修改] [删除] [转寄] [转贴] [收藏] [举报] 		[ 3 ]
+
+发信人: zhaichun108 (onlylonely), 信区: JobHunting
+标  题: Re: G新鲜面经
+发信站: BBS 未名空间站 (Thu Oct 10 12:23:13 2013, 美东)
+
+
+题目真心难
+
+1.2没看懂？
+
+4 什么是generalized tree?
+--
+
+※ 来源:·WWW 未名空间站 海外: mitbbs.com 中国: mitbbs.cn·[FROM: 131.]
+ 
+	Jc2013
+进入未名形象秀
+	我的博客
+	
+	
+[回复] [回信给作者] [本篇全文] [本讨论区] [修改] [删除] [转寄] [转贴] [收藏] [举报] 		[ 4 ]
+
+发信人: Jc2013 (屌丝的逆袭), 信区: JobHunting
+标  题: Re: G新鲜面经
+发信站: BBS 未名空间站 (Thu Oct 10 12:23:51 2013, 美东)
+
+能再说下第二题吗？没看懂啊
+--
+
+※ 来源:·WWW 未名空间站 海外: mitbbs.com 中国: mitbbs.cn·[FROM: 108.]
+ 
+	fril
+进入未名形象秀
+	我的博客
+	
+	
+[回复] [回信给作者] [本篇全文] [本讨论区] [修改] [删除] [转寄] [转贴] [收藏] [举报] 		[ 5 ]
+
+发信人: fril (None), 信区: JobHunting
+标  题: Re: G新鲜面经
+发信站: BBS 未名空间站 (Thu Oct 10 12:46:22 2013, 美东)
+
+1.2 就是说一个数组，找一个序列，使得第一个小于第二个，第二个大于第三个，第三
+个小于第四个，第四个大于第五个。。一个大牛的解法是先sort，然后头尾分别取，这
+个应该work。但follow up是如何返回所有的valid序列，这个我没打上来。
+
+4. generalized tree其实就是一个list，就是说，树上任何一个节点，如果至多只有
+一个child，那么就是valid的结果。很明显所有的leaf节点都满足，我上面的例子中，
+2也符合，因为他只有一个child，其他节点1和3不符合，因为他们都有两个子节点。
+--
+
+※ 来源:·WWW 未名空间站 海外: mitbbs.com 中国: mitbbs.cn·[FROM: 24.]
+ 
+	beefcurtain5
+进入未名形象秀
+	我的博客
+	
+	
+[回复] [回信给作者] [本篇全文] [本讨论区] [修改] [删除] [转寄] [转贴] [收藏] [举报] 		[ 6 ]
+
+发信人: beefcurtain5 (beefcurtain5), 信区: JobHunting
+标  题: Re: G新鲜面经
+发信站: BBS 未名空间站 (Thu Oct 10 12:47:14 2013, 美东)
+
+5. generalized cache? 你怎么说的， 就是说， array+linkedlist to resolve
+collision, or array + double hashing  to resolve collision?
+
+3.2. 1k Ads, how to make it only appear once across all servers, no master
+server? consistent hashing?
+
+3.1 如果一个big文件在一个机子上怎么弄?
+split up the file?
+
+如果多个小文件在多个机子上怎么弄？
+map reduce?
+
+--
+
+※ 来源:·WWW 未名空间站 海外: mitbbs.com 中国: mitbbs.cn·[FROM: 146.]
+ 
+	Jc2013
+进入未名形象秀
+	我的博客
+	
+	
+[回复] [回信给作者] [本篇全文] [本讨论区] [修改] [删除] [转寄] [转贴] [收藏] [举报] 		[ 7 ]
+
+发信人: Jc2013 (屌丝的逆袭), 信区: JobHunting
+标  题: Re: G新鲜面经
+发信站: BBS 未名空间站 (Thu Oct 10 13:00:31 2013, 美东)
+
+哦哦 理解了 感觉是LIS的变体吧 第一问是找最长的吗？
+【 在 fril (None) 的大作中提到: 】
+: 1.2 就是说一个数组，找一个序列，使得第一个小于第二个，第二个大于第三个，第三
+: 个小于第四个，第四个大于第五个。。一个大牛的解法是先sort，然后头尾分别取，这
+: 个应该work。但follow up是如何返回所有的valid序列，这个我没打上来。
+: 4. generalized tree其实就是一个list，就是说，树上任何一个节点，如果至多只有
+: 一个child，那么就是valid的结果。很明显所有的leaf节点都满足，我上面的例子中，
+: 2也符合，因为他只有一个child，其他节点1和3不符合，因为他们都有两个子节点。
+
+
+
+--
+
+※ 来源:·WWW 未名空间站 海外: mitbbs.com 中国: mitbbs.cn·[FROM: 108.]
+ 
+	bladehaze
+进入未名形象秀
+	我的博客
+	
+	
+[回复] [回信给作者] [本篇全文] [本讨论区] [修改] [删除] [转寄] [转贴] [收藏] [举报] 		[ 8 ]
+
+发信人: bladehaze (^_^), 信区: JobHunting
+标  题: Re: G新鲜面经
+发信站: BBS 未名空间站 (Thu Oct 10 13:02:06 2013, 美东)
+
+1.2, If I understand the question..
+
+method 1. sort first, take second half intertwine first half. O(nlog(n))
+speed.
+
+method 2, (similar to method 1) use a heap, pop assign to even index, then
+pop assign to odd index. O(n)
+
+method 3, one pass, heapify, pop first assign to 1, then pop two, assign
+larger one first, continue. O(n) one pass.
+
+method 4, O(n), one pass constant space, look at i and i+1, if i is even and
+A[i] > A[i+1] swap two value, if i is odd and A[i] < A[i+1] swap two value.
+
+
+so method 4 is best possible...
+
+
+--
+
+※ 修改:·bladehaze 於 Oct 10 13:06:51 2013 修改本文·[FROM: 50.]
+※ 来源:·WWW 未名空间站 海外: mitbbs.com 中国: mitbbs.cn·[FROM: 50.]
+ 
+	candysheep
+进入未名形象秀
+	我的博客
+	
+	
+[回复] [回信给作者] [本篇全文] [本讨论区] [修改] [删除] [转寄] [转贴] [收藏] [举报] 		[ 9 ]
+
+发信人: candysheep (甜甜羊), 信区: JobHunting
+标  题: Re: G新鲜面经
+发信站: BBS 未名空间站 (Thu Oct 10 13:04:47 2013, 美东)
+
+mark
+--
+
+※ 来源:·WWW 未名空间站 海外: mitbbs.com 中国: mitbbs.cn·[FROM: 24.]
+ 
+	glowinglake
+进入未名形象秀
+	我的博客
+	
+	
+[回复] [回信给作者] [本篇全文] [本讨论区] [修改] [删除] [转寄] [转贴] [收藏] [举报] 		[ 10 ]
+
+发信人: glowinglake (湖清霞远), 信区: JobHunting
+标  题: Re: G新鲜面经
+发信站: BBS 未名空间站 (Thu Oct 10 13:09:22 2013, 美东)
+
+是onsite吗？
+
+
+【 在 fril (None) 的大作中提到: 】
+: 1.1 gas station
+: 1.2 一个数组，找出一个solution使得1st《2nd， 2nd》3rd。。比如15462就是数组
+1
+: ，2，4，5，6的一个solution。大牛指点下这个怎么弄？
+: 2. most frequent character in a huge string (10works 1master)， 如果一个
+big
+: 文件在一个机子上怎么弄，如果多个小文件在多个机子上怎么弄？
+: 3.1. return random node of a list, what if it can be modified concurrently
+: 3.2. 1k Ads, how to make it only appear once across all servers, no master
+: server
+: 4.check generalized tree, follow up:return all generalized tree of its
+: children， 比如
+: ...................
+
+
+--
+发自Android MITBBS阅览器 8.0
+--
+
+※ 来源:·WWW 未名空间站 海外: mitbbs.com 中国: mitbbs.cn·[FROM: 107.]
+ 
+	fightclub
+进入未名形象秀
+	我的博客
+	
+	
+[回复] [回信给作者] [本篇全文] [本讨论区] [修改] [删除] [转寄] [转贴] [收藏] [举报] 		[ 11 ]
+
+发信人: fightclub (搏击俱乐部), 信区: JobHunting
+标  题: Re: G新鲜面经
+发信站: BBS 未名空间站 (Thu Oct 10 13:41:50 2013, 美东)
+
+
+【 在 candysheep (甜甜羊) 的大作中提到: 】
+: mark
+
+
+老见你mark，工作找的怎么样了？
+--
+
+※ 来源:·WWW 未名空间站 海外: mitbbs.com 中国: mitbbs.cn·[FROM: 192.]
+ 
+	xiaofenglu
+进入未名形象秀
+	我的博客
+	
+	
+[回复] [回信给作者] [本篇全文] [本讨论区] [修改] [删除] [转寄] [转贴] [收藏] [举报] 		[ 12 ]
+
+发信人: xiaofenglu (陆小凤), 信区: JobHunting
+标  题: Re: G新鲜面经
+发信站: BBS 未名空间站 (Thu Oct 10 15:37:50 2013, 美东)
+
+非牛人. 供讨论.
+
+1.2 一个数组，找出一个solution使得1st《2nd， 2nd》3rd。。比如15462就是数组1
+，2，4，5，6的一个solution。
+
+从结果到条件往前推:
+
+结果: a<b>c<d>e<f>g
+分开来看:
+a<b<d<f
+b>c>e>g
+
+明显, b是一个特殊的数, 它大于一半的数, 小于一半的数. 所以b应该是中数. a应该
+是b之前的一个数.
+d and f 应该是中数后面的数; c,e,g 应该是中数前面的数.
+
+那这样的分析后, 我们可以这么做:
+
+1. 把input array先sort.
+2. 把中数和中数前的数挑出来, 做b and a.
+3. 中数后面的数挑出来做 d, f, ...
+4. 中数前面的数挑出来做 c, e, g, ...
+5. interleave 3 and 4
+
+example:
+
+1，2，3, 4，5，6, 7, 8
+
+A. let b be 5, a be 4
+B. 4<5<6<7<8
+C. 5>3>2>1
+
+interleave 后.
+
+4<5>3<6>2<7>1<8
+
+
+--
+
+※ 来源:·WWW 未名空间站 海外: mitbbs.com 中国: mitbbs.cn·[FROM: 38.]
+ 
+	lcn
+进入未名形象秀
+	我的博客
+	
+	
+[回复] [回信给作者] [本篇全文] [本讨论区] [修改] [删除] [转寄] [转贴] [收藏] [举报] 		[ 13 ]
+
+发信人: lcn (Lincoln), 信区: JobHunting
+标  题: Re: G新鲜面经
+发信站: BBS 未名空间站 (Thu Oct 10 15:50:32 2013, 美东)
+
+
+【 在 xiaofenglu (陆小凤) 的大作中提到: 】
+: 非牛人. 供讨论.
+: 1.2 一个数组，找出一个solution使得1st《2nd， 2nd》3rd。。比如15462就是数组
+1
+: ，2，4，5，6的一个solution。
+: 从结果到条件往前推:
+: 结果: a<b>c<d>e<f>g
+: 分开来看:
+: a<b<d<f
+: b>c>e>g
+b>c && c<d 给不出b<d。b has nothing to do with d。
+: 明显, b是一个特殊的数, 它大于一半的数, 小于一半的数. 所以b应该是中数. a应该
+: 是b之前的一个数.
+: ...................
+
+
+
+--
+
+※ 来源:·WWW 未名空间站 海外: mitbbs.com 中国: mitbbs.cn·[FROM: 98.]
+ 
+	tTwoSurvivor
+进入未名形象秀
+	我的博客
+	
+	
+[回复] [回信给作者] [本篇全文] [本讨论区] [修改] [删除] [转寄] [转贴] [收藏] [举报] 		[ 14 ]
+
+发信人: tTwoSurvivor (day day up), 信区: JobHunting
+标  题: Re: G新鲜面经
+发信站: BBS 未名空间站 (Thu Oct 10 16:05:30 2013, 美东)
+
+这是onsite?
+
+
+【 在 fril (None) 的大作中提到: 】
+: 1.1 gas station
+: 1.2 一个数组，找出一个solution使得1st《2nd， 2nd》3rd。。比如15462就是数组
+1
+: ，2，4，5，6的一个solution。大牛指点下这个怎么弄？
+: 2. most frequent character in a huge string (10works 1master)， 如果一个
+big
+: 文件在一个机子上怎么弄，如果多个小文件在多个机子上怎么弄？
+: 3.1. return random node of a list, what if it can be modified concurrently
+: 3.2. 1k Ads, how to make it only appear once across all servers, no master
+: server
+: 4.check generalized tree, follow up:return all generalized tree of its
+: children， 比如
+: ...................
+
+
+--
+发自Android MITBBS阅览器 8.3
+--
+
+※ 来源:·WWW 未名空间站 海外: mitbbs.com 中国: mitbbs.cn·[FROM: 67.]
+ 
+	xiaofenglu
+进入未名形象秀
+	我的博客
+	
+	
+[回复] [回信给作者] [本篇全文] [本讨论区] [修改] [删除] [转寄] [转贴] [收藏] [举报] 		[ 15 ]
+
+发信人: xiaofenglu (陆小凤), 信区: JobHunting
+标  题: Re: G新鲜面经
+发信站: BBS 未名空间站 (Thu Oct 10 16:07:09 2013, 美东)
+
+3.1. return random node of a list, what if it can be modified concurrently
+
+每个node上有个object lock.
+--
+
+※ 来源:·WWW 未名空间站 海外: mitbbs.com 中国: mitbbs.cn·[FROM: 38.]
+ 
+	xiaofenglu
+进入未名形象秀
+	我的博客
+	
+	
+[回复] [回信给作者] [本篇全文] [本讨论区] [修改] [删除] [转寄] [转贴] [收藏] [举报] 		[ 16 ]
+
+发信人: xiaofenglu (陆小凤), 信区: JobHunting
+标  题: Re: G新鲜面经
+发信站: BBS 未名空间站 (Thu Oct 10 16:10:03 2013, 美东)
+
+3.2. 1k Ads, how to make it only appear once across all servers, no master
+server
+
+1K % numberOfMachine => index of machine to save the Ads.
+
+每个机器上同时 maintain 一份(AdsIndex, machineIndex)的hashtable.
+这个需要做syncrhonization的.
+
+
+--
+
+※ 修改:·xiaofenglu 於 Oct 10 16:10:42 2013 修改本文·[FROM: 38.]
+※ 来源:·WWW 未名空间站 海外: mitbbs.com 中国: mitbbs.cn·[FROM: 38.]
+ 
+	lcn
+进入未名形象秀
+	我的博客
+	
+	
+[回复] [回信给作者] [本篇全文] [本讨论区] [修改] [删除] [转寄] [转贴] [收藏] [举报] 		[ 17 ]
+
+发信人: lcn (Lincoln), 信区: JobHunting
+标  题: Re: G新鲜面经
+发信站: BBS 未名空间站 (Thu Oct 10 16:28:41 2013, 美东)
+
+仔细考虑了下，1.2这么做比较简单：就是把数组遍历一遍，但是每次要调头，如果调
+头的时候没有候选了就fail.
+写了个java的code
+[1,2,4,5,6]给出的所有结果是
+[1, 4, 2, 6, 5]
+[1, 5, 4, 6, 2]
+[1, 5, 2, 6, 4]
+[1, 6, 4, 5, 2]
+[1, 6, 2, 5, 4]
+[2, 4, 1, 6, 5]
+[2, 5, 4, 6, 1]
+[2, 5, 1, 6, 4]
+[2, 6, 4, 5, 1]
+[2, 6, 1, 5, 4]
+[4, 5, 2, 6, 1]
+[4, 5, 1, 6, 2]
+[4, 6, 2, 5, 1]
+[4, 6, 1, 5, 2]
+[5, 6, 2, 4, 1]
+[5, 6, 1, 4, 2]
+
+  List<List<Integer>> reorder(int[] arr) {
+    assert (arr != null);
+    Arrays.sort(arr);
+    List<List<Integer>> ol = new ArrayList<List<Integer>>();
+    for (int i = 0; i < arr.length; i++) {
+      boolean[] visited = new boolean[arr.length];
+      List<Integer> curr = new ArrayList<Integer>();
+      visited[i] = true;
+      curr.add(arr[i]);
+      traverse(arr, i, true, visited, curr, ol);
+    }
+    return ol;
+  }
+
+  void traverse(int[] arr, int i, boolean toRight, boolean[] visited,
+      List<Integer> curr, List<List<Integer>> ol) {
+    if (curr.size() == arr.length) {
+      ol.add(new ArrayList<Integer>(curr));
+      return;
+    }
+
+    if (toRight) {
+      int j = i + 1;
+      while (j < arr.length) {
+        if (!visited[j]) {
+          visited[j] = true;
+          curr.add(arr[j]);
+          traverse(arr, j, !toRight, visited, curr, ol);
+          curr.remove(curr.size() - 1);
+          visited[j] = false;
+        }
+        j++;
+      }
+    } else {
+      int j = i - 1;
+      while (j >= 0) {
+        if (!visited[j]) {
+          visited[j] = true;
+          curr.add(arr[j]);
+          traverse(arr, j, !toRight, visited, curr, ol);
+          curr.remove(curr.size() - 1);
+          visited[j] = false;
+        }
+        j--;
+      }
+    }
+  }
+
+
+【 在 fril (None) 的大作中提到: 】
+: 1.1 gas station
+: 1.2 一个数组，找出一个solution使得1st《2nd， 2nd》3rd。。比如15462就是数组
+1
+: ，2，4，5，6的一个solution。大牛指点下这个怎么弄？
+: 2. most frequent character in a huge string (10works 1master)， 如果一个
+big
+: 文件在一个机子上怎么弄，如果多个小文件在多个机子上怎么弄？
+: 3.1. return random node of a list, what if it can be modified concurrently
+: 3.2. 1k Ads, how to make it only appear once across all servers, no master
+: server
+: 4.check generalized tree, follow up:return all generalized tree of its
+: children， 比如
+: ...................
+
+
+
+
+--
+
+※ 修改:·lcn 於 Oct 10 16:56:38 2013 修改本文·[FROM: 98.]
+※ 来源:·WWW 未名空间站 海外: mitbbs.com 中国: mitbbs.cn·[FROM: 98.]
+ 
+	beefcurtain5
+进入未名形象秀
+	我的博客
+	
+	
+[回复] [回信给作者] [本篇全文] [本讨论区] [修改] [删除] [转寄] [转贴] [收藏] [举报] 		[ 18 ]
+
+发信人: beefcurtain5 (beefcurtain5), 信区: JobHunting
+标  题: Re: G新鲜面经
+发信站: BBS 未名空间站 (Thu Oct 10 16:31:25 2013, 美东)
+
+why do we need to maintain a hashtable? if we already know which machine we
+will save the ad?
+【 在 xiaofenglu (陆小凤) 的大作中提到: 】
+: 3.2. 1k Ads, how to make it only appear once across all servers, no master
+: server
+: 1K % numberOfMachine => index of machine to save the Ads.
+: 每个机器上同时 maintain 一份(AdsIndex, machineIndex)的hashtable.
+: 这个需要做syncrhonization的.
+
+
+
+--
+
+※ 来源:·WWW 未名空间站 海外: mitbbs.com 中国: mitbbs.cn·[FROM: 146.]
+ 
+	candysheep
+进入未名形象秀
+	我的博客
+	
+	
+[回复] [回信给作者] [本篇全文] [本讨论区] [修改] [删除] [转寄] [转贴] [收藏] [举报] 		[ 19 ]
+
+发信人: candysheep (甜甜羊), 信区: JobHunting
+标  题: Re: G新鲜面经
+发信站: BBS 未名空间站 (Thu Oct 10 18:17:48 2013, 美东)
+
+找不到。
+
+【 在 fightclub (搏击俱乐部) 的大作中提到: 】
+: 老见你mark，工作找的怎么样了？
+
+
+
+--
+
+※ 来源:·WWW 未名空间站 海外: mitbbs.com 中国: mitbbs.cn·[FROM: 107.]
+ 
+	fril
+进入未名形象秀
+	我的博客
+	
+	
+[回复] [回信给作者] [本篇全文] [本讨论区] [修改] [删除] [转寄] [转贴] [收藏] [举报] 		[ 20 ]
+
+发信人: fril (None), 信区: JobHunting
+标  题: Re: G onsite 新鲜面经
+发信站: BBS 未名空间站 (Thu Oct 10 19:58:40 2013, 美东)
+
+First of all， 是onsite，被5人轮虐。。。好在lunch哥们比较腼腆，没问问题，就
+扯扯淡。
+   
+    @beefcurtain5
+    5.不好意思没说清楚，generialezed cahce只是design方法的signature，比如get
+(K), put(K,V)，这个我也是乱答，感觉出了get，put，clear之类不需要别的。。
+    3.2 我答的也是consistent hashing
+    3.1 这个题分之前需要做hash吗，不用话貌似得check所有的文件每一行，做了的
+话貌似只看每个最大就可以。
+   
+    @Jc2013
+    不是找最长。。就是找一个符合要求的序列就行，要求所有数组元素都在。
+   
+    @bladehaze
+    这么多解法，眼花缭乱啊，不过方法4怎么感觉不是O（n），数组swap貌似代价粉
+大。。用堆的想法不错，学习了，呵呵。
+   
+    @xiaofenglu
+    1.2 分析过程很清晰！赞一个！
+    3.1 这个不要用lock。。。用了就掉进陷阱。。。就try catch一下，如果
+exception继续取一次就好。
+    3.2 万一某个server挂了，如何让他负责的Ad继续由别的server发？你那个
+hashtable维护起来很tricky的。。。所以我觉得consisten hashing应该是对的。
+   
+    @Icn
+    1.2 上代码就比谈想法更进一步，呵呵，interviewer自己说的。。。

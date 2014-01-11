@@ -1,0 +1,12 @@
+发信人: wantage (abstract), 信区: JobHunting
+标  题: 发个BB面经
+发信站: BBS 未名空间站 (Mon Oct  7 17:09:43 2013, 美东)
+
+nonCS, campus interview for FAE，language：C++
+
+第一轮：设计shared pointer；merge two sorted arrays原题；virtual functions
+第二轮：给一个手机键盘，*和#两个键可以经过但不能停留。有一个国际象棋的knight
+从1出发，one move可以到达6和8，即2条path，two moves可以经历5种path，编程实现
+N moves可能经历的path数目； 设计一个address book。
+第三轮：HR和Senior Manager，常见的behavior questions, e.g. why BB? why
+software developer?

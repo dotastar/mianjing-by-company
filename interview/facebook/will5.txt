@@ -1,0 +1,58 @@
+http://www.mitbbs.com/article_t/JobHunting/32556709.html
+发信人: will5 (绽放), 信区: JobHunting
+标  题: FB临门一脚挂了,那种郁闷悔恨的感觉.
+发信站: BBS 未名空间站 (Thu Oct 17 17:55:34 2013, 美东)
+
+上次onsite,4轮,自己感觉很好.
+HR回信也说: went well so far but still need last code question interview to 
+end the process
+要安排电话面试
+结果我说:电面不好,我要求onsite,今天上午就onsite了.
+
+结果, 一看是一个严肃的老印,基本听不懂其在说什么
+就一道题:
+实现 int Read(int Size, char * buffer) using int Read4(char * buffer)
+这题思路很简单的,我当时给了2种方法结果在他的引导上走上了一条不归路,第一次实
+现有bug, 没考虑buffer里面留下的部分....汗 ...各种改...(这题原来有过类似的 
+readLine, 但是自己觉得应该简单没有动手仔细写过, 结果在press下不能写好, 还是
+实力不够!!!)
+最后老印拍了照,明显要回去Negative的节奏
+
+也许看到了老印,第一感觉就不妙吧,有了心理暗示, 过程中沟通也不是很顺畅. 面到40
+分钟的时候,老印就不出题了, 直接叫问问题.汗
+
+郁闷, 悔恨, 临门一脚, 我是中国足球队吗, 对自己的能力深深的怀疑!!!
+
+再补充几个细节:
+1) 此老印说之前在很多公司做过 现在在做Ads这一块. 前面闲扯的时间差不多有7\8分
+钟, 本身他出来接我的时候也迟到了几分钟
+2) 在35分钟左右的时候,他就说你问我问题吧, 你就问问我fb的process吧? 我汗, 我
+说好的,那你介绍介绍吧, 无非就是6 weeks的ramp up什么的,这些我都知道了,明显是
+拖时间到点. 
+3) 他送我出去的时候,还说:今天只面我一个吗? 我去, 你都送我出来了, 还这样问
+4) 全程毫无提示
+
+虽然不能归结为被黑了,但是和之前的 3个老美(或者欧洲) 一个台湾GG 的风格完全不
+同, 这四轮过程非常愉快.
+
+也许有人会问, 既然那四轮很好,为什么要加面一轮, 原因在这里:
+1. 我没有经过电面,直接onsite的,也许会被认为缺一些coding的考察吧
+2.上次四轮, 最后一轮, 第一个问题是: N个平面上点,找离原点最近的K个, 我本来要
+给三种方法: 1. N*Log(K) 2.KLog(N) 3.select K 结果说了第一种之后,看他反应不错
+,我就问写code吗?他说ok,然后就写完了用priority queue. 当时脑袋蒙了想起select 
+K的最优解决是 5中取1(不是一般快排的取pivot的方法), 我没信心完全写出code, 就
+没说select K的算法.事实上用quicksort写也是很容易的.
+至少用priority_queue 写完之后没bug, 后来又写 shift sorted array做binary 
+search, 写的太快了给人是背答案的感觉,也没bug. 第三个题是实现Heap(其实就是他
+对前面的priority_queue有疑问,他说他对priority_queue不熟悉)push pop top, 实现
+了最后支出一个小bug,fix
+
+
+所以我觉得第四轮有一些疑惑再加上没有电面, 加面一轮到是可以理解. 
+
+生活没有假设, 也许上次onsite最后一轮直接给最优而不是走了保守策略, 可能也ok了
+, 也许这轮onsite像原来希望的交流很smooth(这也是我没有选择telephone interview
+的原因)话也会ok的, 也许遇到了困难我能很calm down的去解决问题, 最后结果也可能
+不错.
+Anyway, 只能move on了, 也祝愿后来的面试的人能多点运气,能一气呵成, 拿到offer!
+Bless大家!

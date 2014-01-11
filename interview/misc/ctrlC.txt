@@ -1,0 +1,62 @@
+发信人: ctrlC (nil), 信区: JobHunting
+标  题: 纽约小公司skype电面一题
+发信站: BBS 未名空间站 (Wed Oct  9 11:32:06 2013, 美东)
+
+Given a binary search tree, find the total number of integers
+in between min and max.
+                   30
+                  / 
+                25    40
+               /      
+             15   28     50
+
+i.e.: count_nodes(..., 20, 50) --> 5
+
+class BST(object):
+
+    """
+    A Binary search tree.
+    """
+
+    def __init__(self, value, left, right):
+        self.value = value
+        self.left = left
+        self.right = right
+
+    def count_nodes(self, min_, max_):
+
+        def count_nodes_(self, count):
+            if self is not None:
+                # need to traverse both the left child and the right child
+                if min_ <= self.value <= max_:
+                    count += 1
+                    count = count_nodes_(self.left, count)
+                    count = count_nodes_(self.right, count)
+                # only need to traverse the right child
+                elif self.value < min_:
+                    count = count_nodes_(self.right, count)
+                # only need to traverse the left child
+                else:
+                    count = count_nodes_(self.left, count)
+
+            return count
+
+        return count_nodes_(self, 0)
+
+
+root = BST(35,
+           BST(25,
+               BST(18,
+                   BST(7, None, None),
+                   BST(20, None, None)),
+               BST(32,
+                   None,
+                   BST(34, None, None))),
+           BST(43,
+               BST(40, None, None),
+               BST(60,
+                   BST(50, None, None),
+                   BST(64, None, None))))
+
+
+print(root.count_nodes(20, 50))

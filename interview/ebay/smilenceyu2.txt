@@ -1,0 +1,52 @@
+发信人: smilenceyu (smilence), 信区: JobHunting
+标  题: ebay二轮电面面经
+发信站: BBS 未名空间站 (Fri Oct 18 18:30:31 2013, 美东)
+
+感觉各种不顺，本来是约在了昨天，然后面试官忘了就约在今天，然后又迟到20分钟（
+导致做题时间很紧张）。这次这个老印口音是真听不清楚，而且中间手机还莫名重启了
+，真是无语。希望老印看
+在他两次爽约的份上，放我一马。
+
+0.先问了简历，还问我说项目都是用C++，会不会其他语言之类
+
+1.Leetcode 3Sum原题。最大的失误是，我居然没有想到切换到旁边打开着的leetcode
+窗口！！可能是有点紧张，又记得这题比较简单。然后我就先sort做，结果面试官不知
+道这种方法，让我解释了大半天。然后写完了我才发现忘了处理重复的元素，而且有点
+忘了怎么处理了。（其实最简单一个set记录tripple不就搞定了！！
+
+阴差阳错，前天把所有做过的leetcode题做了一遍，居然漏了这道？？
+
+最后他问我重复的元素，我又解释说的确是没有处理，然后补充解释了下用hashtable
+的方法，说这样就可以避免重复问题了。我估计面试官自己想的是这个方法。不过他好
+像觉得我先sort的方法很“新颖”，所以还是说very good。
+
+真是无奈，如果因为这种低级失误没过，真是怨不得别人了。
+
+2.完全听不清楚他说什么，先问我有没有上过操作系统之类，最后才知道就是要设计一
+个lru cache。
+
+幸好前两天看了好几次这个，版上也在讨论。不假思索就说了hash table+list。
+
+然后他就问我应该提供哪些函数，还纠正我说他觉得push和update函数应该是private
+，不应该是public。然后我就说那就应该friend cpu和操作系统这些，因为他们需要调
+用。
+
+最后问了一下我，怎么判断cache的size太小了。我就说node记录一个插入时候的
+timestamp，每次removetail的时候，检查当前时间和这个timestamp的差，如果太小了
+（说明cache太小没多久就被pop出来）就增大cache。他好像还算满意。。
+
+class Cache{
+private:
+    int max_size;
+    list<Data> m_list;
+    unordered_map<int,list<Data>::iterator> table;
+    void removeTail();
+    
+public:
+    
+    void update(const Data& d);
+    bool exist(const Data& d) const;
+    Data get(const int &dataid) const; 
+}           
+
+求bless。希望接下去直接onsite了，印度英语实在吃不消。

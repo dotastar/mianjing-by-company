@@ -1,0 +1,70 @@
+http://www.mitbbs.com/article_t/JobHunting/32586667.html
+发信人: smilenceyu (smilence), 信区: JobHunting
+标  题: eBay onsite面经，已挂
+发信站: BBS 未名空间站 (Tue Nov 26 17:33:35 2013, 美东)
+
+上周三round 2，见了两轮director。因为有个保底offer的deadline，所以催了催hr。
+今天早上6点发来的拒信。
+
+自己是没觉得什么，就是觉得对不住大家期望了。
+
+eBay是第一个给我interview的大公司，而且也比较符合我水平和背景，所以我还是蛮
+重视的，两轮电面，4轮onsite技术面，两轮director，总共8轮。
+
+从接到面试通知开始准备到现在拿到拒信，总共持续了2个月的时间，实际上我主要的
+复习都在这段时间内，包括刷leetcode，整理笔记：http://www.zybuluo.com/smilence/note/76 （最近又修订了一些，欢迎建议），还有eBay所有的面经（literally，所有的）也做了2遍。每天平均学习10小时吧，有时候多点有时候少点。
+
+最后这个结果，是有点不甘心，不过主要还是自己不争气，没有把握机会。
+
+也不想抱怨什么，就是想说比如ebay的情况是这样：
+
+1.Director面还是会挂人的，尤其是问coding问题很正常，我就是第一个director问的
+问题没答好，后来回来他们告诉我是A*启发式搜索。
+
+2.虽然理论上是General hire，但走到这一步至少eBay还是看组的，我当时瞟了一眼
+director的ppt，有四个candidate，其他三个是三哥。所以最后估计还是几选几这么个
+情况。
+
+虽然有点遗憾，不过既然尽力了倒也没什么。我现在有一个保底的offer已经签了
+（偏硬件的公司的SDE职位)，然后下周有Facebook onsite，还有个yahoo的电面。其他
+就什么都没了。我想可能也未必是坏事，说不定没有这个ebay offer，去Facebook面试
+反而是背水一战。更何况eBay不要我自然是他损失，对我来说这点事还造成不了什么阻
+碍。大不了就是明年再战了。
+
+发完这个贴，我就去闭关复习了。谢谢各位帮助支持，祝大家好运。
+
+
+
+
+
+
+
+--
+
+※ 修改:·smilenceyu 於 Nov 26 18:08:27 2013 修改本文·[FROM: 71.]
+※ 来源:·WWW 未名空间站 海外: mitbbs.com 中国: mitbbs.cn·[FROM: 71.]
+ 	
+	 smilenceyu
+进入未名形象秀
+	我的博客
+[回复] [回信给作者] [本篇全文] [本讨论区] [修改] [删除] [转寄] [转贴] [收藏] [举报]		[ 2 ]
+发信人: smilenceyu (smilence), 信区: JobHunting
+标  题: Re: eBay onsite面经，已挂
+发信站: BBS 未名空间站 (Tue Nov 26 17:34:55 2013, 美东)
+
+第一轮电面：http://www.mitbbs.com/article0/JobHunting/32549003_0.html 
+
+第二轮电面： http://www.mitbbs.com/article0/JobHunting/32557821_0.html
+
+onsite面经比较流水账，不过我看很多人可能还是喜欢看详细过程的，所以就尽可能详
+细描述了。
+
+第一轮onsite： https://docs.google.com/document/d/1o8VP-IVzg48swGe8UEVOd-
+gtqNA_S4RHMAHu6RzvTpE/edit 
+
+第二轮onsite： https://docs.google.com/document/d/1Ie2R4SXbOgggd_Nwk2FLYkFb-
+lTDvyameFMsH3zZMWI/edit
+
+所有的本版面的ebay面经： http://www.mitbbs.com/article0/JobHunting/32545221_0.html
+
+--

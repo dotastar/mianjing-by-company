@@ -1,0 +1,751 @@
+发信人: smartlhc (晨晨), 信区: JobHunting
+标  题: Epic Written Interview
+发信站: BBS 未名空间站 (Thu Feb 23 16:48:18 2012, 美东)
+
+在本地的考试中心预约的上机考试。考试有三个部分，1.数学题，2.给出一种新的编程
+语言的语法，回答相应问题，3. Programming Test 要求速度和准确性both important
+
+Programming test 答得不好，肯定不行了，把面试题发上来让大家做做。做了3个半小
+时，快累死了。
+
+
+数学题基本上就是脑筋急转弯，举几个例子
+
+1. You have three kinds of magazines, all but two are Times, all but two are
+Science, all but two are Nature. How many magazines in total do you have?
+
+2. Only one of the answers is true
+
+A. All of the below are true
+B. All answers are true
+C. One of the above is true
+D. All of the above are true
+E. None of the above are true
+F. None of the above are true
+
+3. You have two coins which sum up to 15 cents. One of them is not a dime. 
+What are the two coins (multiple choice)
+A. Penny
+B. Nickel
+C. Dime
+D. Quarter
+E. Not possible
+
+第二部分，是介绍一种高级语言，有点像lisp，没什么特别的，就按照它介绍的语法规
+则来答
+
+第三部分，编程题，一共四道题，实在没想到有这么多，鼓励自己坚持到最后，写完了
+3道。没写上的那个题是最经典的电话按键排列组合题的变种，面之前没看，这个悔呀
+
+1. You are given a telephone keyboard
+
+0-0
+1-1
+2-ABC2
+3-DEF3
+4-GHI4
+5-JKL5
+6-MNO6
+7-PQRS7
+8-TUV8
+9-WXYZ9
+0-0
+*-space
+#-char separater
+
+if you type "2", you will get 'A', that is
+"2"-'A'
+"22"-'B' 
+"222"-'C'
+"2222"-'D'
+
+However, the digits can repeated many times
+"22222"-you get 'A' again 
+
+You can use "#" to separate characters, for example
+"2#22", you get "AB"
+
+However, you may also have consecutive different digits without separator: "
+23"-'AD'
+
+If you type "*", it means space.
+
+You a given a sequence of digits, translate it into a text message
+
+2. Basket ball hit rates
+The hit rate of the basketball game is given by the number of hits divided 
+by the number of chances. For example, you have 73 chances but hit 15 times,
+then your hit rate is 15/73=0.205 (keep the last 3 digits). On average, you
+have 4.5 chances in each basketball game. Assume the total number of games 
+is 162. Write a function for a basketball player. He will input the number 
+of hits he has made, the number of chances he had, and the number of 
+remaining games. The function should return the number of future hits, so 
+that he can refresh his hit rate to 0.45
+
+3. A Typist problem. 电话按键题的变种！一个打字员，10个手指，分别负责不同的
+按键，
+0-null
+1-gftrvb
+2-edc
+3-wsx
+4-qaz
+5-null
+6-yuhjnm
+7-ik
+8-ol
+9-p
+
+给你 9801，输出所有可能组合
+
+pog
+pof
+pot
+por
+pov
+pob
+plg
+plf
+...
+
+悔啊悔啊，面之前打算看电话按键题的，没看，没想到真考了……
+
+4. String transpose
+Transpose a string means re-sequencing a string
+If you transpose string1 to string2, you can only swap the adjacent two 
+characters each time, until you get your target string.
+
+For example, you want to transpose GUW to WUG, the steps are
+GUW
+GWU
+WGU
+WUG
+
+Print all steps in string transpose 
+
+先把题放着看看，一会儿我再说我的答案
+
+
+
+
+--
+
+※ 来源:·WWW 未名空间站 海外: mitbbs.com 中国: mitbbs.cn·[FROM: 128.227.]
+ 	
+	 eagletiger
+
+进入未名形象秀
+	我的博客
+[回复] [回信给作者] [本篇全文] [本讨论区] [修改] [删除] [转寄] [转贴] [收藏] [举报]		[ 2 ]
+发信人: eagletiger (eagletiger), 信区: JobHunting
+标  题: Re: Epic Written Interview
+发信站: BBS 未名空间站 (Sun Oct 13 17:12:57 2013, 美东)
+
+在本地的考试中心预约的上机考试。考试有三个部分，1.数学题，2.给出一种新的编程
+语言的语法，回答相应问题，3. Programming Test 要求速度和准确性both important
+
+Programming test 答得不好，肯定不行了，把面试题发上来让大家做做。做了3个半小
+时，快累死了。
+
+
+数学题基本上就是脑筋急转弯，举几个例子
+
+1. You have three kinds of magazines, all but two are Times, all but two are
+Science, all but two are Nature. How many magazines in total do you have?
+
+3 books
+
+2. Only one of the answers is true
+
+A. All of the below are true
+B. All answers are true
+C. One of the above is true
+D. All of the above are true
+E. None of the above are true
+F. None of the above are true
+
+E
+
+3. You have two coins which sum up to 15 cents. One of them is not a dime.
+What are the two coins (multiple choice)
+A. Penny
+B. Nickel
+C. Dime
+D. Quarter
+E. Not possible
+
+B C
+
+第二部分，是介绍一种高级语言，有点像lisp，没什么特别的，就按照它介绍的语法规
+则来答
+
+第三部分，编程题，一共四道题，实在没想到有这么多，鼓励自己坚持到最后，写完了
+3道。没写上的那个题是最经典的电话按键排列组合题的变种，面之前没看，这个悔呀
+
+1. You are given a telephone keyboard
+
+0-0
+1-1
+2-ABC2
+3-DEF3
+4-GHI4
+5-JKL5
+6-MNO6
+7-PQRS7
+8-TUV8
+9-WXYZ9
+0-0
+*-space
+#-char separater
+
+if you type "2", you will get 'A', that is
+"2"-'A'
+"22"-'B'
+"222"-'C'
+"2222"-'D'
+
+However, the digits can repeated many times
+"22222"-you get 'A' again
+
+You can use "#" to separate characters, for example
+"2#22", you get "AB"
+
+However, you may also have consecutive different digits without separator: "
+23"-'AD'
+
+If you type "*", it means space.
+
+You a given a sequence of digits, translate it into a text message
+
+/*
+* =========================================================================
+============
+1. You are given a telephone keyboard
+
+0-0
+1-1
+2-ABC2
+3-DEF3
+4-GHI4
+5-JKL5
+6-MNO6
+7-PQRS7
+8-TUV8
+9-WXYZ9
+0-0
+*-space
+#-char separater
+
+if you type "2", you will get 'A', that is
+"2"-'A'
+"22"-'B' 
+"222"-'C'
+"2222"-'D'
+
+However, the digits can repeated many times
+"22222"-you get 'A' again 
+
+You can use "#" to separate characters, for example
+"2#22", you get "AB"
+
+However, you may also have consecutive different digits without separator: "
+23"-'AD'
+
+If you type "*", it means space.
+
+You a given a sequence of digits, translate it into a text message
+* =========================================================================
+============
+*/
+
+#include <iostream>
+#include <vector>
+#include <map>
+using namespace std;
+
+void init(map<char, string> &container)
+{
+    pair<char, string> temp;
+    temp.first = '0';
+    temp.second = "0";
+    container.insert(temp);//0-0
+    temp.first = '1';
+    temp.second = "1";
+    container.insert(temp);//1-1
+    temp.first = '2';
+    temp.second = "ABC2";
+    container.insert(temp);//2-ABC2
+    temp.first = '3';
+    temp.second = "DEF3";
+    container.insert(temp);//3-DEF3
+    temp.first = '4';
+    temp.second = "GHI4";
+    container.insert(temp);//4-GHI4
+    temp.first = '5';
+    temp.second = "JKL5";
+    container.insert(temp);//5-JKL5
+    temp.first = '6';
+    temp.second = "MNO6";
+    container.insert(temp);//6-MNO6
+    temp.first = '7';
+    temp.second = "PQRS7";
+    container.insert(temp);//7-PQRS7
+    temp.first = '8';
+    temp.second = "TUV8";
+    container.insert(temp);//8-TUV8
+    temp.first = '9';
+    temp.second = "WXYZ9";
+    container.insert(temp);//9-WXYZ9
+    temp.first = '*';
+    temp.second = " ";
+    container.insert(temp);//*-space
+}
+
+vector< pair<char, int> > parse(string &str)
+{
+    vector< pair<char, int> > tempContainer;
+
+    char pre = '-';
+    int count = 0;
+
+    if(str.size() <= 0)
+        return tempContainer;
+
+    for(int i = 0; i < str.size(); i++)
+    {
+        if(str[i] != pre)
+        {
+            if(i > 0)
+            {
+                pair<char, int> temp;
+                temp.first = pre;
+                temp.second = count;
+                tempContainer.push_back(temp);
+            }
+
+            pre = str[i];
+            count=1;
+
+        }
+        else
+        {
+            count++;
+        }
+    }
+    pair<char, int> temp;
+    temp.first = pre;
+    temp.second = count;
+    tempContainer.push_back(temp);
+
+    //for(int i = 0; i < tempContainer.size(); i++)
+        //cout<<tempContainer[i].first<<" "<<tempContainer[i].second<<endl;
+    
+    return tempContainer;
+}
+
+char convert(char key, int value, map<char, string> &container)
+{
+    string str;
+    str = container[key];
+
+    return str[(value-1)%str.size()];
+}
+
+string translate(string &str)
+{
+    map<char, string> container;
+
+    init(container);
+
+    vector< pair<char, int> > tempContainer;
+    tempContainer = parse(str);
+
+    string result;
+
+    for(int i = 0; i < tempContainer.size(); i++)
+    {
+        if(tempContainer[i].first != '#')
+        {
+            result += convert(tempContainer[i].first, tempContainer[i].
+second, container);
+        }
+    }
+
+    return result;
+}
+
+int main(int argc, char *argv[])
+{
+    string str = "223#3345#23";
+    cout<<"Tralsate "<<str<<endl;
+
+    cout<<translate(str)<<endl;
+
+    return 0;
+}
+
+
+2. Basket ball hit rates
+The hit rate of the basketball game is given by the number of hits divided
+by the number of chances. For example, you have 73 chances but hit 15 times,
+then your hit rate is 15/73=0.205 (keep the last 3 digits). On average, you
+have 4.5 chances in each basketball game. Assume the total number of games
+is 162. Write a function for a basketball player. He will input the number
+of hits he has made, the number of chances he had, and the number of
+remaining games. The function should return the number of future hits, so
+that he can refresh his hit rate to 0.45
+
+/*
+* =========================================================================
+============
+2. Basket ball hit rates
+The hit rate of the basketball game is given by the number of hits divided 
+by the number of chances. For example, you have 73 chances but hit 15 times,
+then your hit rate is 15/73=0.205 (keep the last 3 digits). On average, you
+have 4.5 chances in each basketball game. Assume the total number of games 
+is 162. Write a function for a basketball player. He will input the number 
+of hits he has made, the number of chances he had, and the number of 
+remaining games. The function should return the number of future hits, so 
+that he can refresh his hit rate to 0.45
+* =========================================================================
+============
+*/
+
+#include <iostream>
+using namespace std;
+
+double getHit(int h, int c, int r)//h is the number of hit he had made, c is
+the number of chances he had made, r is the number of remainning games
+{
+    double rate;
+    rate = 0.45;//rate
+
+    //double total = 4.5 * 162;//total
+    
+    return 0.45*(c+r*4.5) - h;
+}
+
+int main(int argc, char *argv[])
+{
+    cout<<getHit(100, 250, 3)<<endl;
+
+    return 0;
+}
+
+
+3. A Typist problem. 电话按键题的变种！一个打字员，10个手指，分别负责不同的
+按键，
+0-null
+1-gftrvb
+2-edc
+3-wsx
+4-qaz
+5-null
+6-yuhjnm
+7-ik
+8-ol
+9-p
+
+给你 9801，输出所有可能组合
+
+pog
+pof
+pot
+por
+pov
+pob
+plg
+plf
+...
+
+悔啊悔啊，面之前打算看电话按键题的，没看，没想到真考了……
+
+/*
+* =========================================================================
+============
+*
+*       Filename:  typist.cpp
+*
+*    Description:  
+*
+*        Version:  1.0
+*        Created:  10/13/2013 04:00:44 PM
+*       Revision:  none
+*       Compiler:  gcc
+*
+*         Author:  YOUR NAME (), 
+*   Organization:  
+*
+* =========================================================================
+============
+*/
+
+#include <iostream>
+#include <map>
+#include <vector>
+#include <string>
+#include <sstream>
+using namespace std;
+
+void init(map<char, string> &container)
+{
+    pair<char, string> temp;
+    temp.first = '1';
+    temp.second = "gftrvb";
+    container.insert(temp);
+    temp.first = '2';
+    temp.second = "edc";
+    container.insert(temp);
+    temp.first = '3';
+    temp.second = "wsx";
+    container.insert(temp);
+    temp.first = '4';
+    temp.second = "qaz";
+    container.insert(temp);
+    temp.first = '6';
+    temp.second = "yuhjnm";
+    container.insert(temp);
+    temp.first = '7';
+    temp.second = "ik";
+    container.insert(temp);
+    temp.first = '8';
+    temp.second = "ol";
+    container.insert(temp);
+    temp.first = '9';
+    temp.second = "p";
+    container.insert(temp);
+}
+
+string filter(string &str)
+{
+    stringstream stream;
+    for(int i = 0; i < str.size(); i++)
+        if(str[i] != '0' && str[i] != '5')
+            stream<<str[i];
+
+    return stream.str();
+}
+
+void update(vector<int> &scan, vector<int> &temp)
+{
+    scan[0]++;
+
+    for(int i = 0; i < scan.size()-1; i++)
+    {
+        if(scan[i] >= temp[i])
+        {
+            scan[i] %= temp[i];
+            scan[i+1]++;//round
+        }
+    }
+}
+
+void combination(string &str)
+{
+    string strTemp;
+
+    strTemp = filter(str);
+
+    map<char, string> container;//save the key and the values
+
+    init(container);//initialize the container
+
+    //save the character number that each key can take care
+    //save the string that each key can represent
+    vector<int> temp;
+    vector<string> strContainer;
+    for(int i = 0; i < strTemp.size(); i++)
+    {
+        temp.push_back(container[strTemp[i]].size());
+        strContainer.push_back(container[strTemp[i]]);
+    }
+
+    //empty string
+    if(temp.size() == 0)
+        return;
+
+    int total = 1;//total number of the combinations
+    for(int i = 0; i < temp.size(); i++)
+        total *= temp[i];
+
+    vector<int> scan(temp.size(), 0);
+
+    //output all the combinations
+    for(int i = 0; i < total; i++)
+    {
+        for(int j = 0; j < scan.size(); j++)
+        {
+            cout<<strContainer[j][scan[j]];
+        }
+        cout<<endl;
+        update(scan, temp);
+    }
+}
+
+int main(int argc, char * argv[])
+{
+    string str = "9801";
+
+    combination(str);
+
+    return 0;
+}
+
+
+4. String transpose
+Transpose a string means re-sequencing a string
+If you transpose string1 to string2, you can only swap the adjacent two
+characters each time, until you get your target string.
+
+For example, you want to transpose GUW to WUG, the steps are
+GUW
+GWU
+WGU
+WUG
+
+Print all steps in string transpose
+
+/*
+* =========================================================================
+============
+*
+*       Filename:  transpose.cpp
+*
+*    Description:  
+*
+*        Version:  1.0
+*        Created:  10/13/2013 04:47:15 PM
+*       Revision:  none
+*       Compiler:  gcc
+*
+*         Author:  YOUR NAME (), 
+*   Organization:  
+*
+* =========================================================================
+============
+*/
+
+#include <iostream>
+#include <string>
+using namespace std;
+
+//check if str1 can be transposed to str2
+bool valid(string &str1, string &str2)
+{
+    if(str1.size() != str2.size())
+        return false;
+
+    char array1[200], array2[200];//check the number for each character in 
+both strings, use the array to represent 126 characters in the ASCII table
+    
+    for(int i = 0; i < 200; i++)
+    {
+        array1[i] = 0;
+        array2[i] = 0;
+    }
+
+    for(int i = 0; i < str1.size(); i++)
+    {
+        int index;
+        index = str1[i];
+        array1[index]++;
+        index = str2[i];
+        array2[index]++;
+    }
+
+    for(int i = 0; i < 200; i++)
+    {
+        if(array1[i] != array2[i])
+            return false;
+    }
+
+    return true;
+}
+
+int getPosition(char c, string str)//find the first position of c in str
+{
+    for(int i = 0; i < str.size(); i++)
+        if(c == str[i])
+            return i;
+    return -1;
+}
+
+void move(string &str, int i, int t)//move the character at i to t
+{
+    for(int k = i; k > t; k--)
+    {
+        std::swap(str[k], str[k-1]);
+        cout<<str<<endl;
+    }
+}
+
+void transpose(string &str1, string &str2)
+{
+    if(!valid(str1, str2))
+    {
+        cout<<"Input strings are not valid"<<endl;
+        return;
+    }
+
+    cout<<"Transpose: "<<str1<<" to "<<str2<<endl;
+
+    for(int i = 0; i < str2.size(); i++)
+    {
+        char target = str2[i];
+        int targetIndex = i;
+
+        int initialIndex = getPosition(target, str1);
+
+        if(initialIndex == -1)
+        {
+            cout<<"Can not find "<<target<<" in "<<str1<<endl;
+            return;
+        }
+
+        //move character at initialIndex to targetIndex in str1
+        move(str1, initialIndex, targetIndex);
+    }
+
+    cout<<"Have done transpose"<<endl;
+}
+
+int main(int argc, char *argv[])
+{
+    string str1, str2;//transpose str1 to str2
+    str1 = "GUW";
+    str2 = "WUG";
+
+    transpose(str1, str2);
+    return 0;
+}
+
+
+先把题放着看看，一会儿我再说我的答案
+--
+
+※ 来源:·WWW 未名空间站 海外: mitbbs.com 中国: mitbbs.cn·[FROM: 128.]
+ 
+	 eagletiger
+
+进入未名形象秀
+	我的博客
+[回复] [回信给作者] [本篇全文] [本讨论区] [修改] [删除] [转寄] [转贴] [收藏] [举报]		[ 3 ]
+发信人: eagletiger (eagletiger), 信区: JobHunting
+标  题: Re: Epic Written Interview
+发信站: BBS 未名空间站 (Sun Oct 13 17:13:56 2013, 美东)
+
+明天机考，刚翻出各位老大帖的之前的题，练一下手.
+
+【 在 eagletiger (eagletiger) 的大作中提到: 】
+: 在本地的考试中心预约的上机考试。考试有三个部分，1.数学题，2.给出一种新的编程
+: 语言的语法，回答相应问题，3. Programming Test 要求速度和准确性both 
+important
+: Programming test 答得不好，肯定不行了，把面试题发上来让大家做做。做了3个半小
+: 时，快累死了。
+: 数学题基本上就是脑筋急转弯，举几个例子
+: 1. You have three kinds of magazines, all but two are Times, all but two 
+are
+: Science, all but two are Nature. How many magazines in total do you have?
+: 3 books
+: 2. Only one of the answers is true
+: A. All of the below are true
+: ...................

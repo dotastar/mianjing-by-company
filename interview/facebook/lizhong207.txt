@@ -1,0 +1,48 @@
+http://www.mitbbs.com/article_t/JobHunting/32594353.html
+发信人: lizhong207 (li207), 信区: JobHunting
+标  题: FB onsite面经加求bless
+发信站: BBS 未名空间站 (Wed Dec 11 01:05:46 2013, 美东)
+
+前一周电面，电面的题目挺简单，第一题忘了，第二题是two sum，然后写3sum
+我写了一个O(n^2)的3sum，然后面试官问我怎么能写到NlogN，但是想了很久都没有想
+出来方法，然后面试结束后去wiki一查发现NlogN的方法不存在，应该是面试官记错了
+
+一轮电面之后之后让去onsite
+onsite是3轮面试，2轮coding加一轮的experience
+coding的题目都很简单，第一个人先是问了我怎么做test，然后出了两题，第一题比较
+两个string，返回一个int来表示第一个string大还是第二个string大，只要返回任意
+的正数或者负数就行。比如a，ab，就返回一个负数，因为第二个string比第一个
+string大
+第二题是有这么一个class Contact，里面有一个String的name，和一个List<String>
+装着email address，是这个Contact有的address，用一个list装着是因为一个人有可
+能有多个email，现在给你an array of Contact，比如
+#1 John [john@gmail.com]
+#2 Mary [mary@gmail.com]
+#3 John [john@yahoo.com]
+#4 John [john@gmail.com, john@yahoo.com, john@hotmail.com]
+#5 Bob [bob@gmail.com]
+现在我们知道如果email address相同的话，那么就说明是同一个人，现在要做的是根
+据这些email address，把同一个contact给group起来，生成一个List<List<Contact>>
+，比如我们就可以知道#1，#3，#4是同一个人。注意不能根据名字来group，因为有可
+能有相同名字的人，或者同一个人有可能有不同的名字来注册之类的。我给出了一个类
+似graph的解法。时间不够，就没有写code，只是把逻辑解释了一遍。
+第二个人也是出了两道题目，第一题是给两个string，判断其中一个string能否对其中
+的一个字符通过一次的insertion或者一次deletion或者一次replacement变成另外一个
+string，比如
+cat cast True #第一个string通过一次insertion可以变成第二个string
+cat at True #deletion
+cat cot True #replacement
+cat dog False
+cat cat False #因为这两个string相同，不需要任何的操作，要返回false
+第二题是找出factorial(n)中有多少个0，我跟他说我做过
+第三个人大部分时间都是问的experience，问为什么Facebook，对Facebook的哪个
+feature最喜欢，为什么喜欢，然后这个feature还有什么不足。之后让给他一个非常
+specific的例子说当你和同事出现技术上的冲突的时候，应该怎么解决，问的特别细，
+特别深入。之后让写一道题，是leetcode上的，linux里面的cd命令那题，就是给定你
+当前的系统路径比如/a/b，然后你要cd到另外一个目录，给你cd的输入比如cd ../pq/.
+/r，那么最后的路径应该就是/a/pq/r，要求输出最后这个路径
+
+facebook总体都不难，我觉得最多是leetcode中等难度的题，但是我也听说不同的人的
+难度会差别很大。做的时候前两个人还比较顺，但是最后一个人我都没有怎么用过太多
+的facebook，也就在那里瞎扯，写code的时候还被指出了一个非常低级的bug，听说F对
+bugfree的要求特别高，所以求bless啊求bless啊

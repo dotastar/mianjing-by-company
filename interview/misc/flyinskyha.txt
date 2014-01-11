@@ -1,0 +1,51 @@
+http://www.mitbbs.com/article_t/JobHunting/32576715.html
+发信人: flyinskyha (flyinskyha), 信区: JobHunting
+标  题: 最近很hot startup一题
+发信站: BBS 未名空间站 (Wed Nov 13 23:58:40 2013, 美东)
+
+大概意思是有3个门，1个后面是prize，2个后面是goat, contestant选择一个门，然后
+host在剩下的两个门选择一个goat门打开，然后contestant可以选择switch门，问题是
+实现一个function:
+bool play_game(bool contestant_will_switch_doors)
+输入是true就是换门，false就是不换门，return是true就是最后选择到了prize那个，
+false就是选择到了goat那个。很纠结 这个换门不换门其实最后都是50%的几率拿到
+prize。这是我的实现，没能做完。哪位能否实现这个function以及整个游戏。
+
+
+enum Door
+{
+  goat,
+  prize
+};
+
+class Game
+{
+   private:
+    vector<Door> vec;
+    int m_size;
+   public:
+    Game(int size){
+      m_size = size;
+      srand(time(NULL));
+      int ran = rand() % m_size;
+      for(int i=0; i< m_size; i++)
+      {
+        if(ran == i)
+          vec.push_back(prize);
+        else
+          vec.push_back(goat);
+      }
+    }
+      
+  bool play_game(bool contestant_will_switch_doors) {
+    // contestant picks a door
+    // host reveals a door
+    // contestant switches or not
+    // determine if the contestant wins or not
+  }
+};
+
+int main() {
+  Game* g = new Game(3);
+  return 0;
+}

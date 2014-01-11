@@ -1,0 +1,43 @@
+发信人: pdu (PigDuckUnited), 信区: JobHunting
+标  题: fb电面面经
+发信站: BBS 未名空间站 (Thu Oct 17 20:02:42 2013, 美东)
+
+给一堆用户的登陆日志，要求输出各时间段内的在线用户数。
+
+例子：
+user1:
+login_time: 0
+logout_time: 1
+
+user2:
+login_time: 0
+logout_time: 2
+
+user3:
+login_time: 1
+logout_time: 3
+
+输出：
+[0 - 2): 2
+[2 - 3): 1
+[3 - infinite): 0
+
+0 - 1不用输出，因为时间点0有2个在线用户，时间点1也有2个在线用户，在线用户数
+没有变，所以不用输出。在时间点2在线用户数变为1，所以输出0 - 2: 2
+
+完成函数：
+struct Log
+{
+  float login_time;
+  float logout_time;
+};
+void online_user(vector<Log> &logs);
+
+=====
+刚开始是一些behavior question，后来就问了这一个题，算法2分钟就沟通好了，可是
+后来代码写得很乱，到最后都还有bug
+华人面试官，感觉人挺好的。可惜自己脑抽了，一紧张就出错，一出错更紧张，最后就
+搞不定了
+最后他建议在面fb之前，先找其他公司的面试，练练状态
+
+这种情况挂了只能怪自己，不能埋怨同胞不留情。move on to next

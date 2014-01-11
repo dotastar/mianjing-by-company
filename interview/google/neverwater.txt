@@ -1,0 +1,18 @@
+http://www.mitbbs.com/article_t/JobHunting/32552341.html
+发信人: neverwater (从不灌水), 信区: JobHunting
+标  题: Google phone interview 金天
+发信站: BBS 未名空间站 (Fri Oct 11 22:09:53 2013, 美东)
+
+很nice的欧洲女马工和我talk.老问题，可我没见到过这个问题。讨论好久。终于在最
+后弄出来了。不知她满意不满意。
+
+很奇怪如果大家都没见的题。这种题，大家在面试中多快弄出来？
+
+
+Given an array of numbers, nums, return an array of numbers products, where 
+products[i] is the product of all nums[j], j != i.
+
+Input : [1, 2, 3, 4, 5]
+Output: [(2*3*4*5), (1*3*4*5), (1*2*4*5), (1*2*3*5), (1*2*3*4)]
+      = [120, 60, 40, 30, 24]
+You must do this in O(N) without using division.

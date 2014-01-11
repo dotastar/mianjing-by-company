@@ -1,0 +1,23 @@
+http://www.mitbbs.com/article_t/JobHunting/32602855.html
+发信人: fishliu2012 (fish), 信区: JobHunting
+标  题: 报个amazon offer和面经
+发信站: BBS 未名空间站 (Tue Dec 31 12:30:06 2013, 美东)
+
+SEARCH组，感觉算是比较有前景的一块。背景是PHD. 他家给我的offer很低，发一下供
+版上的朋友参考。base 108K, sign-on 25,000.股票给 150 shares,第一年只能vest 5
+%。上次在版上问过一个walmartlabs的offer,得到了很多热心朋友的帮助，听到了不少
+walmartlabs负面的消息。但 walmartlabs 钱多很多，加下来 210K, 这两个不知道怎
+么选，听大家的意见两个好像都不能长呆，反正都不打算呆是不是amazon写在简历上要
+好很多，所以这两个中我还是倾向于amazon.
+
+提醒大家一些，他家online assessment的题目我做的和版上帖的不一样。我只有一题
+，是
+从 （1，...n)中打印所有的k, so that k = a^2+b^2, a,b都是整数。这题leetcode上
+有。但我觉得那个解法有问题，因为他没有考虑算平方根也需要很大时间的。
+
+他家onsite特别多behavior题,每个面试官都会问。他家coding题总体没什么难度，有
+道题比较难，是ransom note那题，但假如报纸正反两面都有字母该怎么办。其他的题
+目全部是leetcode上的，包括3sum, sort linkedlist, reverse integer，一边在上面
+白板写面试官一边在底下敲进电脑。因为我是做ML的，剩下很多他们觉得比较 machine
+learning的题目，算法考的很少，感觉面试官好像也不是特别懂的样子。因为这些题
+目涉及很多组里的问题，如果有想了解的朋友请PM我。

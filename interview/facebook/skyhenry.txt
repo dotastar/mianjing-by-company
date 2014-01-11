@@ -1,0 +1,26 @@
+http://www.mitbbs.com/article_t/JobHunting/32563881.html
+发信人: Cheney (风云), 信区: JobHunting
+标  题: FB电面面筋顺求refer
+发信站: BBS 未名空间站 (Fri Oct 25 22:40:34 2013, 美东)
+
+过程比较常规，题目也正常，但是犯了几个不好的错误，深深得惆怅阿。
+
+面试官晚dail 5分钟，一开始都在聊其他的，做过的有意思的事（给他看了自己在aws
+上的小游戏），然后聊游戏，最challenge的是什么等等；还有why fb等。
+
+大约过了20分钟，切入coding了。
+第一题是isPalindrome，还稍微简化了下：考虑所有的字符，输入串长度不为0。
+个人用两个"pointer" 做的，犯的第一个错误是在判断字符相等时莫名的加了return
+true..被指出来了。
+
+第二题是整数除法，不能用/, %, *，简化条件：只考虑正整数，但要求返回string。
+花了些时间，但最后更新dividend时忘了移位，应该是dividend -= (divisor << pos)
+, 自己测的时候小慌，没找出来，最后才补上的。
+
+面完后发现还有一个问题没解决，要求是返回string，但itoa的话返回的是char*。现
+在还不确定int->string的最好方法, std::to_string?
+
+感想：很久没面试了，有点不适应节奏；要在面试中做到bugfree不容易
+继续加强训练，顺求下LAGT的推荐，上回联系了招工帖的akamai，没有响应。。
+
+copy of history: http://collabedit.com/rdsv7

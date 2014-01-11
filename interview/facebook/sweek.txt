@@ -1,0 +1,36 @@
+http://www.mitbbs.com/article_t/JobHunting/32588377.html
+发信人: sweek (wee), 信区: JobHunting
+标  题: 腐败面经
+发信站: BBS 未名空间站 (Fri Nov 29 02:19:25 2013, 美东)
+
+刚面完F，感恩节回报版面。为免被机器人搜索，尽量用中文。
+总的来说感觉和板上大部分F面经差不多，leetcode上原题或变形题比较多。刷题容易
+刷出offer。
+
+电面 （感谢国人大哥放水！）
+1. 二分查找, 略有变形，注意边界条件
+2. 二叉树序列化/deserialization
+3. 集合 A and B, 计算  A-B and B-A
+
+白板面：
+1. 把一个string分成几个单词 （leetcode题）
+2. 大整数相加，相乘 （扩展为任意进制）
+3. decode ways （leetcode题）
+4. json prettify
+5. 设计题: 搜索FB状态更新
+
+这些题真是不难，只要细心点动作快点就好。 json prettify是第二题，时间不够没做
+完，不过从offer情况看没被一票否决。
+
+一些感想：
+1. 要想动作快，白板上字体可以小一点，长类型名可以用缩写。比如ArrayList<
+String> 我都写成AL<String>，所有interviewers都没意见。再比如throw 
+xxxException，直接写成throw ...就好了。当然你必须说出来这缩写代表什么。
+2. 如果忘了某个库函数，直接说就行了，或者自己造一个。
+3. 在说“做完了”之前主动跑几个test cases，不要被动等interviewer让你跑test 
+cases。
+4. 简单题想出彩，代码越简单越好。如果有重复代码，最好refactor一下。  
+5. 尽量争取每轮多做几道题
+6. 刷leetcode很有用。我一遍都没刷全，只做了100来道题，就深切感受到了。我准备
+给leetcode donate了，正是感恩节应该做的事。 有时间刷多遍的同学我建议不要只追
+求“pass”，而是多注意下code质量，越短小精悍越好。

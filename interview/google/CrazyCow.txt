@@ -1,0 +1,36 @@
+http://www.mitbbs.com/article_t/JobHunting/32574909.html
+发信人: CrazyCow (CrazyCow), 信区: JobHunting
+标  题: 国内Google电面两轮 已挂
+关键字: google,电面
+发信站: BBS 未名空间站 (Mon Nov 11 12:42:55 2013, 美东)
+
+10月17日，第一轮电面：
+   第一题：上海的电话isTree(vector<pair<int,int> >& edges);  (离散化+dfs判环
+判联通)
+   第二题，               
+     Given a 2D space of maximum size NxN which supports two operations :
+     [1] void UPDATE(x,y,v) - sets the value of cell [x,y] to v
+     [2] int QUERY(x1,y1,x2,y2) - returns sub-rectangle sum (x1,y1) to (x2,
+y2)
+      inclusive, and there is an infinite stream of such 2 types of 
+operations which have to supported. How would you store the values for 
+efficient updates and retrievals ? （二维线段树  说算法+分析复杂度）
+    第一轮答得还可以。
+10月30日，第二轮电面：(挂)
+    美国的电话，面试官很nice：
+    第一题。一个二叉树，节点值有正有负，求树中的任意路径的最大值。路径的值就
+是路径经过点的值的和。然后我说dfs，面试官就让写代码  。 写代码一开始dfs的接
+口声明有问题，期间停下来修改了一下，然后写完。被面试官查出1个bug。面试官提示
+了，一开始找出了另外个bug；面试官又提示了一下，才找出了面试官想要我fix的bug
+。杯具。
+    第二题。给三个字符串，a，b，c。问a 和b 能不能组成c，且保证c 中a b 的字母
+顺序不变。 一开始我给了一个没验证贪心的想法。然后面试官让我验证或举个反例。
+我想贪心多数没戏，就又说了种dp的思路。面试官让我写下来。我写完之后，让我解释
+了解释。然后突然悲催地发现我的解法是O(2^n)的。。面试后想想如果我的解法状态去
+重后，就和普通的dp无异了。。  杯具  。。 然后就挂了。
+    哎，悲伤，简单题目答成这样，白白浪费了这次机会。
+    背景：国内渣本科毕业一年，有ACM竞赛经验。平常做算法题还可以，leetcode上
+刷题也从没看过其他人的题解。还是把google电面想的太easy了，所以心态上有松懈。
+而且加之早上起早有些困。。。 总之这些都是次要原因，主要还是因为太他妈挫了。
+    好好努力，来年再战！
+--

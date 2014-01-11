@@ -1,0 +1,24 @@
+发信人: lizhong207 (li207), 信区: JobHunting
+标  题: Amazon onsite面经加求祝福
+发信站: BBS 未名空间站 (Mon Oct 14 23:38:12 2013, 美东)
+
+上周五面的，New grad，所以题目很简单，之前做了一个online assessment之后直接
+onsite
+一共四轮，每一轮都是一个来自不同组的人面
+第一轮类似一个string替换，问题是HTML中class label的名字太长，会影响网络传输
+的速度，想出一个办法如何把这么长的name给替换掉。然后是一些简历以及稍微
+behavior问题
+第二轮先是问了一些java的概念，然后出了一道题，二维平面上有很多圆，圆心都在原
+点，同时平面上有很多点，问哪两个相邻的圆环之间的点最多
+第三轮第一个题是longest palindromic substring，我没敢用manacher's algorithm
+，用了一个简单的O(N^2)的算法，之后面试官也没有问下去，直接问了第二题。第二题
+是一颗二叉树，哪个路径上的节点最多，路径不是从root到leaf，而是可以从任何地方
+开始，可以从child到parent，返回这样最长的路径上的节点数。我写了一个算法面试
+官没看懂，于是后面的时间都在给他证明，不过总算在结束之前他看懂了
+第四轮问的题目更简单，判断两个string是不是anagram，一棵二叉树是不是bst，给一
+个很大的user log，怎么确定unique的user数量，还有一道忘记了，但也是那种一看就
+知道怎么做的
+
+可能是RP好，总的来说题目非常简单，HR说一个礼拜就会知道结果，求RP啊求Blessing
+啊求显灵啊！！
+http://www.mitbbs.com/article_t/JobHunting/32554297.html
