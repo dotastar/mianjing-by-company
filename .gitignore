@@ -5,3 +5,5 @@
 *.dblite
 
 *.o
+
+apue/chapter1/ls

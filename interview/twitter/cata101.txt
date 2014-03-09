@@ -1,0 +1,41 @@
+http://www.mitbbs.com/article_t/JobHunting/32639643.html
+发信人: cata101 (BST), 信区: JobHunting
+标  题: Twitter电面面经+Online Test小结
+发信站: BBS 未名空间站 (Tue Mar  4 22:41:22 2014, 美东)
+
+感谢版上driftdrift大牛内推，之前自己投的fulltime简历被秒据。。。
+今天面的，面试官德裔美国人，之前在BOA当过10年tech lead，后来做过短期的
+startup，入职twitter半年。
+过程：
+1.面官自我介绍
+2.自我介绍，聊project，其中distributed system project，聊到PAXO
+3.coding 题
+Graph traversal题，不难：
+Given:
+1. Red and Blue fields, each worth one unit
+2. Each field has some neighbors
+3. Find the largest continuous field of a given color
+example：
+R - B - B - R
+|   |   |   |
+B - R - R - R
+B:4
+R:3
+面官挺nice的，一直在跟我讨论，把 functions 的signature都写好了
+4.问问题
+
+感觉上岁数的面官，算法题不会太刁难。。。
+
+Online Test
+twitter给电面之前都让做online test，通过codility，都不难。
+我碰到的题：
+1. Single number （leetcode上有，用bits manipulation做）
+2. Given zero-indexed array A of N integers,
+Sets S[K] are finite for each K, S[K] = { A[K], A[A[K]], A[A[A[K]]], ... }. 
+returns the size of the largest set S[K] for this array
+其他在网上搜到的题：
+
+http://www.1point3acres.com/bbs/thread-83646-1-1.html
+ttp://www.mitbbs.com/article_t0/JobHunting/32498187.html
+http://www.mitbbs.com/article_t/JobHunting/32454305.html  
+--

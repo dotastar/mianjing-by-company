@@ -1,0 +1,46 @@
+http://www.mitbbs.com/article_t/JobHunting/32636739.html
+发信人: tiantianyo (天天向上), 信区: JobHunting
+标  题: 多家的面经
+发信站: BBS 未名空间站 (Fri Feb 28 19:53:56 2014, 美东)
+
+具体哪些公司就不提了，反正就是版上的那些大公司，把能记住的电面onsite题就混在
+一块儿了。
+
+1. anagram 
+2. OO design: candy bar 
+3. sort color
+4. 给一个小写的string，例如“abcd” 输出所有大小写混合的组合
+5. string to double
+6. given a string words, find the shortest substring including all the given
+key words
+7. what is little/big endian, how to tell if one machine is little or big 
+endian machine？
+8. power set
+9. smart pointer
+10. given a set of weighted intervals, find the set non-overlap weighted 
+intervals that has the biggest weight
+11. two sum变形
+12. serialize/deserialize binary tree, the leetcode solution is not accepted
+by the interviewer, nor the inorder&preorder sequence method
+13. design a data structure that can support: get element in O(1), delete 
+randomly in O(1)
+14. how to swap the i-th and j-th bits of an integer
+15. median of two sorted arrays - all possible solutions discussed
+16. find the kth element from an unsorted array
+17. valid number
+18, given an unsorted integer array, find three integers can form a triangle
+19. tell if two words are one-character different: replace/delete/insert
+20. given an array of 32-bit integers, the array is already sorted according
+to the most significant 28bits, sort the array in O(n)
+21. return all the nodes on the deepest path of a BST O(n)
+22. an array of float number, calculate the average value with a sliding 
+window, the window is moved with k steps every time. need to keep the 
+precision for float type: 1000000 + 0.01 = 1000000 (not wanted)
+23. big integer operation and compare
+24. generate maze
+25. what is TCP, UDP, RTP, differences of them? what is RTP header? what is 
+DNS? Who owns DNS? What is the name of the organization that manages DNS? 
+Can a company own its own DNS? Describe how DNS works in very detailed way. 
+what will happen when you type google.com? How google deal with so many 
+requests per second? How to load balance the request? What is SSL? What is 
+the protocol/design mechanism of SSL? 

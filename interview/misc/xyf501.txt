@@ -1,0 +1,150 @@
+http://www.mitbbs.com/article_t/JobHunting/32623475.html
+发信人: xyf501 (Ivan), 信区: JobHunting
+标  题: FLAG干货：
+关键字: flag,面经
+发信站: BBS 未名空间站 (Mon Feb 10 17:01:39 2014, 美东)
+
+Linkedin
+
+phone1：烙印
+lowest common ancestor w/ and w/o parent pointer
+phone2：国人
+search in rotated sorted array
+
+onsite:
+1.两个国人
+implement addInterval(start, end) and getcoverage(), 
+2.两个国人
+talk projects and some behavior question 
+3.烙印
+lunch, talk about technologies interest 
+4.亚裔，不确定是否国人
+Manager, talked a lot of behavior questions, interest and projects 
+5.烙印
+Design: tinyurl 
+6.烙印+小白
+1.exclusive array, give an arr1, return a new arr2, arr2[i] is the 
+multiplication of all elements in arr1 except arr1[i] 
+2.boolean isMirrorTrees(tree1, tree2)/inplace convert a tree to its mirror 
+tree/create a new mirror tree
+3.find the intersection of two linked list(do not use hashmap)
+
+
+Amazon
+
+phone1: 烙印
+Given a list of test results (each with a test date, Student ID, and the 
+student’s Score), return the Final Score for each student. A student’s 
+Final Score is calculated as the average of his/her 5 highest test scores. 
+You can assume each student has at least 5 test scores. 
+
+phone2:白男
+1.大数plusOne 
+2.给你一个按字母顺序排好的字典（但你不知道字母顺序,非英语），要求找出字母顺序
+例：
+单词顺序：
+    wrt
+    wrf
+    er
+    ett
+    rftt
+字母顺序：
+    w,e,r,t,f
+
+onsite:
+1. 白男
+class MagicNumber{
+boolean isMagicNum(long num);
+long nextMagic(long num){
+    while(!isMagicNum(num)){
+    num++;
+}
+return num;
+}
+}
+consider a data structure to improve the nextMagic(long num) 
+2. 烙印
+behavior questions and text editor design(insert, add, search, cut, paste) 
+3. 白男
+大数加法 (int数组表示大数，每一个元素代表一个2^31进制数字) 
+4. 日本人manager
+lunch interview: 
+    4.1 describe a time you are stressful to meet a deadline
+    4.2 describe a time you feel most proud in your professional career
+    4.3 what would you change in your past project if you have a chance 
+5. 白男
+give API: List<Movie> getMovies(Actor a);  List<Actor> getActors(Movie m);
+implement: int findDistance(Actor a, Actor b) 
+6. 白男
+System design, open question, give your solution, describe pros and cons 
+
+
+Google
+phone： 白男
+1. remove duplicates of the array in place
+2. 一道BFS题。具体是什么记不清了
+
+on-site:
+
+1. 白男
+count islands in a m*n grid （一个联通的值为1的区域被视为一个island）
+例：
+    0011010
+    0010010
+    1000110
+    0000001
+
+    4 islands found in above grid
+Design： copy and shuffle lines in a 8 GB file, memory limit 1 GB (you are 
+given multiple machines)
+2.国人
+void minMSwap(int[] num, int m), return the min array after m swaps， each 
+swap happens only between two adjacent elements([4,2,1,3], 2 return [1,4,2,3
+] )
+4,2,1,3
+4,1,2,3
+1,4,2,3
+design a protocol to syncing gmail messages among different client apps 
+
+3.小白
+give a list of <id, parent id, weight>, build the tree(not limited to a 
+binary tree), then update each node’s sum value(sum is the sum of all its 
+descendents’ weights)
+int[] num incremental(大数加一)
+design interface for memory cache
+
+4. 国女
+find a intersection to build office so that the sum of all employees’ 
+commute distances is minimum. （the map is represented as a m*n grid, you 
+are given each employee’s coordination, they can only move in up-down and 
+left-right directions）
+
+5. 白男manager
+How to find median of unsorted integers in linear time
+Design the system architecture(FE and BE) for above service in a distributed
+system (find optimal office location).
+
+
+FB
+phone: 小白
+word break, suffixtree
+
+Onsite:
+1. 越南人？
+Talked the resume, project and behavior questions. lowest common ancestor 
+with parent pointer. 
+2. 白男
+is valid binary search tree (handle edge case), if the tree size exist 
+memory limit, how to handle? 
+3. 白男
+Design question, FB search
+4. 国人
+give a time, search in a log file. 需要自己提问需求，并考虑边界情况。
+    00:23 *****
+    00:24 *****
+    00:56 *****
+    01:02 *****
+
+how to distribute the work to 10 servers?
+5. 白男
+Celebrity Problem

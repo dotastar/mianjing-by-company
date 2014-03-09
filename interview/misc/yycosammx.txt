@@ -1,0 +1,50 @@
+http://www.mitbbs.com/article_t/JobHunting/32621725.html
+发信人: yycosammx (squarY), 信区: JobHunting
+标  题: L和T家电面面经
+关键字: Linkedin,Twitter
+发信站: BBS 未名空间站 (Sat Feb  8 00:06:09 2014, 美东)
+
+LZ在国内，春节期间面了L和T，附上面经，攒RP。
+
+Linkedin, system&infra team。版上好人推荐的general hiring，没选上，后来自己
+在linkedin投的这个职位
+PS1: 
+senior staff engineer，老美，70年代大学毕业。
+1.  聊简历和技术背景
+2.  子数组最大和，我说见过，说了O(n)的方案，没coding
+3.  Search in rotated sorted array。开始没考虑重复元素，后来修正了。但面试官
+似乎不知道重复元素的影响，举了几个例子验证后，说OK
+最后，我问了一些linkedin infra的问题，解答很详细，并推荐了rest.li，后来和同
+事研究了下，在服务发现这块设计的很赞
+
+PS2: 
+国人主面，老外shadow
+1. 聊项目经验，问的很仔细，英文水平有限，又没法画图，解释的不太好
+2. Java和OS相关概念
+3. coding，序列化和反序列二叉树。用了leetcode的表示法。春节期间没练习，手生
+，结果有逻辑bug，当时感觉完全没信心了，提问阶段只问了一个就不想说了。
+
+2天后接到feedback，给了onsite。感谢同胞，关键时刻还是同胞靠谱啊。
+
+
+Twitter,  core storage team， PS安排在L的2面后一天，版上好人忙推荐，已悲剧，
+抱歉给推荐人丢脸了。
+PS1:
+老美，70年代MIT毕业，感觉对JAVA和底层技术理解很好
+1.  聊项目
+2.  Java相关问题，OOD和并发，比较深入，包括java memory model, lock-free, 
+dead-lock等
+3.  coding: N个list求Kth largest，用heap解的，O(nlogk)。实现时又一个bug，已
+经要哭了。。。 修正后，follow up了其他几种方案和对比
+感觉聊的还行，最后问我为什么人在国内但申请US的职位，解释后，说祝我好运，我感
+觉就是跪了
+
+第二天收到拒信，问了原因，recruiter应该是安慰我，说职位比较紧急，只考虑马上
+能来干活的，欢迎下次申请。第一次悲剧，挺难过的。
+
+
+下周开始onsite，由于是国内候选人，都不用去US。G在北京，FB在HK，L是Skype视频
+onsite（弱问，这也可以叫onsite？准备买个白板，不然system design感觉没法表达）
+
+最后求个bless~
+

@@ -1,0 +1,50 @@
+http://www.mitbbs.com/article_t/JobHunting/32607193.html
+发信人: a060601199 (昵称), 信区: JobHunting
+标  题: linkedin,rocketfuel, google面经若干
+发信站: BBS 未名空间站 (Sat Jan 11 04:22:49 2014, 美东)
+
+L:
+
+问答题
+Write-through cache vs write-back cache 
+what's memory mapped file
+
+算法题，都是老题
+1) 给一个nested的int array， 返回sum of int weight by its depth
+2) 写一个支持removeRandom的hashtable
+3) 一串字符串，返回有多少个substring符合某些pattern，这些pattern都是10char的
+长度，所以逐个比较就可以了
+4) tree lowest ancestor( tree node have parent pointer)
+
+
+RF:
+基本全是老印，一个比一个吊炸天
+
+1) 给一个数字，可以删除k个digit，返回最小的结果
+example num=42139,k=1 == > 2139
+answers: 首先从左到右，如果左边的digit比右边的大，就删除左边的digit，如果删
+除不够k个digit则把最后的几位删掉，不大好实现，最好把输入变成array再做，或者
+java的string
+
+2) 写一个数据结构支持,put,get,getRandom
+    BST postorder to a linkedlist
+    convert sorted arry to BST
+
+3) hadoop任务进行到一半时候DFS name node挂了，如果记录state保证之后能继续任
+务而不是重新开始(这题其实没大懂）
+
+4) clone directed graph
+
+5) design a log system to record structure/object，有点serialize + key-value
+store filesystem 的感觉
+leetcode Interleaving String 
+
+
+google面的是TSE, technical solution engineer
+
+network trouble shooting，场景是客户说无法上网，让你如何一步步isolate 
+problem，很坑爹的题目
+
+还有就是给一堆http的报文，问你发生了什么
+
+考几个linux cmd，cat file | awk '{print $5}' | uniq

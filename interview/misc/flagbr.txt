@@ -1,0 +1,153 @@
+http://www.mitbbs.com/article_t/JobHunting/32619609.html
+发信人: flagbr (flagbr), 信区: JobHunting
+标  题: FLAGBR 面经
+关键字: 面经
+发信站: BBS 未名空间站 (Wed Feb  5 00:17:35 2014, 美东)
+
+一直被同学催着写个面经，造福后人。自己太懒，拖了好久~ 面试过程中遇到的国人都
+很nice，感觉无以回报，只能写个面经分享心得，希望能够帮助更多的国人。
+
+在湾区和即将去湾区的喜欢吃喝玩乐的小伙伴们请联系我(flagbr.cs@gmail.com)，可
+以一起去夏威夷，阿拉斯加，加勒比玩，想想还有点小激动呢 :-) 欢迎妹子勾搭 ^_^
+
+背景：
+即将master毕业，无北美实习经验，无开源项目经验
+，GPA不高，没搞过acm，不喜欢写代码，喜欢瞎琢磨，喜欢扯淡，喜欢吃喝玩乐，喜欢
+滑雪爬山(蛮厉害的那种)，喜欢各处玩(这个也蛮厉害的啊，自恋ing)，不准备长期做
+码农。
+
+结果：
+拿了FLAGR的offer，B家主动cancel了onsite。非常幸运，面了的公司都拿了offer，最
+终去了最喜欢的F家，多要了一点sign on，因为穷的太久了，急需点钱来玩。对于
+package来说，基本都是标准package，开始的时候F最多，后来G给加了不少，最终拒绝
+G的时候还要再给加，感觉G很喜欢抢F的人啊！钱多钱少不太看重，反正也不准备长期
+做码农。自己感觉的hiring bar的排序：facebook=linkedin>google>amazon, 当然，
+难度是随着时间改变的，招人多的时候容易，不怎么招人的时候就很难。
+
+面经：
+Bloomberg
+电面：mapreduce一道题(和search engine有关，build index)，hashtable实现相关问
+题，智力题(不难)，开放题(match persons and teams, each person has a rank for
+each team, each team also has a rank for each person, design the matching 
+algorithm)
+onsite：cancel了。开始的时候目的很单纯，只是想免费去纽约玩，后来发现只给报销
+一晚的住宿，而且要穿正装(没有正装啊！还要花钱买啊！), 而且坐飞机太久太累
+
+Amazon
+比较奇葩的group interview，不需要电面，直接去西雅图onsite。一共大概30人，每3
+人一组，一起做一个project，project已经被分为了3个部分，每人选一部分，各部分
+之间联系不大，所以可以focus在自己的部分，但amazon很看重communication和
+leadership，所以还要互相交流，互相帮助。一开始被选为group interview的时候很
+开心，总算不用准备讨厌的OO design题了！后来发现没有电面直接onsite的问题是录
+取率必然不高！而且不知道真正录取的标准，感觉没有底。
+对于写的代码而言，只需要给出一个valid的输出即可，因为没有给优化的目标，也没
+有明确的优化方向。但代码一定要写的清楚明白，一个100行的程序不同人写出来体现
+出的水平大不相同。我最终写了一个最直接的实现(100行python)，并且在注释中讨论
+了各种不同优化目标下的改进方案。
+对于communication和leadership来说，很重要！会有工程师在旁边看着你！写代码的
+过程中会被叫出去一次30分钟，一次15分钟的面试。30分钟的聊自己是怎么做的，15分
+钟的随便聊，我聊了一通吃喝玩乐，相谈甚欢。
+
+Facebook
+签了offer，就不透露题了，总之感觉facebook的bar最高，面试题的难度不同人差别很
+大，题目简单不一定就有offer，题目难也未必没offer，不好说。
+
+Rocket Fuel
+code challenge: auto racer
+电面1: 
+第一题：贪心
+Given a number, can you remove k digits from the number so that the new 
+formatted number is smallest possible.
+input: n = 1432219, k = 3
+output: 1219
+第二题：DP
+BT(binary tree), want to find the LIS(largest independent set) of the BT
+LIS: if the current node is in the set, then its chilren should not be in 
+the set. So that the set has the largest number of nodes.
+
+电面2：
+第一题：Median of Two Sorted Arrays
+第二题：DP
+一个二维数组，元素是0或1，找出最大的由1构成的"X"形状
+
+onsite:
+1. print all subsets
+   system design(N topics, publishers, subscribers, scalability, distributed)
+   the most frequent urls in the past minute, hour, day
+2. manager interview
+   code review
+3. shortest path between two nodes of a tree(no parent pointer)
+4. machine learning(不懂)
+5. machine learning(不懂)
+
+Rocket Fuel是自己投的，因为在网上看到code challenge挺有意思。onsite的时候了
+解到他家最近要搬进新楼里，应该招人很多，大家可以试一试，题目不简单
+
+Google:
+电面：
+remove duplicate lines of a file(what if the file is very large which could 
+not be held in the main memory)
+开关灯问题
+Trapping Rain Water(leetcode)
+sometimes a program works, sometimes it does not. Possible reasons
+
+onsite:
+1. clone directed graph(recursive, non-recursive)
+   longest common suffix of two linked list
+   data structure design
+2. how many (m, n) pairs such that m*m+n*n<N
+   线索化二叉树
+3. 判断一个点是否在一个凸多边形内, O(n), O(logn)
+4. group items(BFS)
+   MapReduce(filter a collection of documents, the words which occur more 
+than 5000 times)
+
+google面的不好，因为实在是太累了，幸运的是还是给offer了。
+
+linkedin
+电面1：
+第一题：给一个words list, 输入两个单词，找出这两个单词在list中的最近距离(先
+写了一个没有预处理的，又写了一个预处理建index的)
+['green', 'blue', 'orange', 'purple', 'green']  f.distance(list, 'blue', '
+green') # output 1
+第二题：类似binary search的一题，要注意boundary case
+
+电面2：
+binary tree level order traversal, 写了三种方法。。。(BFS用arraylist，类似
+DFS，BFS用queue)
+
+onsite:
+1. romanToInt, intToRoman, 
+   N points, m nearst ones
+2. 双向链表，每个node可能都有父节点和子节点，每个父子节点又是一个链表。把它
+拍扁，顺序随意，O(1)空间复杂度
+   edit distance
+3. system deisign: design amazon product page
+4. project presentation
+5. group fit
+
+LinkedIn很不错，食堂很好吃，并没有传说中的那么多印度人，国人挺多的。听hr说
+linkedin今年要扩大技术团队，大家可以投一下
+
+找工作经验：
+1. 不要把战线拉的太长，2个月最好，时间久了就没有激情了，效果反倒不好。准备的
+时候要全力以赴，concentration
+2. 安排面试最好不要把所有公司放在同一周，实在是太累了，最好是两个onsite之间
+间隔两天
+3. 对于男生来说，准备面试无聊的时候可以做做俯卧撑和卷腹，即使拿不到offer还能
+练出胸肌和腹肌~ 
+4. CC150随便看看就行了，leetcode要“好好”做(融会贯通)，面试一家公司之前看看
+相应的面经，足够了
+5. 如果不是搞acm的，leetcode至少要刷一遍再去面flag。刷几遍不关键，关键是要有
+提高
+6. 提高两方面：1.coding能力：会做的题能写出bug free，简洁可读性好的代码 2. 
+算法，解决问题的能力：没见过的题，一步一步想到面试官想要的方法
+7. coding能力：写的程序越短越好，思路清楚，容易看懂；可以写多个函数，可读性
+好很多，写起来也容易；争取一遍写完就OK，不要改来改去；我感觉coding能力的重要
+性被大家严重低估了，很多人只关心算法，其实能把程序写的干净漂亮才是最关键的。
+8. 算法，解决问题的能力：即使见过的题也要一点一点的分析，面试官看重的是分析
+和交流的过程，而不是最终的solution；不要只知道多做题，要多思考，这个和高考一
+样，翻来覆去就是几种类型的题，按照类型来做，很快就熟练了
+9. 和面试官聊的开心很关键，要表现出积极，乐观，阳光，热爱生活，让面试官enjoy
+面试过程，喜欢和你一起工作
+10. 不要抱怨，不要给自己找借口

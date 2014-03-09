@@ -1,0 +1,26 @@
+http://www.mitbbs.com/article_t/JobHunting/32636325.html
+发信人: noaddiction (五行缺火), 信区: JobHunting
+标  题: A onsite 4轮面筋
+发信站: BBS 未名空间站 (Fri Feb 28 10:58:55 2014, 美东)
+
+回馈下本版，长期潜水得到了很多帮助。
+
+算法两题，一个是leetcode原题，判断两个tree node的lowest common ancestor.
+另一个是directed graph, 代表work flows, 打印dependency sequence.
+1->2->3
+4->5《  （两个分别指向3，8的箭头）
+6->7->8
+task 3必须在1245都完成后才出现，task 8必须在4567都完成才出现。
+sequence12453678是个解。
+基本靠提示做的。3和8只有进来的edges, 当作root, 分别做post order tree 
+traversal
+(不一定binary tree). 结果合并并且避免重复就可以了。
+
+OO design题主要针对scalability。搞熟stateless, stateful conversation的差别, 
+partition, replica各自的好处就差不多了。我尽量把自己知道的知识都表达出来，只
+要沾边的。比如，这个系统用name value database比sql更好。Optimistic lock和
+pessimistic可以同时使用，用checked exception提供alternative work flow比
+return null好，等等。
+
+behavior问题主要靠以前工作经验。
+

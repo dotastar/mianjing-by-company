@@ -1,0 +1,27 @@
+http://www.mitbbs.com/article_t/JobHunting/32640527.html
+发信人: mechanical (mechanics), 信区: JobHunting
+标  题: A家电面面经
+发信站: BBS 未名空间站 (Wed Mar  5 23:28:35 2014, 美东)
+
+今天下午电面A家
+
+面试官是经理，印度人
+
+三道题
+
+第一题：给一个全是质数的数组，比如[3,7,11,17,3,7]，返回有重复的质数，这里是[
+3,7]
+
+我就直接用general的方法做的，真心不知道面试官说全是质数有什么企图。。
+
+第二题：就是判断是不是BST。。
+
+第三题：考的design pattern - Observer design pattern
+我把observer design pattern 写了个skeleton就完事了
+
+之前还有一点behavior问题和resume问题，总共就45分钟
+
+晚些时候HR告诉我通过了
+
+希望大家面试顺利
+

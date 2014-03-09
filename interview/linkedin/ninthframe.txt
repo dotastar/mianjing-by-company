@@ -1,0 +1,26 @@
+http://www.mitbbs.com/article_t/JobHunting/32624373.html
+发信人: ninthframe (ninthframe), 信区: JobHunting
+标  题: Linkedin 电面面经
+关键字: Linkedin
+发信站: BBS 未名空间站 (Tue Feb 11 17:36:46 2014, 美东)
+
+因为已经拿了A家，之前又听说linkedin很难（recruitor 在email里说 we have 
+extremely high hiring bar, 直接把我吓到了），本来只是想去打个酱油的。但面完
+感觉挺简单，不知道是因为电面还是面试官是国人大姐给我放水了。题目如下：
+
+JAVA part:
+
+1 interface 和 abstract class 区别
+2 multithread, thread safe
+3 equals 和 == 区别
+
+Web part:
+
+1 get 和 post 区别
+2 http 和 https 区别
+
+Algorithm:
+
+1 NestedInteger 如 {2, 4, {6, {8}}} calculate weighted sum. weight is the 
+depth.
+2 Two sum

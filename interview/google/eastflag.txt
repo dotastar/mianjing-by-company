@@ -1,0 +1,19 @@
+http://www.mitbbs.com/article_t/JobHunting/32575573.html
+发信人: eastflag (Minifancy), 信区: JobHunting
+标  题: 最新G 电面面经
+关键字: G,电面
+发信站: BBS 未名空间站 (Tue Nov 12 16:37:51 2013, 美东)
+
+今天G的电面，应该是第一轮电面吧，因为题目比较简单。。。
+
+对面是个女的，估计是SDE,先是简单问下为啥选Google，然后是两道题
+
+1. 大数+1
+这题好常见。。。
+
+2. 对数组排序，使得a1<=a2>=a3<=a4>=...
+也是很简单的O(n)，注意写的时候不用swap元素。。。
+
+Google doc写的，大概花了30分钟，然后问了下有什么问题。。。
+
+嗯，这周要去A家on-site,求bless~~
