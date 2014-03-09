@@ -1,0 +1,8 @@
+Program("myls.c")
+Program("mycp.c")
+Program("mycp2.c")
+Program("mypid.c")
+Program("myshell.c")
+Program("myerror.c")
+Program("myuid.c")
+Program("mysig.c")

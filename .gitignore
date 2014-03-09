@@ -1,3 +1,7 @@
 *.pdf
 *.djvu
 *.exe
+
+*.dblite
+
+*.o
