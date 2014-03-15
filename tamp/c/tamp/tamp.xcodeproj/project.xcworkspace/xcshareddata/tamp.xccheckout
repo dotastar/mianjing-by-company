@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>IDESourceControlProjectFavoriteDictionaryKey</key>
+	<false/>
+	<key>IDESourceControlProjectIdentifier</key>
+	<string>D6B1D438-989E-4CC6-8580-2D4B32E038DC</string>
+	<key>IDESourceControlProjectName</key>
+	<string>tamp</string>
+	<key>IDESourceControlProjectOriginsDictionary</key>
+	<dict>
+		<key>B5DC601B-A439-4D90-89B3-4723DEB24743</key>
+		<string>https://github.com/wuyang/wypractice.git</string>
+	</dict>
+	<key>IDESourceControlProjectPath</key>
+	<string>tamp/c/tamp/tamp.xcodeproj/project.xcworkspace</string>
+	<key>IDESourceControlProjectRelativeInstallPathDictionary</key>
+	<dict>
+		<key>B5DC601B-A439-4D90-89B3-4723DEB24743</key>
+		<string>../../../../..</string>
+	</dict>
+	<key>IDESourceControlProjectURL</key>
+	<string>https://github.com/wuyang/wypractice.git</string>
+	<key>IDESourceControlProjectVersion</key>
+	<integer>110</integer>
+	<key>IDESourceControlProjectWCCIdentifier</key>
+	<string>B5DC601B-A439-4D90-89B3-4723DEB24743</string>
+	<key>IDESourceControlProjectWCConfigurations</key>
+	<array>
+		<dict>
+			<key>IDESourceControlRepositoryExtensionIdentifierKey</key>
+			<string>public.vcs.git</string>
+			<key>IDESourceControlWCCIdentifierKey</key>
+			<string>B5DC601B-A439-4D90-89B3-4723DEB24743</string>
+			<key>IDESourceControlWCCName</key>
+			<string>wypractice</string>
+		</dict>
+	</array>
+</dict>
+</plist>
