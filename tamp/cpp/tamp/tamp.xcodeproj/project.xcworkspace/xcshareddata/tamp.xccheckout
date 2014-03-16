@@ -5,7 +5,7 @@
 	<key>IDESourceControlProjectFavoriteDictionaryKey</key>
 	<false/>
 	<key>IDESourceControlProjectIdentifier</key>
-	<string>8FE9F192-393B-4780-B93C-52133A5E99A4</string>
+	<string>F11A12B0-D4C9-4CFC-9259-A11D5D9CBB3A</string>
 	<key>IDESourceControlProjectName</key>
 	<string>tamp</string>
 	<key>IDESourceControlProjectOriginsDictionary</key>
@@ -14,7 +14,7 @@
 		<string>https://github.com/wuyang/wypractice.git</string>
 	</dict>
 	<key>IDESourceControlProjectPath</key>
-	<string>tamp/c/tamp/tamp.xcodeproj/project.xcworkspace</string>
+	<string>tamp/cpp/tamp/tamp.xcodeproj/project.xcworkspace</string>
 	<key>IDESourceControlProjectRelativeInstallPathDictionary</key>
 	<dict>
 		<key>B5DC601B-A439-4D90-89B3-4723DEB24743</key>
