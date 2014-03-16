@@ -12,7 +12,7 @@ public class Counter {
     private int value;
     //private Lock lock = new Peterson();
     //private Lock lock = new TTASLock();
-    private Lock lock = new BackoffLock();
+    private Lock lock = new ALock(2);
     public Counter(int c){
         value = c;
     }
@@ -43,6 +43,7 @@ public class Counter {
                     //System.out.println(message);
                     for(int i = 0; i < 5000000; i++){
                         c.getAndIncrement();
+                        System.out.println("="+c.get());
                     }
                 }
             });

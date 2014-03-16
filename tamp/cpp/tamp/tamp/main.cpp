@@ -7,12 +7,19 @@
 //
 
 #include <iostream>
+#include <thread>
+
+using namespace std;
+
+void hello()
+{
+    cout<<"Hello world"<<endl;
+}
 
 int main(int argc, const char * argv[])
 {
-
-    // insert code here...
-    std::cout << "Hello, World!\n";
+    thread t(hello);
+    t.join();
     return 0;
 }
 

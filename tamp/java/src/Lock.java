@@ -1,5 +1,6 @@
 import java.util.Random;
 import java.util.concurrent.atomic.AtomicBoolean;
+import java.util.concurrent.atomic.AtomicInteger;
 
 /**
  * Created with IntelliJ IDEA.
@@ -109,5 +110,34 @@ class BackoffLock implements Lock{
     }
     public void unlock(){
         state.set(false);
+    }
+}
+
+class ALock implements Lock{
+    ThreadLocal<Integer> mySlotIndex = new ThreadLocal<Integer>(){
+        protected Integer initialValue() {
+            return 0;
+        }
+    };
+    AtomicInteger tail;
+    boolean[] flag;
+    int size;
+    public ALock(int capacity){
+        size = capacity;
+        tail = new AtomicInteger(0);
+        flag = new boolean[capacity];
+        flag[0] = true;
+    }
+    public void lock(){
+        int slot = tail.getAndIncrement() % size;
+        System.out.println(slot);
+        mySlotIndex.set(slot);
+        System.out.println(flag[slot]);
+        while(!flag[slot]){};
+    }
+    public void unlock(){
+        int slot = mySlotIndex.get();
+        flag[slot] = false;
+        flag[(slot + 1) % size] = true;
     }
 }
