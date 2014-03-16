@@ -1,0 +1,31 @@
+http://www.mitbbs.com/article_t/JobHunting/32634303.html
+发信人: yw001 (肥猴), 信区: JobHunting
+标  题: G onsite 面经
+发信站: BBS 未名空间站 (Tue Feb 25 16:37:40 2014, 美东)
+
+mountain view 两周前面的，今天电话来hiring committee没过。
+
+（1） 中年白人： 先在手机上演示了一个game, 就是一个球从起点开始沿着通道，看
+能不能滚到终点。不过有限制， 每次球一走到底要不到边界，要不到障碍物，中间不
+能停留。 可以上下左右走，然后让写个function 给定起点， 终点，和图，判断是不
+是solvable. 写出来了， 就是用BFS,有个小bug被指出。然后问复杂度， 问如何优化。
+（2） 韩国人： a) 给一个dictionary, 再给一个set of coding string （g5, goo3,
+goog2, go2le.........). return all string from dictionary that can be 
+matched with the coding string. 要求尽量减少dictionary look up 次数。给了个
+方法，但一直不满意复杂度。
+                     （b)如何用Trie,   把问题(a)解决,要求写code 建一个Trie包
+括所有字典词和coding string.不是很明白。。。凭感觉写了个。
+
+（3） 阿三， 非常拽。。。 给一个dictionary, 一个string,找出dict 里能全部用
+string里的letter 表示的所有最长的词。给了算法，死活不满意，不让我写code. 估
+计被黑了。
+  (4）阿三。 design google calendar .  要求分析如何存data, 如何invoke user 
+created events, 如何handle 100000events per second, 然后要写了一部分thread 
+safe 的code 实现如何invoke event.
+
+(5)年轻白人： (a)leetcode 上的coin 题， 用DP. (b)给你一个password 假定6位， 
+有个function 每call 一次就给你一个triplet 是password 里的随即三位，order不变
+。比如google, 可能返回， ggl, goe, oog, ool, ........
+问如何最有效破译这个密码，写code. 
+
+下周Facebook onsite, 求bless 

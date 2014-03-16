@@ -1,0 +1,30 @@
+http://www.mitbbs.com/article_t/JobHunting/32644779.html
+发信人: tsunami0102 (tsunami0102), 信区: JobHunting
+标  题: Amazon Onsite 面经
+发信站: BBS 未名空间站 (Tue Mar 11 19:35:30 2014, 美东)
+
+上个月刚面的,45分钟一轮,一共4轮, 第一轮就碰上了bar raiser,已跪
+
+1. (Bar Raiser) Amazon服务器有很多log文件记录用户访问Amazon的行为,每条log形
+式为(时间   访问者ID   访问网页)
+     每个访问者访问Amazon网页所产生的每条log不一定在同一个log文件里,相近时间
+的log也不一定在一个文件里.
+     
+    问:
+     用户每次访问Amazon都会产生一串访问序列(类似先主页 ->搜索产品->产品介绍-
+>另一个产品->.....), 针对每一串   访问序列,仅取前三个网页组成一个三元组(如上
+面的例子,就是<主页,某搜索页面,某产品页面>), 统计TOP K 的三元组.
+(跪在这题上了,先要确定如何判断用户的一次访问,然后是怎样从好多log文件中高效地
+提取每个用户每次访问的前三个网页,存在什么地方,最后把这堆信息用heap或者其他什
+么取top k).
+
+2. 给一个二叉树,找到与给定节点距离为N的所有节点(没有parent link,有parent 
+link),两个节点间隔着几条边,就是距离为几
+
+3.  1) Remove duplicate in an array
+     2) Longest common prefix in an array of strings.
+
+4. 1) Top K elements in an array.
+    2) 两个单词,长度一样,找出从一个单词变到另一个单词的最短路径,每次只能改变
+一个字母,且改变字母后的单词必须是有效的单词(我是假定有字典能判断一个单词是否
+有效,然后BFS.)   
