@@ -12,7 +12,7 @@ public class Counter {
     private int value;
     //private Lock lock = new Peterson();
     //private Lock lock = new TTASLock();
-    private Lock lock = new ALock(2);
+    private Lock lock = new ALock(30);
     public Counter(int c){
         value = c;
     }
@@ -25,6 +25,7 @@ public class Counter {
         } finally {
             lock.unlock();
         }
+        System.out.println(Thread.currentThread().getName() +"] value="+value);
         return temp;
     }
     public int get(){
@@ -34,7 +35,7 @@ public class Counter {
     static Counter c = new Counter(0);
 
     public static void main(String[] args){
-        Thread[] threads = new Thread[2];
+        Thread[] threads = new Thread[20];
         for(int i = 0; i < threads.length; i++){
             //final String message = "Hello world from thread" + i;
             threads[i] = new Thread(new Runnable() {
@@ -43,12 +44,13 @@ public class Counter {
                     //System.out.println(message);
                     for(int i = 0; i < 5000000; i++){
                         c.getAndIncrement();
-                        System.out.println("="+c.get());
+
                     }
                 }
             });
         }
 
+        long beginTime = System.nanoTime();
         for(int i = 0; i < threads.length; i++){
             threads[i].start();
         }
@@ -60,6 +62,8 @@ public class Counter {
                 e.printStackTrace();
             }
         }
+        long endTime = System.nanoTime();
+        System.out.println("used time:" + (endTime - beginTime));
         System.out.println("="+c.get());
     }
 

@@ -130,14 +130,17 @@ class ALock implements Lock{
     }
     public void lock(){
         int slot = tail.getAndIncrement() % size;
-        System.out.println(slot);
         mySlotIndex.set(slot);
-        System.out.println(flag[slot]);
-        while(!flag[slot]){};
+        //System.out.printf(Thread.currentThread().getName() + "] lock slot=%d, flag=%b\n", slot, flag[slot]);
+        while(!flag[slot]){
+            //System.out.printf(Thread.currentThread().getName() + "] lock in while slot=%d, flag=%b\n", slot, flag[slot]);
+        };
     }
     public void unlock(){
         int slot = mySlotIndex.get();
+        //System.out.printf(Thread.currentThread().getName() + "] enter unlock slot=%d, flag=%b, next flag=%b \n",slot, flag[slot], flag[(slot + 1) % size]);
         flag[slot] = false;
         flag[(slot + 1) % size] = true;
+        //System.out.printf(Thread.currentThread().getName() + "] exit unlock slot=%d, flag=%b, next flag=%b \n",slot, flag[slot], flag[(slot + 1) % size]);
     }
 }
