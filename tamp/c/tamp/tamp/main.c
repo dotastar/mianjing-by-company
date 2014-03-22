@@ -13,11 +13,13 @@
 #include <unistd.h>
 //#include <stdatomic.h>
 #include <sys/time.h>
+#include <string.h>
 
-#define NUM_THREADS 8
+#define NUM_THREADS 2
 #define LOOP_NUM 10000000
 
 pthread_key_t key;
+
 int counter;
 pthread_mutex_t mutex;
 void init_thread_id(){
@@ -78,6 +80,64 @@ void ttas_unlock(){
     __sync_lock_release(&ttas_state);
 }
 
+int backoff_lock_min_delay, backoff_lock_max_delay;
+int backoff_lock_limit;
+int backoff_state = 0;
+void backoff_lock_init(){
+    backoff_lock_min_delay = 1;
+    backoff_lock_max_delay = 100;
+    backoff_lock_limit = backoff_lock_min_delay;
+}
+void backoff_lock(){
+    while (true) {
+        while(backoff_state){};
+        if(!__sync_lock_test_and_set(&backoff_state, 1))
+            return;
+        else {
+            int delay = rand() % backoff_lock_limit;
+            backoff_lock_limit *= 2;
+            if(backoff_lock_limit > backoff_lock_max_delay){
+                backoff_lock_limit = backoff_lock_max_delay;
+            }
+            usleep(delay);
+        }
+    }
+}
+
+void backoff_unlock(){
+    __sync_lock_release(&backoff_state);
+}
+
+
+int alock_size;
+int alock_tail = 0;
+int* alock_flag = 0;
+pthread_key_t alock_slot;
+int alock_cacheline_ratio = 32;
+void alock_init(int thread_num){
+    alock_size = thread_num;
+    alock_flag = malloc(sizeof(int)*thread_num*alock_cacheline_ratio);
+    memset(alock_flag, 0, sizeof(int)*thread_num*alock_cacheline_ratio);
+    alock_flag[0] = 1;
+    pthread_key_create(&alock_slot, NULL);
+}
+
+void alock_lock(){
+    int slot = __sync_fetch_and_add(&alock_tail, 1) % alock_size;
+    int* p_slot = (int*)pthread_getspecific(alock_slot);
+    *p_slot = slot;
+    pthread_setspecific(alock_slot, p_slot);
+    while(! alock_flag[alock_cacheline_ratio*slot]){
+        //printf("thread %d slot %d tail %d\n", (unsigned int) pthread_self(), slot, alock_tail);
+    }
+}
+
+void alock_unlock(){
+    int* p_slot = (int*)pthread_getspecific(alock_slot);
+    int slot = *p_slot;
+    alock_flag[alock_cacheline_ratio*slot] = 0;
+    alock_flag[alock_cacheline_ratio*(slot + 1) % (alock_cacheline_ratio*alock_size)] = 1;
+}
 
 int counter_value = 0;
 
@@ -108,6 +168,20 @@ int get_and_increment4(){
     ttas_unlock();
     return temp;
 }
+int get_and_increment5(){
+    backoff_lock();
+    int temp = counter_value;
+    counter_value = temp + 1;
+    backoff_unlock();
+    return temp;
+}
+int get_and_increment6(){
+    alock_lock();
+    int temp = counter_value;
+    counter_value = temp + 1;
+    alock_unlock();
+    return temp;
+}
 
 unsigned long long int rdtscp(void)
 {
@@ -119,6 +193,9 @@ unsigned long long int rdtscp(void)
 }
 
 void* run_counter(void * arg){
+    int* p = malloc(sizeof(int));
+    *p = 0;
+    pthread_setspecific(alock_slot, p);
     struct timeval tv_begin,tv_end;
     unsigned long long tsc_begin, tsc_end;
     gettimeofday(&tv_begin, NULL);
@@ -129,14 +206,18 @@ void* run_counter(void * arg){
         //get_and_increment1();
         //get_and_increment2();
         //get_and_increment3();
-        get_and_increment4();
+        //get_and_increment4();
+        //get_and_increment5();
+        get_and_increment6();
     }
     tsc_end = rdtscp();
     gettimeofday(&tv_end, NULL);
     
-    unsigned long long int tv_interval = (tv_end.tv_sec - tv_begin.tv_sec)*1000000 + (tv_end.tv_usec - tv_begin.tv_usec);
-    unsigned long long int tsc_interval = tsc_end - tsc_begin;
-    printf("thread %d used %llu cycles, %llu us\n", get_thread_id(), tv_interval, tsc_interval);
+    //printf("s=%lu, u=%d\n", tv_end.tv_sec - tv_begin.tv_sec, tv_end.tv_usec - tv_begin.tv_usec);
+     long long int tv_interval = (tv_end.tv_sec - tv_begin.tv_sec)*1000000 + (tv_end.tv_usec - tv_begin.tv_usec);
+     long long int tsc_interval = tsc_end - tsc_begin;
+    printf("thread %d used %lld cycles, %lld us\n", get_thread_id(), tsc_interval, tv_interval);
+    free(p);
     return NULL;
 }
 
@@ -174,8 +255,11 @@ pthread_t* create_threads(int thread_num){
 int main(int argc, const char * argv[])
 {
     int thread_num = NUM_THREADS;
+    //printf("sizeof%d\n", sizeof(int));
     //int thread_num = get_processor_num();
     init_thread_id();
+    backoff_lock_init();
+    alock_init(thread_num);
     pthread_t* threads = create_threads(thread_num);
     
     for(int i = 0; i < thread_num; i++){
