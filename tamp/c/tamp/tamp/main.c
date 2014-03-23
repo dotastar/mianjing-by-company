@@ -18,24 +18,25 @@
 #define NUM_THREADS 2
 #define LOOP_NUM 10000000
 
-pthread_key_t key;
+
+pthread_key_t thread_id_key;
 
 int counter;
-pthread_mutex_t mutex;
+pthread_mutex_t thread_id_mutex;
 void init_thread_id(){
-    pthread_mutex_init(&mutex, NULL);
-    pthread_key_create(&key, NULL);
+    pthread_mutex_init(&thread_id_mutex, NULL);
+    pthread_key_create(&thread_id_key, NULL);
     counter = 0;
 }
 
 int get_thread_id(){
-    int* id = (int*)pthread_getspecific(key);
+    int* id = (int*)pthread_getspecific(thread_id_key);
     if(id == NULL){
         id = (int*)malloc(sizeof(int));
-        pthread_mutex_lock(&mutex);
+        pthread_mutex_lock(&thread_id_mutex);
         *id = counter++;
-        pthread_setspecific(key, id);
-        pthread_mutex_unlock(&mutex);
+        pthread_setspecific(thread_id_key, id);
+        pthread_mutex_unlock(&thread_id_mutex);
     }
     return *id;
 }
@@ -139,6 +140,37 @@ void alock_unlock(){
     alock_flag[alock_cacheline_ratio*(slot + 1) % (alock_cacheline_ratio*alock_size)] = 1;
 }
 
+pthread_mutex_t mutex;
+//pthread_spinlock_t spinlock;
+
+typedef struct _qnode{
+    int locked;
+} qnode;
+
+pthread_key_t clh_lock_node_key;
+pthread_key_t clh_lock_pred_key;
+qnode* clh_lock_tail;
+void clh_lock_init(){
+    pthread_key_create(&clh_lock_node_key, NULL);
+    pthread_key_create(&clh_lock_pred_key, NULL);
+    clh_lock_tail = malloc(sizeof(qnode));
+    clh_lock_tail->locked = 0;
+}
+void clh_lock_lock(){
+    qnode* node = (qnode*)pthread_getspecific(clh_lock_node_key);
+    node->locked = 1;
+    //qnode* pred = (qnode*)__sync_lock_test_and_set((qnode*)clh_lock_tail, node);
+    //pthread_setspecific(clh_lock_pred_key, pred);
+    //while(pred->locked){};
+}
+void clh_lock_unlock(){
+    qnode* node = (qnode*)pthread_getspecific(clh_lock_node_key);
+    node->locked = 0;
+    qnode* pred = (qnode*)pthread_getspecific(clh_lock_pred_key);
+    pthread_setspecific(clh_lock_node_key, pred);
+}
+
+
 int counter_value = 0;
 
 int get_and_increment1(){
@@ -182,6 +214,13 @@ int get_and_increment6(){
     alock_unlock();
     return temp;
 }
+int get_and_increment7(){
+    pthread_mutex_lock(&mutex);
+    int temp = counter_value;
+    counter_value = temp + 1;
+    pthread_mutex_unlock(&mutex);
+    return temp;
+}
 
 unsigned long long int rdtscp(void)
 {
@@ -191,11 +230,21 @@ unsigned long long int rdtscp(void)
     
     return ((unsigned long long)a) | (((unsigned long long)d) << 32);;
 }
+long long get_time_stamp(){
+    struct timeval tv;
+    gettimeofday(&tv, NULL);
+    return tv.tv_sec*1000000LL + tv.tv_usec;
+}
 
 void* run_counter(void * arg){
-    int* p = malloc(sizeof(int));
-    *p = 0;
-    pthread_setspecific(alock_slot, p);
+    int* p_alock_slot = malloc(sizeof(int));
+    *p_alock_slot = 0;
+    pthread_setspecific(alock_slot, p_alock_slot);
+    qnode* p_clh_lock_node = malloc(sizeof(qnode));
+    pthread_setspecific(clh_lock_node_key, p_clh_lock_node);
+    qnode* p_clh_lock_pred = NULL;
+    pthread_setspecific(clh_lock_node_key, p_clh_lock_pred);
+
     struct timeval tv_begin,tv_end;
     unsigned long long tsc_begin, tsc_end;
     gettimeofday(&tv_begin, NULL);
@@ -209,6 +258,7 @@ void* run_counter(void * arg){
         //get_and_increment4();
         //get_and_increment5();
         get_and_increment6();
+        //get_and_increment7();
     }
     tsc_end = rdtscp();
     gettimeofday(&tv_end, NULL);
@@ -217,7 +267,9 @@ void* run_counter(void * arg){
      long long int tv_interval = (tv_end.tv_sec - tv_begin.tv_sec)*1000000 + (tv_end.tv_usec - tv_begin.tv_usec);
      long long int tsc_interval = tsc_end - tsc_begin;
     printf("thread %d used %lld cycles, %lld us\n", get_thread_id(), tsc_interval, tv_interval);
-    free(p);
+    free(p_alock_slot);
+    free(p_clh_lock_node);
+    free(p_clh_lock_pred);
     return NULL;
 }
 
@@ -252,14 +304,18 @@ pthread_t* create_threads(int thread_num){
     return threads;
 }
 
+void main_init(int thread_num){
+    init_thread_id();
+    backoff_lock_init();
+    alock_init(thread_num);
+    pthread_mutex_init(&mutex, NULL);
+}
 int main(int argc, const char * argv[])
 {
     int thread_num = NUM_THREADS;
     //printf("sizeof%d\n", sizeof(int));
     //int thread_num = get_processor_num();
-    init_thread_id();
-    backoff_lock_init();
-    alock_init(thread_num);
+    main_init(thread_num);
     pthread_t* threads = create_threads(thread_num);
     
     for(int i = 0; i < thread_num; i++){
