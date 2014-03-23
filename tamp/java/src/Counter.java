@@ -12,7 +12,7 @@ public class Counter {
     private int value;
     //private Lock lock = new Peterson();
     //private Lock lock = new TTASLock();
-    private Lock lock = new ALock(30);
+    private Lock lock = new MSCLock();
     public Counter(int c){
         value = c;
     }
@@ -35,7 +35,7 @@ public class Counter {
     static Counter c = new Counter(0);
 
     public static void main(String[] args){
-        Thread[] threads = new Thread[20];
+        Thread[] threads = new Thread[2];
         for(int i = 0; i < threads.length; i++){
             //final String message = "Hello world from thread" + i;
             threads[i] = new Thread(new Runnable() {

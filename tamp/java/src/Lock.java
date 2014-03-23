@@ -1,6 +1,7 @@
 import java.util.Random;
 import java.util.concurrent.atomic.AtomicBoolean;
 import java.util.concurrent.atomic.AtomicInteger;
+import java.util.concurrent.atomic.AtomicReference;
 
 /**
  * Created with IntelliJ IDEA.
@@ -142,5 +143,78 @@ class ALock implements Lock{
         flag[slot] = false;
         flag[(slot + 1) % size] = true;
         //System.out.printf(Thread.currentThread().getName() + "] exit unlock slot=%d, flag=%b, next flag=%b \n",slot, flag[slot], flag[(slot + 1) % size]);
+    }
+}
+
+class CLHLock implements Lock{
+    private final AtomicReference tail;
+    private final ThreadLocal myPred;
+    private final ThreadLocal myNode;
+    public CLHLock(){
+        tail = new AtomicReference(new QNode());
+        myNode = new ThreadLocal(){
+            protected QNode initialValue(){
+                return new QNode();
+            }
+        };
+        myPred = new ThreadLocal();
+    }
+    @Override
+    public void lock(){
+        QNode node = (QNode)myNode.get();
+        node.locked = true;
+        QNode pred = (QNode)tail.getAndSet(node);
+        myPred.set(pred);
+        while(pred.locked){};
+    }
+
+    @Override
+    public void unlock(){
+        QNode node = (QNode)myNode.get();
+        node.locked = false;
+        myNode.set(myPred.get());
+    }
+    private class QNode{
+        volatile boolean locked;
+    }
+}
+
+class MSCLock implements Lock{
+    private final AtomicReference<QNode> tail;
+    private final ThreadLocal<QNode> myNode;
+    public MSCLock(){
+        tail = new AtomicReference<QNode>(null);
+        myNode = new ThreadLocal<QNode>(){
+            protected QNode initialValue(){
+                return new QNode();
+            }
+        };
+    }
+    @Override
+    public void lock(){
+        QNode node = myNode.get();
+        //node.locked = true;
+        QNode pred = tail.getAndSet(node);
+        if(pred != null){
+            node.locked = true;
+            pred.next = node;
+            while(node.locked){};
+        }
+    }
+
+    @Override
+    public void unlock(){
+        QNode node = myNode.get();
+        if(node.next == null){
+            if(tail.compareAndSet(node, null))
+                return;
+            while(node.next == null){}
+        }
+        node.next.locked = false;
+        node.next = null;
+    }
+    private class QNode{
+        boolean locked = false;
+        QNode next = null;
     }
 }
