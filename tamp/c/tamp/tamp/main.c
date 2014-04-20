@@ -14,9 +14,10 @@
 //#include <stdatomic.h>
 #include <sys/time.h>
 #include <string.h>
+#include <libkern/OSAtomic.h>
 
 #define NUM_THREADS 2
-#define LOOP_NUM 10000000
+#define LOOP_NUM 1000000
 
 
 pthread_key_t thread_id_key;
@@ -143,6 +144,9 @@ void alock_unlock(){
 pthread_mutex_t mutex;
 //pthread_spinlock_t spinlock;
 
+static OSSpinLock spinlock = OS_SPINLOCK_INIT;
+
+
 typedef struct _qnode{
     int locked;
 } qnode;
@@ -173,52 +177,59 @@ void clh_lock_unlock(){
 
 int counter_value = 0;
 
-int get_and_increment1(){
+int get_and_increment_no_lock(){
     int temp = counter_value;
     counter_value = temp + 1;
     return temp;
 }
 
-int get_and_increment2(){
+int get_and_increment_peterson_lock(){
     peterson_lock();
     int temp = counter_value;
     counter_value = temp + 1;
     peterson_unlock();
     return temp;
 }
-int get_and_increment3(){
+int get_and_increment_tas_lock(){
     tas_lock();
     int temp = counter_value;
     counter_value = temp + 1;
     tas_unlock();
     return temp;
 }
-int get_and_increment4(){
+int get_and_increment_ttas_lock(){
     ttas_lock();
     int temp = counter_value;
     counter_value = temp + 1;
     ttas_unlock();
     return temp;
 }
-int get_and_increment5(){
+int get_and_increment_backoff_lock(){
     backoff_lock();
     int temp = counter_value;
     counter_value = temp + 1;
     backoff_unlock();
     return temp;
 }
-int get_and_increment6(){
+int get_and_increment_alock(){
     alock_lock();
     int temp = counter_value;
     counter_value = temp + 1;
     alock_unlock();
     return temp;
 }
-int get_and_increment7(){
+int get_and_increment_mutex_lock(){
     pthread_mutex_lock(&mutex);
     int temp = counter_value;
     counter_value = temp + 1;
     pthread_mutex_unlock(&mutex);
+    return temp;
+}
+int get_and_increment_spinlock(){
+    OSSpinLockLock(&spinlock);
+    int temp = counter_value;
+    counter_value = temp + 1;
+    OSSpinLockUnlock(&spinlock);
     return temp;
 }
 
@@ -252,13 +263,14 @@ void* run_counter(void * arg){
     
     
     for(int i = 0; i < LOOP_NUM; i++){
-        //get_and_increment1();
-        //get_and_increment2();
-        //get_and_increment3();
-        //get_and_increment4();
-        //get_and_increment5();
-        get_and_increment6();
-        //get_and_increment7();
+        //get_and_increment_no_lock();
+        get_and_increment_peterson_lock();
+        //get_and_increment_tas_lock();
+        //get_and_increment_ttas_lock();
+        //get_and_increment_backoff_lock();
+        //get_and_increment_alock();
+        //get_and_increment_mutex_lock();
+        //get_and_increment_spinlock();
     }
     tsc_end = rdtscp();
     gettimeofday(&tv_end, NULL);
@@ -312,9 +324,10 @@ void main_init(int thread_num){
 }
 int main(int argc, const char * argv[])
 {
-    int thread_num = NUM_THREADS;
+    //int thread_num = NUM_THREADS;
     //printf("sizeof%d\n", sizeof(int));
     //int thread_num = get_processor_num();
+    int thread_num = 6;
     main_init(thread_num);
     pthread_t* threads = create_threads(thread_num);
     
