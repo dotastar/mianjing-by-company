@@ -1,0 +1,68 @@
+http://www.mitbbs.com/article_t/JobHunting/32652879.html
+发信人: crownrose (Tammy), 信区: JobHunting
+标  题: A,G SDE 面试总结
+发信站: BBS 未名空间站 (Mon Mar 24 14:23:26 2014, 美东)
+
+第一次试水北美找工作，前前后后持续4个月,拿到Amazon Fulltime offer，Google 
+Intern Host Match offer， 感谢那些一起刷题的朋友，感谢 watercold 帮主的帮助,
+dgs的帮忙! 刷题群：229623621 
+
+资料： introduction to algorithm; cracking code;
+
+Amazon： 
+  Amazon 首先进行online assessment，经典7道题碰上了三题；
+   1： single linked list circle detection (命中)
+   2： sum up array of numbers in window size (命中)
+   3： matrix path，只能往左或往右，要求使得path上的number的最小值最大
+   4: linked list的倒数第K个节点
+   5: Give student result structure:
+
+    struct Result{
+    int studentID;
+    string data;
+    int testScore;
+    }
+
+    给一个result的vector，返回一个map<ID, 最高5次平均分> (命中)
+    
+   6：Merge 2 sorted linkedList
+   7：求数组中出现频率最高的数
+
+Amazon Onsite: 5轮面试，leetcode难度
+    1： 实现Hash；
+    2: Least Recent Cache 实现；
+    3: Validate Binary Tree；
+    4: 电话号码转 string，purmutation
+    5: tic-tac-toe 和 游戏设计
+
+中间还穿插一些小题，比如敲入URL + 回车之后，发生什么事情； 用三种办法判断 
+Anagram；经典sort算法的时间复杂度,Max-Heapify的非递归实现方法等。
+
+Google 电面两轮，每轮45分钟，采用 shared google doc + 电话答题方式，签了保密
+协议。。。两轮面试完全没有 background talk，上来就直接编程，面试官提醒：如果
+不会，请直接说不会 LOL。。。。
+
+  1.1. 8进制到16进制转换；
+  1.2. MergeSort 变形题，面试官顺便考察了所有的sort 时间复杂度，稳定性以及 
+sort 算法的适用场所；
+  
+  第二轮 面试官问的比较杂，能记得的如下：二面超时10分钟
+  1：flatten linked list;
+  2：除了算法优化外，还有什么可以提高function 的性能；
+  3：列举cookie 的一些参数以及其意义；
+  4：MapReduce 算法；
+  5：一群人排队，每个人有(height, Tvalue), height表示身高，Tvalue表示 前面有
+几个比当前人身高高的人。。。然后顺序打乱，重新排队，复原以前的队列；
+
+   进入Google host match 之后就再没有心思面试了，推了一些去西雅图的onsite，
+本以为Google offer 到手了，没想到进入了漫长的等待。。。。对Google政策的不了
+解是今年最大的失算。
+
+    /*************  醒目 **********/
+  
+      如果版上的Googler组要实习，恳请內推啊！
+
+    /*************  醒目 **********/
+
+   Decline 了 Amazon 的fulltime offer，原因是Amazon 前两年不给master 办理绿
+卡，由于目前正在办理枫叶卡，不想鸡飞蛋打。。。。

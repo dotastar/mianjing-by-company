@@ -1,0 +1,29 @@
+http://www.mitbbs.com/article_t/JobHunting/32657765.html
+发信人: anthony2013 (hope), 信区: JobHunting
+标  题: Yahoo 面经
+发信站: BBS 未名空间站 (Sun Mar 30 03:27:31 2014, 美东)
+
+上周面试的，还没有结果，NCG
+
+第一轮：小印
+1) leetcode原题:Copy List with Random Pointer
+2) 问了一个linux命令du该如何设计
+
+第二轮：亚裔小伙
+1）按层打印出二叉树
+2)  给一个数字，转化成字符串，有多少种可能
+比如123，1=>a, 2=>b, 3=>c; 12=>l, 3=>c;  1=>a, 23=>w
+
+第三轮：
+1）Leetcode原题，买卖股票1
+2）LRU cache
+
+第四轮：
+1）reverse linked list，先写了iteration的解法，然后要求写出recursion
+然后问了若干java概念题目，system design的小问题，比如dead lock怎么处理之类的。
+
+工作了几个月，想换工作，刷题熟练度不高，有一些简单的题目都不记得了，比如买卖
+股票，reverse的recursion解法都有些提示下完成的。
+
+求bless，总感觉要悲剧。
+--

@@ -1,0 +1,32 @@
+http://www.mitbbs.com/article_t/JobHunting/32666723.html
+发信人: yaqifighting (yaqi), 信区: JobHunting
+标  题: EE 转ＣＳ面经
+发信站: BBS 未名空间站 (Wed Apr  9 15:33:18 2014, 美东)
+
+小女ＥＥ小硕一枚，　从刷题到面试整整半年，总算有着落了，在版上学了很多，现在
+把自己的面经总结下，希望能帮到别人。
+1, Microsoft
+on-campus
+*Card Shuffle
+*设计一个报警器
+
+2, Yelp
+phone:
+*chain iterator
+*给一个特定的message，根据keyword 输出，比如输出所有含yelp food 的message
+
+3, blackrock
+1, 设计file system
+2, Java refactor 的用法
+3， OOP 的基本概念
+
+4， A 家
+1， URL group， 输出最常用的URL
+2， 黑白格路径问题
+3， reverse a linked list ，两种方法
+4， Design bus schedule system
+
+
+还有一些记不太清楚，总体来讲觉得对EE 的同学来说从cracking the coding 开始是
+个不错的选择，然后再做一些leetcode, 对语言的基本概念要清楚。祝大家都能找到理
+想的工作。

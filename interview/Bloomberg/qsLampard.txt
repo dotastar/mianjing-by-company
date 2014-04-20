@@ -1,0 +1,40 @@
+http://www.mitbbs.com/article_t/JobHunting/32612895.html
+发信人: qsLampard (qsLampard), 信区: JobHunting
+标  题: Bloomberg面经【求祝福】
+关键字: bloomberg
+发信站: BBS 未名空间站 (Wed Jan 22 20:53:41 2014, 美东)
+
+总共三轮
+
+第一轮俩人technical
+1. tweet has topics, find top 10 topics of tweets send in last 30 minutes
+2. leetcode 积水问题
+3. there are different kind of databases; given a query, system will tell 
+you which database you should connect(system gives you a string like "Oracle
+" or "MySQL"). Design a class that could handle any query.
+
+第二轮俩人technical
+1. java questions
+2. make car; given “bus” return object bus; given "truck" return object 
+truck...etc
+3. many linked lists meet together. find the first node that all these 
+linked lists meet at
+eg: 1-2-3-4-5  6-2-3-4-5 7-8-4-5 return 4
+4. find kth node from the end of a linked list
+5. 3*3*3 由小白立方体组成的大立方体，表面刷黑然后打散，求所有27个小立方体都
+白色朝上的概率
+6. given double a,b(both between 0 and 1), return integer A B so |A/B-a|<b也
+就是两个integer相除的结果与a的误差小于b
+
+第三轮manager
+问一个做的项目，很多如何改进的问题，最后问我如何测改程序速度/内存/CPU占用率
+
+我第一轮的俩design都答得不好，tweet那题我把tweets分成多个部分多线程处理，要
+得到结果时merge一下次数,面试官表示merge太慢但是我也没什么好办法；database那
+题一开始没听懂，问了面试官好久
+第二轮java问题有一个问我object传参时可能method会修改object，怎么保证object不
+被修改。我只知道一个final关键字，但是貌似用不上？最后一题我先给了naive解法，
+后来提示下给的更好的解
+第三轮如何测程序CPU占用？我说了个方法但是感觉不太可行
+
+以往听说最后都有hr面，我这次没有,不知道机会大不大？

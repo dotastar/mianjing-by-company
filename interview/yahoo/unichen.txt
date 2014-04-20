@@ -1,0 +1,44 @@
+http://www.mitbbs.com/article_t/JobHunting/32674933.html
+发信人: unichen (greedyrouter), 信区: JobHunting
+标  题: Yahoo Platform组面经
+发信站: BBS 未名空间站 (Sat Apr 19 02:17:14 2014, 美东)
+
+继续发面经攒人品。因为第一门语言是Scheme，这个面试帮我复习了很多Java的知识。
+Decline了他们的offer。
+
+Phone:
+Round 1:
+把一个linked list里的元素两两交换。
+
+Round 2:
+在一棵binary search tree里找到小于某个值的最大元素。
+设计一个地铁售票机。
+
+Round 3：
+Implement Singleton.
+Implement Producer-consumer.
+
+Onsite:
+Round 1:
+1'  有2 billion个URL，每个URL都有一个size, 对于所有的size, 怎么找出95th 
+percentile
+2'  Implement strstr.
+
+Round 2：
+1‘ 关于String的，不记得细节了。
+2‘ 怎么判断一个数是否是2的整数次方。
+3’ String matching，一个String里有字母和＊， 怎么判断是否能够match一个
+dictionary中的任意单词。
+
+Round 3:
+1‘ Java的design pattern，你知道哪些， 最喜欢用哪一个？
+2’ Implement equal method for generic objects.
+3' Implement string reversion
+4' 怎么保证一个method是thread safe的。什么是deadlock？
+
+Round 4:
+1’ 有一个linked list，知道一个你需要删除的节点，不知道它前面的元素，如何删
+除之？
+2‘ 有一个过山车，从高空往下看是个圆形，并且只有一层。是不是存在两个点，他们
+的连线经过圆心，并且高度相等。若存在，如何找到它们？
+3‘ String replacement, 如何把一个string中所有的substr1更改成substr2？

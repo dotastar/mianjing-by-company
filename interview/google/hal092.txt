@@ -1,0 +1,25 @@
+http://www.mitbbs.com/article_t/JobHunting/32668905.html
+发信人: hal092 (hal092), 信区: JobHunting
+标  题: GOOGLE 第二轮电面
+发信站: BBS 未名空间站 (Fri Apr 11 13:29:15 2014, 美东)
+
+
+昨天电面，两道题 不算难，求好运~~
+
+1. Given a sorted array of floats, find the index of the number closest to x:
+Example: {1.2, 2.5, 9.3}  x = 5,    return 1
+
+
+
+
+2. Of the pairs of words in the dictionary that have no letters in common, 
+find one that maximizes the product of the words' lengths.
+
+cat
+dog
+feed
+pull
+space
+
+pair = word1, word2
+length = word1.size() * word2.size()
