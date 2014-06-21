@@ -1,0 +1,89 @@
+http://www.mitbbs.com/article_t/JobHunting/32692817.html
+发信人: wookoong (悟空), 信区: JobHunting
+标  题: airBnb电面面经
+发信站: BBS 未名空间站 (Sat May 10 01:21:41 2014, 美东)
+
+一上来就做题，没有废话。只做一题，但是要求直接编译运行出正确结果。
+
+题目是给定一个word list 和一个target word，要求输出在word list 里跟target 
+word的edit distance 相差不大于k的所有words。我写了一个基于edit distance的解
+法(见下面)，程序是要从头到尾都要写，包括main函数和test数据。写完后他问有没有
+更好的解法，我说可以用trie，但是我不觉得我能在剩余时间里写得出来基于trie的解
+法，就大致说了一下我认为的思路。在此也求大牛给一个基于trie解法的code。
+
+
+======================
+#include <iostream>
+#include <string>
+#include <vector>
+#include <algorithm>
+
+
+using namespace std;
+
+//k=1
+// word_list = ['dat', 'bat', 'batt', 'beetle']
+// similar(query, word_list)
+// similar('cat', word_list) = ['dat', 'bat']
+// similar('bat', word_list) = ['bat', 'batt', 'dat']
+// similar('datt', word_list) = ['dat', 'batt']
+// 
+// To execute C++, please define "int main()"
+
+vector<string> similar(string word, vector<string> &word_list, int k);
+int editDist(string word1, string word2);
+
+int main() {
+  string word = "datt";
+  vector<string> word_list = vector<string>({"dat", "bat", "batt", "beetle"}
+);
+  int k=1;
+  vector<string> ret = similar(word, word_list, k);
+  for(int i=0; i< (int) ret.size(); i++)
+    cout<<ret[i]<<endl;
+}
+
+
+
+
+int editDist(string word1, string word2){
+  int len1=word1.length();
+  int len2=word2.length();
+  int m[len1+1][len2+1];
+  //m[0][0]=0;
+  //init the matrix
+  for(int i=0; i<=len1; i++){
+    m[i][0]=i;
+  }
+  for(int j=0; j<=len2; j++)
+     m[0][j]=j;
+  //then update the matrix
+  for(int i=1; i<=len1; i++){
+    for(int j=1; j<=len2; j++){
+       m[i][j]=min(m[i-1][j-1]+(int)(word1[i-1]!=word2[j-1]), m[i-1][j]+1);
+       m[i][j]=min(m[i][j], m[i][j-1]+1);
+      
+      
+    }
+    
+  }
+  return m[len1][len2];
+  
+  
+}
+
+
+vector<string> similar(string word, vector<string> &word_list, int k){
+  vector<string> ret;
+  int n= word_list.size();
+  if(n<1) return ret;
+  for(int i=0; i<n; i++){
+    if(editDist(word, word_list[i])<=k){
+        cout<<endl<<"dist: "<< editDist(word, word_list[i]);
+        ret.push_back(word_list[i]); 
+    }
+  }
+  
+  return ret;
+
+}

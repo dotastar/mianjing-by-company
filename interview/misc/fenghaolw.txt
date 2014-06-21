@@ -1,0 +1,181 @@
+http://www.mitbbs.com/article_t/JobHunting/32685617.html
+发信人: fenghaolw (生如夏花), 信区: JobHunting
+标  题: 找工作告一段落了，发点面经回馈本版
+发信站: BBS 未名空间站 (Wed Apr 30 23:37:05 2014, 美东)
+
+背景：EE 非名校PhD 无线通信方向，预计夏天毕业，两次实习经历（12年Broadcom，
+13年Amazon）
+2月的时候发现时间紧迫，开始锁定SDE的目标狂投简历……真正意义上的海投，大大小
+小有近百家吧，基本没有找人refer。偶尔在版上看到有人帮忙refer的时候也会问一下
+，不过好像都被简历拒了- -
+所有面经放上……
+
+Bloomberg:
+02/21 电面阿三，没有写具体code，都是说思路
+Why bloomberg? 
+Mention and describe one of your projects. What is your role on this project?
+Polymorphism in C++, how to implement virtual functions (vtable), different 
+types of polymorphisms (dynamic/static).
+Two sum (with or without extra memory)
+Kth node to the last (Linked List)
+Implement min and max methods for stack (should be O(1) complexity). How to 
+handle duplicates
+Design history tab in browsers (similar to LRU, doubly linked list and hash 
+table)
+03/19 onsite
+Round 1: 一白人一黑人…
+Resume questions: 
+Given two sorted array, find the intersection. (First give hash map solution
+, which takes extra memory; then give binary search solution, takes O(mlogn)
+. Finally got merge sort solution after a lot of hints…)
+Details about hash function
+Implement a stack using linked list
+Memory leak in C/C++
+Round 2: 一中东人，一中国大哥放水…
+Best time to buy and sell stock II (leetcode)
+You have a stream of characters/integers/long integers. Write a method to 
+check whether the current character/integer has been appeared before.
+Common data structures (pros/cons of array/linked list/hash map).
+Memory management in C/C++
+25 horses Brain Teaser
+Round 3: 白人manager
+Ticket system (Glassdoor 上有，题目很多各种各样的follow up)
+Simple binary search 
+Memory management. Stack and heap in memory. What else do we have? Code 
+segment (functional pointers)
+03/24拿到第一个offer, 100k base + 10k bonus.
+
+Zillow:
+先是coding test，string to integer 和 insert/delete in ternary tree
+03/20第一次电面，白人manager
+进程和线程的区别
+Abstract class和Interface的区别，不懂java，胡诌了一通- -
+Find the first unique char in a string, one-pass solution
+03/27 第二次电面，白人
+聊简历，聊project
+Word break in leetcode
+04/10 onsite，四轮全是白人…
+题目都很简单，而且Glassdoor上全出现过，就不提了
+04/15拿到offer，90k base + 10k sign-on + 1350 options
+
+Yelp:
+04/04 电面，白人
+大量behavior questions
+Coding题就一个，给一个日志文件，每一行是 timestamp, uid of worker, uid of 
+resources, start or end.
+让你判断对于任意一个resource uid，有没有两个worker同时access这个resource
+题目不难，不过要在线编译通过
+04/16 onsite
+四轮，每个人都会问近20分钟的简历和behavior questions
+Round 1: Big integer add, follow up: add more than two integers in any base 
+(not only decimal)
+Round 2: A lot of questions about networking stack, TCP/UDP/HTTP. Write 
+method to simulate network requests.
+Round 3: Given a list of list of char. Input is a char, output is all chars 
+which are in the same list of input.
+Example: List: ((a, b, c), (b, d, e), (e, f), (g, h))
+Input: b, output: a, c, d, e
+Input: f, output: e
+Preprocessing could be slow, but find method should be constant complexity
+Round 4: OS related: processes and threads. Socket IPC and design problem 
+about chat server. (Multiple sockets sending large files might cause delay/
+jitter. How to handle this)
+Implement Game of life.  http://en.wikipedia.org/wiki/Conway's_Game_of_Life
+04/22拿到offer，125k base + RSU (Fixed market value of 100k in 4 years) + 
+10k sign-on.
+
+Snapchat: 网申2天后约电面，电面1天后约onsite，效率非常快啊- -
+03/13 电面，2sum, 3sum, 4sum…
+04/11 onsite，题目都不难，但是发挥很差，面完就知道没戏了…暴富的机会就这么没
+了，呵呵
+Round 1: Find all amicable numbers; Big integer multiplication.
+Round 2: Game of life (same as yelp). Follow up: from 2-dimensional to N-
+dimensional. What if multiple users are accessing the same game board, and 
+they have different viewports.
+Round 3: Discussions about design servers for snapchat. Requirement: 
+guarantee that the messages are reliably delivered; also need to guarantee 
+deletion after reliable delivery.
+Design an elevator.
+Round 4: Flatten BST to in-order doubly linked list. 
+他家的人都特别有激情，可惜错过了哈
+
+Palantir: 
+03/27 电面
+Warmup: Read input in format: city, state, population (tab delimited file. 
+population is of form: integer number always followed by a 'k'). Note that 
+city name can contain spaces. Output the total population in each state in 
+descending order
+Given an array of integers which is initially increasing and then decreasing
+, find the maximum value in the array.
+Given a stream of integers, find top K (heap)
+Given an array of integers, find top K. top K elements do not need to be 
+sorted. (quick select the Nth, then scan the array again, linear complexity)
+04/18 onsite: 他家第二轮感觉是个ABC，其他都是白人…
+Round 1: 写一个 Tree iterator
+Round 2: Longest substring which repeated in a string, example: banana, 
+return ana
+Flatten BST to in-order doubly linked list
+Round 3: Given stocks with dates and values. For multiple companies. For 
+each date, return the current total amount of stock you have. (a variation 
+of Merge K sorted array)
+Round 4: Word search in leetcode
+Round 5: Convert map<A, map<B, C> > to map<C, map<B, set<A> > >
+Find k missing numbers in an array 1-N
+面完感觉一般，23号收到拒信……
+
+Quantcast:
+Coding test: spreadsheet, 做完就挂了……
+
+Expedia:
+被HR放了三次鸽子，然后聊了一次之后就了无音讯了
+
+Redfin:
+第一次电面是个印度女manager，问了个stack with min和，valid parenthesis.
+第二次电面被我推掉了
+
+Amazon (Boston office):
+04/16 电面
+Find how many times an array has been rotated
+Input: [4, 5, 6, 7, 8, 1, 2, 3]
+Output: 3
+Find longest substring which has been appeared more than once (the same with
+Palantir round 2...)
+Single number (leetcode)
+
+04/25 onsite
+老印比较多，海量的行为问题，所谓的amazon leading principle。我因为实习过还好
+……
+Round 1: OOD, design a furniture class, type: table/chair, material: steer/
+wood, methods: addWeight/putFire 测试家具强度，返回true or false 判断家具是
+否可用
+Round 2: Basic data structure problems. Stack with min, find common parts of
+two files (not sorted, files could be very large)
+Round 3: Merge two sorted array (and eliminate duplicates), letter 
+combination, basic design pattern questions.
+Round 4: Given an array of intervals. Input: an integer, output: true if 
+there exists at least one interval containing this integer.
+Round 5: Given a board with 0 and 1, find number of all components (
+connected 1s).
+Example:
+1 0 0 0
+1 1 0 1
+0 1 0 1
+0 0 1 0
+Output: 3.
+Serialization/Deserialization of a Binary Tree.
+昨天拿到口头offer，不过我说我已经准备去湾区了。
+
+Two Sigma:
+04/24 电面，全是基础问题……
+Onsite被我推掉了，看网上onsite的淘汰率有点心虚，而且也不是很想去NYC…
+
+Rocket Fuel:
+因为要去他家了，就不透题目了
+总体来讲电面和onsite算法题都不难，不过有一轮设计题和两轮code review（基本是
+concurrency和design pattern的东西）
+其实我感觉面得很烂，尤其是某国人大哥的算法题，leetcode原题答得磕磕碰碰……不
+过他应该放水了吧。
+最后package是125k base + 4000 RSU + 20k sign-on + 10% bonus. 去他家主要觉得
+做的东西更有技术含量和前景一点。
+
+总结，基本没有怎么碰到老印，算是老天保佑吧-_-

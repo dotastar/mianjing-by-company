@@ -1,0 +1,43 @@
+http://www.mitbbs.com/article_t/JobHunting/32721125.html
+发信人: chaoz (面朝大海，吃碗凉皮), 信区: JobHunting
+标  题: T家在线题2道 (转载)
+发信站: BBS 未名空间站 (Thu Jun 19 21:00:38 2014, 美东)
+
+【 以下文字转载自 DataSciences 讨论区 】
+发信人: chaoz (面朝大海，吃碗凉皮), 信区: DataSciences
+标  题: T家在线题2道
+发信站: BBS 未名空间站 (Thu Jun 19 21:00:22 2014, 美东)
+
+已经悲剧
+
+题1：anagram of a palindrome 要求O(N)
+
+int isAnagrmaOfPalindrome(char *string){
+unsigned int bitc = 0, i = 0;
+int out = 0;
+
+while(*string){
+    i = *(string++) - 'a';
+    bitc ^= (1 << i);
+    }
+
+out = (int)(bitc & (bitc - 1));
+
+return !out;
+}
+
+题2：重新排序整数的digits使其最大化 (e.g. 3515 -> 5531) 要求O(1)
+
+int largestSibling(int N) {
+int digit;
+int temp = 0;
+int output = 0;
+
+for (digit=9;digit>0;digit--)
+   for (temp=N;temp>0;temp/=10)
+     if (temp%10==digit) output = output + digit*10;
+
+return output;
+}
+
+感想：这和data scientist有什么关系嘛？

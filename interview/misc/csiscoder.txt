@@ -1,0 +1,126 @@
+http://www.mitbbs.com/article_t/JobHunting/32721825.html
+发信人: csiscoder (csiscoder), 信区: JobHunting
+标  题: 上几个面经顺求Bless
+关键字: 面经
+发信站: BBS 未名空间站 (Fri Jun 20 22:06:00 2014, 美东)
+
+最近面了几家公司，上店面经, 攒点人品
+amazon
+三哥，given a binary matrix， find out the total number of islands， （
+geeksforgeeks原题）
+
+跟这里的面经一模一样：http://www.mitbbs.com/article_t/JobHunting/32721661.html
+
+
+面得很早1月底瑞苦肉特找我就随便面了下，很久没有准备算法了，知道是dfs，但是写
+不出来，汗啊，挂了，自此以后努力准备3个月的算法
+
+bloomberg
+版上国人大哥内推的，无论如何应该感谢。
+国人大哥先要面试我才决定给我内推（可能大哥办事认真）。 内推后另一位国人大哥
+面的，虽然
+说的是英文，告诉我的是英文名，但是改不了口音，一堆c++问题，好多都忘了，大概
+有几道是下面的：
+
+1. c++ pointer/reference, when to use pointer, when to use reference
+2. implement linked list. implement copy assignment operator for linked list
+, implement them with class template
+3. 一道算法题： flood fill
+
+挂了，不过自己当时也没太往心里去，继续努力慢慢找
+
+yahoo
+也是版上大哥内推。 
+店面，国人大哥，超级nice, 必须大赞，要是拿到offer一定请这个大哥吃大餐，我想
+我们会成为好朋友的哈哈
+
+问了c＋＋ explict keyword, pointer/reference difference.
+一道题目就是fibonacci数列 ，分析复杂度。
+第二天收到onsite，这周一飞到硅谷面的。 
+
+onsite 见了5个人，貌似也没签nda
+
+1. 日本大哥： Given a list of search query words with query frequency, and 
+another search word, find out the next word that has the query frequency 
+right below it. 
+
+For example. assume we have "miscrosoft" with query frequency 100, find out 
+the word that has query frequency right after "microsoft". for example, it 
+might be "google" with frequency 99. Discuss data structures and write 
+complete code, with time complexity analysis
+
+2. 三哥： Given a binary tree, how would you decide whether it is a unary 
+tree. i.e., the tree contains the same values
+
+Follow-up. Given a binary tree, how would you find out the number of 
+distinct unary subtrees.
+Example:
+             1
+     1            1
+2           1        1 
+return 5.
+
+3. 国人大哥：insert into circular linked list  void insert（TreedNode* node,
+int val); 
+4.三姐，问了很多设计方面的问题，代码题目就是： sort colors (leetcode 原题）
+5. hiring manager，国人大姐。print binary tree level by level
+
+我觉得面试官都很好，真心希望可以拿到offer啊，求大家bless
+
+Linkedin
+白人妹妹猎头主动联系面的，她说不用hr直接安排面试。
+
+一面： 国人大哥和美国妹妹，妹妹是shadow。 
+第一题： search in rotated sorted array，（with or without duplicates）
+第二题： Given an array of integers, find out a triple of integers such that
+they form a triangle. i.e. given a,b,c from the array, a +b >c, b +c >a, a 
++c >b, 返回任何三个就可以了。 
+
+大哥给了很积极的评价，一天后通知二面 
+
+昨天下午二面： 希腊士大夫工程师，加印度大哥
+第一题：print binary tree level by level， 外加c++ vector内部怎么实现以及复
+杂度等细节
+第二题： print  factors of a given integer 
+example： 12 可以表示为：
+12 ＊1
+6 ＊2 ＊1
+4 ＊3 ＊1
+3 ＊2 ＊2 ＊1
+要求走几个例子，写出完整的递归的stack trace
+题目差不多都做出来了
+
+希望可以拿到onsite，已经过去24小时了，linkedin一般都超级快的，希望不要等来个
+据信就好，至少也拿个onsite啊
+
+
+Snapchat
+网上自己投的，投完一个小时后收到邮件询问电面时间。
+
+美国大哥。google hangout  视频面试，大哥带个bose耳机，态度很nice
+题目很简单
+Given a binary search tree and a value n, find out the node that has the 
+value closest to n.
+今天下午刚面的，上了一天班累得够呛，一开始给了一个解法是对任何二叉树的，面试
+官说我给你的是bst，恍然大悟，赶紧写了个一个Bst的版本，走了两个例子，没问题，
+问了几个问题，他说you are doing good. 希望不是忽悠我啊。问了几个问题就结束了。
+
+apple
+siri speech scientist
+不知道怎么别搞到这个组了，国人大哥面的，问了一堆语音识别的东西，完全云山雾罩
+，可想而知挂了
+
+
+还有狗狗店面已挂，面经已经贴出来了http://www.mitbbs.com/article_t0/JobHunting/32714591.html，
+
+g挂了挺可惜的，认真做题做了好几个月，猎头大哥追着我让我面试追了两年，由于各
+种原因耽搁，一直没有面试，后来他转去非死不可了，又安排另一个白人mm联系我让我
+安排时间面试，实在觉得不应该再推迟了，还是挂了。看来功夫还是不行，或者我跟g
+的缘分还没到吧。。。。。再准备一段时间重新来过。
+
+
+接下来还有非死不可面试。
+
+请大家Bless， 要是拿到onsite和 Offer继续回报本版，希望大家能多拿面试，多拿
+offer， 找到心仪的工作。 谢谢：）
+

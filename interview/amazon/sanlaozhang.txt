@@ -1,0 +1,38 @@
+http://www.mitbbs.com/article_t/JobHunting/32721661.html
+发信人: sanlaozhang (十三妖), 信区: JobHunting
+标  题: amazon电面跪了
+发信站: BBS 未名空间站 (Fri Jun 20 17:37:29 2014, 美东)
+
+Given a 2d array, find the the shape count.就是有1的连续片段的数目。脑袋木了
+， collabedit上写了一团乱麻。老爸在旁边切菜，别interviewer叫停了。。。
+e.g 1
+[
+  [101]
+  [010]
+  [111]
+]
+
+count = 3
+
+e.g 2
+[
+  [111]
+  [001]
+  [111]
+]
+
+count = 1
+
+
+e.g 3
+[
+  [111111111111]
+  [000000000001]
+  [111000000001]
+  [100000100001]
+  [100000000001]
+  [100000000001]
+  [111111111111]
+
+]
+count = 2
