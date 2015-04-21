@@ -1,0 +1,22 @@
+http://www.mitbbs.com/article_t/JobHunting/32733949.html
+发信人: mitbbsandrew (未名网友), 信区: JobHunting
+标  题: F面经
+发信站: BBS 未名空间站 (Thu Jul 10 16:28:20 2014, 美东)
+
+电面， 中国大哥， 问了一题，就是给read4k，实现read any bytes. 读大文件时如何
+优化
+
+onsite:
+1， 美国人， 给一个词，判断是不是Palindome, 
+   然后扩展问，给一个字典，找出所有对 单词，这两个单词可以组成一个palindom, 
+然后有问，可以组合任意个单词，怎么找到最长的可能的palindom
+
+2, 中国大哥， 问了 permutation 和几种变体
+
+3, 问现在的项目和resume
+
+4, 美国人， 系统设计，设计各系统能返回 top 10 listened songs from your 
+friends.
+
+今天收到据信，说coding可以，但是design没过。感谢FB的中国大哥，可惜自己能力有
+限。 

@@ -1,0 +1,12 @@
+http://www.mitbbs.com/article_t/JobHunting/32760557.html
+发信人: beiyouyangxi (Xi1990), 信区: JobHunting
+标  题: Rocket Fuel今天Skpye面经
+关键字: Rocekt Fuel
+发信站: BBS 未名空间站 (Fri Aug 15 20:24:17 2014, 美东)
+
+之前已经两轮，第一轮常规的5 hour的test，题目是auto racer test，请见http://get-that-job-at-google.blogspot.com/search/label/RocketFuel 第三道，解法用线段树，可以参考http://www.mitbbs.com/article_t/JobHunting/32573375.html 通过5个case。
+第二轮是HR，让你介绍你自己，你的项目，你担任什么职责在项目中，合适开始工作等
+。今天这一轮是Skype，印度老哥，给你两个数组，preorder和inorder，让你构建一个
+二叉树。Leetcode原题，所以写得很快。他先问你的想法，然后让你写算法复杂度的公
+司，T（n）=T(n-k)+T(k)+O(n).然后问你能否优化，我说可以优化O（n）那一项。然后
+写code。 最后问了他一个关于team的问题。 不知道能否过下一轮。

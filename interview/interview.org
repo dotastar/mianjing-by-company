@@ -1,0 +1,4 @@
+* algorithm
+* system design
+1. clarify the system's constraints and to identify what use cases the system needs to satisfy
+2. 

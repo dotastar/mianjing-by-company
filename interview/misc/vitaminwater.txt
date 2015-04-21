@@ -1,0 +1,33 @@
+http://www.mitbbs.com/article_t/JobHunting/32734797.html
+发信人: vitaminwater (Vitamin), 信区: JobHunting
+标  题: 一些FLGTS 电面面筋
+发信站: BBS 未名空间站 (Fri Jul 11 20:52:53 2014, 美东)
+
+放点电面面经求bless
+
+F:
+1. Reverse linkedlist
+2. Tree => double linked list
+3. Two sum, 考虑重复
+
+G:
+1. 有点像机器人走格子那个题
+2. distributed hash table 的设计题
+
+T:
+第一次:
+代码模拟下简单的group by 功能。
+第二次:
+算术表达式用string 表示，运算结果.
+
+L:
+pow(double a, double b)
+Nested Integer 求和
+给两词，找在文档中这两词最短距离。
+
+S:
+验证数独。
+
+只onsite了两家，下周有结果。剩下三家有点搞不动了。。
+下周有消息后回来update。
+

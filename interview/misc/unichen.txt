@@ -1,0 +1,46 @@
+http://www.mitbbs.com/article_t/JobHunting/32702941.html
+发信人: unichen (greedyrouter), 信区: JobHunting
+标  题: Pure Storage面经
+发信站: BBS 未名空间站 (Sat May 24 11:44:44 2014, 美东)
+
+在他们家遇到了两个傻B阿三。一个不停的纠正我的逗号和分号，另外一个给的hints都
+是废话。最后挂了。他们家的阿三是我面过的所有公司中最极品的。所以面试他们家要
+小心傻B阿三。当然他们家的华人美女HR相当的nice，是我遇到的所有HR中最nice的。
+
+总共面了四轮：
+
+第一轮：定义buddy system为一棵complete binary tree。一个node可能为0也可能为1
+. 它的
+value为1，当且仅当它所有的child的value均为1.
+1
+|             
+1             2
+|             |     
+1     2       3     4
+|     |      |    | 
+1 2  3 4    5 6  7 8
+
+实现下列的method。
+1' clearBit(int offset, int len);
+2' setBit(int offset, int len);
+
+第二轮：设计一个task dispatching system，里面有一个task queue和两个function。
+1’ trigger。这个function运行并清空task queue中所有的tasks。
+2‘ addTask。在trigger之前把task加入task queue，在trigger之后直接运行task。
+
+第三轮：产生一个圆上的所有坐标。不用sqrt, sin, cos等内建函数。
+提示：所有的点都是整点。首先我们可以利用对称性把圆分成8块，先画出0-45度角内
+的点，然后映射之。对于其中0-45度角中的点，当X＋1时，Y的值或者不变或者－1，然
+后放入圆方程中看哪一个是对的。
+
+第四轮：设计一个Map<Integer, Integer>，满足下面的复杂度。
+add: O(1)  deletion: O(1)  lookup: O(1)  clear:O(1)  iterate: O(number of 
+elements)。
+提示：
+如果我们用randomly accessed array，复杂度如下：
+add: O(1)  deletion: O(1)  lookup: O(1)  clear: O(size of array)   iterate: 
+O(size of array)
+如果我么用sequential array, 复杂度如下：
+add: O(1)  deletion: O(number of elements)  lookup:O(number of elements)   
+clear: O(1) iterate:O(number of elements)
+所以我们需要把这两个方法整合起来。

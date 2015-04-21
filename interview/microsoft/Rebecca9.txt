@@ -1,0 +1,44 @@
+http://www.mitbbs.com/article_t/JobHunting/32734717.html
+发信人: Rebecca9 (冷月花魂), 信区: JobHunting
+标  题: M面经
+发信站: BBS 未名空间站 (Fri Jul 11 17:53:58 2014, 美东)
+
+M面经
+两个月前面的，乘着记得回报本版。
+Phone: lowest common ancestor of two nodes in a binary tree. Binary tree 
+node doesn’t have parent pointer.
+What if the nodes have parent pointer?
+Onsite:
+1.    Print the boundary of binary tree anti-clockwise.
+2.    a. Given a linked list, put all the even numbers before odd numbers.
+e.g. 3->4->2->7->null 
+should become  4->2->3->7->null
+b. A small design problem. Shuttle is picking up passages on a lane. The 
+arrival of passengers are random.  Design such a system.
+3.  Find the number of valid phone numbers such that each digit and its 
+following digit should be a knight move in chess.
+1 2 3
+4 5 6
+7 8 9
+* 0 #     电话号码十位数，每位（除了最后一位）和它的下一位要满足 chess 中 
+knight 的条件。例如 16, 18, 27, 29 … 先写了一个backtracking, 面试官不满意，
+说我的复杂度高了，他要DP的答案。于是写了个DP，面试官表示满意。
+4. 面试官在手机上浏览一个网页，貌似是关于C＋＋特性的一个网站。他问了五六个
+C＋＋性质的问题，到了 diamond problem, virtual inheritance 的时候不会了。
+他讲解了一番，然后说，我们C＋＋到此为止，开始做题吧。这个时候感到自
+己大概要挂了，以前光顾着刷题没有看基础知识了 >.< 
+题目是 reverse words in a string. 反转后第N个单词后的空格数要等于远string中
+第N个单词后的空格数。
+e.g. Print  Hello      World
+       World  Hello      Print
+我一直在想 inplace 的解法，但是没有想出来，问可以写一个不考虑空格数的。
+于是写了一个常见的算法，反转整个str, 再反转每个单词。这样的结果是
+        World      Hello  Print
+面试官说，我们可以用一个数组把空格数存起来，再shift words in the resulting 
+string.   我比较郁闷了，如果能用额外空间的话何必这么麻烦呢？直接开辟一块和
+原来string大小相同的空间，用三个指针，其中一个从前往后扫，专门扫空格数，其他
+两个指针从后往前扫，专门找单词。把找到的单词和空格数放到新的空间中就好了。好
+吧，我就说你的方法挺好的，我没有想到。。。
+5. behavior question 和一道小的设计题。
+
+三天后，recruiter 来电，说基础知识不够好，我申请的职位高了。。。
